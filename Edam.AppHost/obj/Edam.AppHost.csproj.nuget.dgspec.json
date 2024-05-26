@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/Edam.AppHost.csproj": {}
+  },
+  "projects": {
+    "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/Edam.AppHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/Edam.AppHost.csproj",
+        "projectName": "Edam.AppHost",
+        "projectPath": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/Edam.AppHost.csproj",
+        "packagesPath": "/Users/ed.sobrino/.nuget/packages/",
+        "outputPath": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ed.sobrino/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Aspire.Hosting.AppHost": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Aspire.Hosting.Redis": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

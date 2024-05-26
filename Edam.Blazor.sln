@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.ApiService", "Edam.ApiService\Edam.ApiService.csproj", "{5827CDB6-BFFC-4EB3-B7F1-442B9416687A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.AppHost", "Edam.AppHost\Edam.AppHost.csproj", "{15133E74-C3C4-454F-BB99-51300CF8237A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.ServiceDefaults", "Edam.ServiceDefaults\Edam.ServiceDefaults.csproj", "{6FB7C2EE-AFDA-4451-A204-B45D61D0E5D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.Web", "Edam.Web\Edam.Web.csproj", "{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.Libraries", "Edam.Libraries", "{E9935052-7104-4397-9B41-36E71D14FDB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.Tests", "Edam.Tests", "{1F7529AB-BFCA-45A7-8F92-CC3D32148424}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5827CDB6-BFFC-4EB3-B7F1-442B9416687A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5827CDB6-BFFC-4EB3-B7F1-442B9416687A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5827CDB6-BFFC-4EB3-B7F1-442B9416687A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5827CDB6-BFFC-4EB3-B7F1-442B9416687A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15133E74-C3C4-454F-BB99-51300CF8237A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15133E74-C3C4-454F-BB99-51300CF8237A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15133E74-C3C4-454F-BB99-51300CF8237A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15133E74-C3C4-454F-BB99-51300CF8237A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB7C2EE-AFDA-4451-A204-B45D61D0E5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB7C2EE-AFDA-4451-A204-B45D61D0E5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB7C2EE-AFDA-4451-A204-B45D61D0E5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB7C2EE-AFDA-4451-A204-B45D61D0E5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ABF3AEE-158F-45D0-A5AD-26CC61012971}
+	EndGlobalSection
+EndGlobal

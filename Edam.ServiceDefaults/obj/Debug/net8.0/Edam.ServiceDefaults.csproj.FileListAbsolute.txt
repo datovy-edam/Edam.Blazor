@@ -1,0 +1,12 @@
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/bin/Debug/net8.0/Edam.ServiceDefaults.deps.json
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/bin/Debug/net8.0/Edam.ServiceDefaults.dll
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/bin/Debug/net8.0/Edam.ServiceDefaults.pdb
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.csproj.AssemblyReference.cache
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.AssemblyInfoInputs.cache
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.AssemblyInfo.cs
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.dll
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/refint/Edam.ServiceDefaults.dll
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.pdb
+/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/ref/Edam.ServiceDefaults.dll
