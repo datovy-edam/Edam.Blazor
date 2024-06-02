@@ -31,7 +31,7 @@ public class FileSystemPicker
    /// </example>
    /// <returns>instance of results log is returned</returns>
    public async Task<IResultsLog> OpenAndReadFile(
-      IFileSystemAccessService service, bool dispose = true)
+      IFileSystemAccessService service, bool dispose = false)
    {
       string? text = null;
       IResultsLog? resultsLog = null;
@@ -77,6 +77,46 @@ public class FileSystemPicker
    }
 
    /// <summary>
+   /// Get Item Async...
+   /// </summary>
+   /// <param name="handle">file element handle</param>
+   /// <returns>return the info of the specific item</returns>
+   public async Task<FileSystemItemInfo> GetItemAsync(IFileSystemHandle handle)
+   {
+      FileSystemItemInfo i = new FileSystemItemInfo();
+      i.KindText = (await handle.GetKindAsync()).ToString();
+      i.Name = await handle.GetNameAsync();
+      i.Handle = handle;
+      return i;
+   }
+
+   /// <summary>
+   /// Get Folder and child Folders hierarchy of children.
+   /// </summary>
+   /// <param name="handle">folder element handle</param>
+   /// <param name="items">items contain in the folder element</param>
+   /// <returns>returns the child elements of the given folder and children if
+   /// any</returns>
+   public async Task<List<FileSystemItemInfo>> GetFolderItemsAsync(
+      FileSystemDirectoryHandle handle, List<FileSystemItemInfo> items)
+   {
+      var ditm = await GetItemAsync(handle);
+      items.Add(ditm);
+      var children = (await handle.ValuesAsync()).ToList();
+      foreach (var item in children)
+      {
+         var fitem = await GetItemAsync(item);
+         if (fitem.Kind == FileSystemItemKind.Directory)
+         {
+            await GetFolderItemsAsync(
+               (FileSystemDirectoryHandle)item, fitem.Children);
+         }
+         items.Add(fitem);
+      }
+      return items;
+   }
+
+   /// <summary>
    /// Open File Picker and Read File.
    /// </summary>
    /// <param name="service">instance of FileSystem service reference</param>
@@ -90,19 +130,17 @@ public class FileSystemPicker
    /// </example>
    /// <returns>instance of results log is returned</returns>
    public async Task<IResultsLog> OpenAndReadFolder(
-      IFileSystemAccessService service, bool dispose = true)
+      IFileSystemAccessService service, bool dispose = false)
    {
-      string? text = null;
       IResultsLog? resultsLog = null;
       FileSystemDirectoryHandle? dirHandle = null;
       try
       {
          DirectoryPickerOptionsStartInWellKnownDirectory options = new()
          {
-            StartIn = WellKnownDirectory.Downloads
+            StartIn = WellKnownDirectory.Documents
          };
-         var dirHandles = await service.ShowDirectoryPickerAsync(options);
-
+         dirHandle = await service.ShowDirectoryPickerAsync(options);
       }
       catch (Exception ex)
       {
@@ -113,10 +151,11 @@ public class FileSystemPicker
       }
       finally
       {
+         List<FileSystemItemInfo> litems = new List<FileSystemItemInfo>();
          if (dirHandle is not null)
          {
-            var dir = await dirHandle.ValuesAsync();
-            //text = await file.TextAsync();
+            litems = await GetFolderItemsAsync(dirHandle, litems);
+
             if (dispose)
             {
                await dirHandle.DisposeAsync();
@@ -125,7 +164,7 @@ public class FileSystemPicker
          if (resultsLog is null)
          {
             var results = new ResultLog();
-            results.ResultValueObject = null;
+            results.ResultValueObject = litems;
             results.Succeeded();
             resultsLog = results;
          }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Edam.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98635715d46295d425b0a6d551fd7a4165c9898b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea8012526fedf2bd8edea52ffdb35538752bd0f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Edam.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Edam.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
