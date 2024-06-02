@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\System\Edam.System\Edam.System.csproj" />
+    <ProjectReference Include="..\Edam.Data.Assets\Edam.Data.Assets.csproj" />
+    <ProjectReference Include="..\Edam.Data.Schema\Edam.Data.Schema.csproj" />
+    <ProjectReference Include="..\Edam.DataObjects\Edam.DataObjects.csproj" />
+    <ProjectReference Include="..\Edam.Gsql\Edam.Gsql.csproj" />
+    <ProjectReference Include="..\Edam.Json\Edam.Json.csproj" />
+    <ProjectReference Include="..\Edam.Xml\Edam.Xml.csproj" />
+  </ItemGroup>
+
+</Project>

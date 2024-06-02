@@ -10,3 +10,16 @@
 /Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/refint/Edam.ServiceDefaults.dll
 /Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/Edam.ServiceDefaults.pdb
 /Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/Debug/net8.0/ref/Edam.ServiceDefaults.dll
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\bin\Debug\net8.0\Edam.ServiceDefaults.deps.json
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\bin\Debug\net8.0\Edam.ServiceDefaults.dll
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\bin\Debug\net8.0\Edam.ServiceDefaults.pdb
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.csproj.AssemblyReference.cache
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.AssemblyInfoInputs.cache
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.AssemblyInfo.cs
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.csproj.CoreCompileInputs.cache
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.sourcelink.json
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.dll
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\refint\Edam.ServiceDefaults.dll
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\Edam.ServiceDefaults.pdb
+D:\Projects\Edam.Blazor\Edam.ServiceDefaults\obj\Debug\net8.0\ref\Edam.ServiceDefaults.dll

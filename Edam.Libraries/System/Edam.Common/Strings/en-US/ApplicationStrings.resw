@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivityFollowUpDescription" xml:space="preserve">
+    <value>As scheduled an agent will call to follow-up on your case or progress as needed.</value>
+  </data>
+  <data name="ActivityFollowUpPhoneVenue" xml:space="preserve">
+    <value>Start your Follow-UP Update online, an Agent will call you as scheduled.</value>
+  </data>
+  <data name="ActivityFollowUpSummary" xml:space="preserve">
+    <value>Service or case follow-up as schedule...</value>
+  </data>
+  <data name="ApplicationShuttingDown" xml:space="preserve">
+    <value>Application shutting down.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ConnectedSince" xml:space="preserve">
+    <value>Connected Since</value>
+  </data>
+  <data name="DomainNameExpected" xml:space="preserve">
+    <value>Domain Name Expected</value>
+  </data>
+  <data name="FailBadOrMissingInputParameters" xml:space="preserve">
+    <value>FAILED. Bad or missing input parameters.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="FormatDistinguishedNameNotFound" xml:space="preserve">
+    <value>unable to locate the distinguishedName for the object {0} in the {1} domain</value>
+  </data>
+  <data name="IncidentArrestNeedsData" xml:space="preserve">
+    <value>You must provide the Incident Arrest data.</value>
+  </data>
+  <data name="LengthMin" xml:space="preserve">
+    <value>Min Length ({0})</value>
+  </data>
+  <data name="MessageFrom" xml:space="preserve">
+    <value>A message from {0}.</value>
+  </data>
+  <data name="MissingOrganizationAgentPasscodeId" xml:space="preserve">
+    <value>ID's for Application, Organization, Agent and Passcode are required fields</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoSuchObjectFound" xml:space="preserve">
+    <value>No Such Object Found</value>
+  </data>
+  <data name="NotifyActivityJoinDone" xml:space="preserve">
+    <value>Just to let you know that based on your request you just joined an activity offered by {0}.  Hope to see you there.</value>
+  </data>
+  <data name="NotifyActivityJoinEvent" xml:space="preserve">
+    <value>You just joined and Activity....</value>
+  </data>
+  <data name="NotifyActivityRatingDone" xml:space="preserve">
+    <value>Click  in the following Link to review evaluations and accept those: [ {0} ].  Login Now.</value>
+  </data>
+  <data name="NotifyActivityRatingEvent" xml:space="preserve">
+    <value>Evaluations has been submitted, please review and approve those as soon...</value>
+  </data>
+  <data name="OperationNotSupported" xml:space="preserve">
+    <value>Operation Not Supported</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="PasscodeEnter" xml:space="preserve">
+    <value>Enter Passcode</value>
+  </data>
+  <data name="PinNumberEnter" xml:space="preserve">
+    <value>Enter Pin Number</value>
+  </data>
+  <data name="PinSelect" xml:space="preserve">
+    <value>Select Pin (min length {0})</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>One moment please...</value>
+  </data>
+  <data name="ProvideSearchCriteriaAndTryAgain" xml:space="preserve">
+    <value>Provide search criteria and try again.</value>
+  </data>
+  <data name="RequestMustBeDefined" xml:space="preserve">
+    <value>Request was excepted and must be provided.</value>
+  </data>
+  <data name="SelectBestFit" xml:space="preserve">
+    <value>Select best fit.</value>
+  </data>
+  <data name="SelectOption" xml:space="preserve">
+    <value>Select Option</value>
+  </data>
+  <data name="SelfHelpEmailPasswordChangeRequest" xml:space="preserve">
+    <value>&lt;h3&gt;Self-Help Password Change Verification&lt;/h3&gt;&lt;p&gt;Copy and paste the following request ID in the corresponding input box:&lt;br/&gt;&lt;br/&gt;&lt;h4&gt;{0}&lt;/h4&gt;&lt;br/&gt;&lt;p&gt;By doing so you are accepting the Terms and Conditions of Service.  If you can't complete the verification process send us an email as detailed at the bottom of home page on the web-site.&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpEmailVerified" xml:space="preserve">
+    <value>&lt;h3&gt;Self-Help EMail Verification&lt;/h3&gt;&lt;div&gt;&lt;span&gt;Copy and paste the following request ID in the corresponding input box:&lt;br/&gt;&lt;br/&gt;&lt;h4&gt;{0}&lt;/h4&gt;&lt;p&gt;By doing so you are accepting the Terms and Conditions of Service.  You must review the Terms and Conditions available as links in the bottom of the home page before submitting your request.&lt;/p&gt;&lt;br/&gt;&lt;span&gt;If you can't complete the verification process send us an email as detailed at the bottom of home page on the web-site.&lt;/span&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="SelfHelpEmailWelcome" xml:space="preserve">
+    <value>Edam Self-Help.  Email verification for a new user registration has been requested.</value>
+  </data>
+  <data name="SelfHelpPleaseCheckMailbox" xml:space="preserve">
+    <value>&lt;h1&gt;Email Verification needed.&lt;/h1&gt;
+   &lt;p&gt;Please check your email for a verification message, click on the link
+      to accept registration terms and conditions and to continue with your
+      enrolment in this site.&lt;/p&gt;
+   &lt;p&gt;Terms and conditions can be found at the bottom of home page on the web-site.&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpRequestVerificationNeeded" xml:space="preserve">
+    <value>&lt;h3&gt;Your request has been registered&lt;/h3&gt;&lt;p&gt;&lt;a href="{0}"&gt;Please complete required verification by clicking in this link&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpRequestVerifiedAcknowledgement" xml:space="preserve">
+    <value>Your Self-Help Request (No. {0}) has been registered, verified and accepted by you.</value>
+  </data>
+  <data name="SelfHelpUnknownRequest" xml:space="preserve">
+    <value>Uknown Request</value>
+  </data>
+  <data name="SelfHelpUnknownRequestType" xml:space="preserve">
+    <value>Unknown Request Type</value>
+  </data>
+  <data name="SelfHelpVerificationFailed" xml:space="preserve">
+    <value>Verification Failed</value>
+  </data>
+  <data name="Some" xml:space="preserve">
+    <value>Some</value>
+  </data>
+  <data name="SomethingIsWrongWhileSubmitting" xml:space="preserve">
+    <value>Up's an issue was found, please check submitted information and retry.  If the error persist call Help-Desk at hour offices in business hours.</value>
+  </data>
+  <data name="UserMustLogin" xml:space="preserve">
+    <value>User Must Login</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

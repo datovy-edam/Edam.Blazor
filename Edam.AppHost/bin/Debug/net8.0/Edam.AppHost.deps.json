@@ -9,7 +9,9 @@
       "Edam.AppHost/1.0.0": {
         "dependencies": {
           "Aspire.Hosting.AppHost": "8.0.1",
-          "Aspire.Hosting.Redis": "8.0.1"
+          "Aspire.Hosting.Redis": "8.0.1",
+          "Aspire.Hosting.SqlServer": "8.0.1",
+          "MailDev.Hosting": "1.0.0"
         },
         "runtime": {
           "Edam.AppHost.dll": {}
@@ -87,6 +89,17 @@
         },
         "runtime": {
           "lib/net8.0/Aspire.Hosting.Redis.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.124.26701"
+          }
+        }
+      },
+      "Aspire.Hosting.SqlServer/8.0.1": {
+        "dependencies": {
+          "Aspire.Hosting": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.SqlServer.dll": {
             "assemblyVersion": "8.0.1.0",
             "fileVersion": "8.0.124.26701"
           }
@@ -514,6 +527,14 @@
             "fileVersion": "15.1.0.0"
           }
         }
+      },
+      "MailDev.Hosting/1.0.0": {
+        "dependencies": {
+          "Aspire.Hosting": "8.0.1"
+        },
+        "runtime": {
+          "MailDev.Hosting.dll": {}
+        }
       }
     }
   },
@@ -543,6 +564,13 @@
       "sha512": "sha512-RNjDgE/TmlyjrrtsL5t5LgUcTAG6JZZyHLSoChRMXL9MpIy/XeAvjsZwoNySkYiwtRRZHtJ3dEsPi/rHqy/Fuw==",
       "path": "aspire.hosting.redis/8.0.1",
       "hashPath": "aspire.hosting.redis.8.0.1.nupkg.sha512"
+    },
+    "Aspire.Hosting.SqlServer/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Svhh/erIzA99ZUafsdY6B+53xU1vLvnwTdX3lDIiUide1q224chm7MBT9arolTUockD+9s7mXNvbSADQzIy77g==",
+      "path": "aspire.hosting.sqlserver/8.0.1",
+      "hashPath": "aspire.hosting.sqlserver.8.0.1.nupkg.sha512"
     },
     "Fractions/7.3.0": {
       "type": "package",
@@ -928,6 +956,11 @@
       "sha512": "sha512-fXrqmKkzBtXeJiHEsZOPEWkonHweiwk/l0Hqhz4yMIZPh57kZy03Xbj2/e8HV1QIkTw7yeBe9bbphuE3YiI4vQ==",
       "path": "yamldotnet/15.1.0",
       "hashPath": "yamldotnet.15.1.0.nupkg.sha512"
+    },
+    "MailDev.Hosting/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

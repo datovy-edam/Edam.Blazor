@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivityFollowUpDescription" xml:space="preserve">
+    <value>Como calenderizado un agente de servicio llamará para dar seguimiento al progreso de su caso o gestiones.</value>
+  </data>
+  <data name="ActivityFollowUpPhoneVenue" xml:space="preserve">
+    <value>Comienza el seguimiento del servicio en línea, un agente llamará como calendirizado. </value>
+  </data>
+  <data name="ActivityFollowUpSummary" xml:space="preserve">
+    <value>Seguimiento de servicio calendirizado...</value>
+  </data>
+  <data name="ApplicationShuttingDown" xml:space="preserve">
+    <value>Application shutting down.</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="ConnectedSince" xml:space="preserve">
+    <value>Connectado/a desde</value>
+  </data>
+  <data name="DomainNameExpected" xml:space="preserve">
+    <value>Nombre del Dominio no fue provisto</value>
+  </data>
+  <data name="FailBadOrMissingInputParameters" xml:space="preserve">
+    <value>Fallo. Falta o incorrectos parametros.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Fallo</value>
+  </data>
+  <data name="FormatDistinguishedNameNotFound" xml:space="preserve">
+    <value>el distinguishedName no se encontró para el objecto {0} en el dominio {1}</value>
+  </data>
+  <data name="IncidentArrestNeedsData" xml:space="preserve">
+    <value>Debe de proveer la información del arresto.</value>
+  </data>
+  <data name="LengthMin" xml:space="preserve">
+    <value>Largo Min ({0})</value>
+  </data>
+  <data name="MessageFrom" xml:space="preserve">
+    <value>Un mensaje de {0}.</value>
+  </data>
+  <data name="MissingOrganizationAgentPasscodeId" xml:space="preserve">
+    <value>ID de Organización, Agente y el Passcode son campos requeridos.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoSuchObjectFound" xml:space="preserve">
+    <value>Objeto no fue encontrado</value>
+  </data>
+  <data name="NotifyActivityJoinDone" xml:space="preserve">
+    <value>Solo para que sepas, acabase de apuntarte para una activitdad con {0}.  Esperamos verte allí.</value>
+  </data>
+  <data name="NotifyActivityJoinEvent" xml:space="preserve">
+    <value>Acabas de apuntarte en una Actividad...</value>
+  </data>
+  <data name="NotifyActivityRatingDone" xml:space="preserve">
+    <value>Cliquee  el siguiente enlace para revisar and aprovar estas: [ {0} ].  Visita la aplicación ahora.</value>
+  </data>
+  <data name="NotifyActivityRatingEvent" xml:space="preserve">
+    <value>Evalucaciones fueron sometidas, por favor revise las mismas pronto...</value>
+  </data>
+  <data name="OperationNotSupported" xml:space="preserve">
+    <value>Operación No Soportada</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Opciones</value>
+  </data>
+  <data name="PasscodeEnter" xml:space="preserve">
+    <value>Entre el Passcode</value>
+  </data>
+  <data name="PinNumberEnter" xml:space="preserve">
+    <value>Entre Número de Pin</value>
+  </data>
+  <data name="PinSelect" xml:space="preserve">
+    <value>Escoja Pin (min largo {0})</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Espere un momento por favor...</value>
+  </data>
+  <data name="ProvideSearchCriteriaAndTryAgain" xml:space="preserve">
+    <value>Provea los criterios de búsqueda y trate nuevamente.</value>
+  </data>
+  <data name="SelectBestFit" xml:space="preserve">
+    <value>Seleccione la mejor alternativa.</value>
+  </data>
+  <data name="SelectOption" xml:space="preserve">
+    <value>Seleccione Opción</value>
+  </data>
+  <data name="SelfHelpEmailPasswordChangeRequest" xml:space="preserve">
+    <value>&lt;h3&gt;Verificación de cambio de contraseña&lt;/h3&gt;&lt;p&gt;Copy y Paste el siguiente código:&lt;br/&gt;&lt;br/&gt;&lt;h4&gt;{0}&lt;/h4&gt;&lt;br/&gt;&lt;p&gt;Haciendo esto usted acepta los Términos y Condiciones del Servicio.  Si no puede completar dicha verificación envianos un email a la dirección indicada al final de la página del web-site.&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpEmailVerified" xml:space="preserve">
+    <value>&lt;h3&gt;Verificación de Email&lt;/h3&gt;&lt;br/&gt;&lt;p&gt;Copy y Paste el siguiente código:&lt;br/&gt;&lt;br/&gt;&lt;h4&gt;{0}&lt;/h4&gt;&lt;p&gt;Haciendo esto usted acepta los Términos y Condiciones del Servicio.  Si no puede completar dicha verificación envianos un email a la dirección indicada al final de la página del web-site.&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpEmailWelcome" xml:space="preserve">
+    <value>Petición de servicio en el Edam.  Su petición para verficar su email ha sido registrada.</value>
+  </data>
+  <data name="SelfHelpPleaseCheckMailbox" xml:space="preserve">
+    <value>&lt;h1&gt;Verificación de Email es necesaria.&lt;/h1&gt;
+   &lt;p&gt;
+      Por favor revise su buzón de Email donde le enviamos el mensaje,
+      cliquee en el enlace (link) para aceptar los términos y condiciones de
+      uso y completar su registración.
+   &lt;/p&gt;
+   &lt;p&gt;Los términos y condiciones los encontrara en los enlaces en la página de entrada.&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpRequestVerificationNeeded" xml:space="preserve">
+    <value>&lt;h3&gt;Su petición ha sido registrada.&lt;/h3&gt;&lt;p&gt;&lt;a href="{0}"&gt;Por faovr clickee este enlace para completar la requerida verificación..&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="SelfHelpRequestVerifiedAcknowledgement" xml:space="preserve">
+    <value>Su petición para ayuda (No. {0}) ha sido registrada, y revisada and aceptada por usted.</value>
+  </data>
+  <data name="SelfHelpUnknownRequest" xml:space="preserve">
+    <value>Petición se desconse</value>
+  </data>
+  <data name="SelfHelpUnknownRequestType" xml:space="preserve">
+    <value>Tipo de Petición se desconose</value>
+  </data>
+  <data name="SelfHelpVerificationFailed" xml:space="preserve">
+    <value>Verificación Falló</value>
+  </data>
+  <data name="Some" xml:space="preserve">
+    <value>Algo</value>
+  </data>
+  <data name="SomethingIsWrongWhileSubmitting" xml:space="preserve">
+    <value>Up’s algo sucedió, por favor coteje la información sometida y intente someterla nuevamente.  Si el error persiste llame a Ayuda al Cliente a nuestras oficinas en horas de negocio.</value>
+  </data>
+  <data name="UserMustLogin" xml:space="preserve">
+    <value>Usuario debe Loguearse</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Si</value>
+  </data>
+</root>

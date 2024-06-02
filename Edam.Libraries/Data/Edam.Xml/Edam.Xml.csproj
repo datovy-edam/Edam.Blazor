@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\System\Edam.System\Edam.System.csproj" />
+    <ProjectReference Include="..\Edam.Data.Assets\Edam.Data.Assets.csproj" />
+  </ItemGroup>
+
+</Project>

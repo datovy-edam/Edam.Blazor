@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Edam.Libraries\System\Edam.Common\Edam.Common.csproj" />
     <ProjectReference Include="..\Edam.ServiceDefaults\Edam.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspire.Microsoft.Data.SqlClient" Version="8.0.1" />
     <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.0.1" />
     <PackageReference Include="BlazorMonaco" Version="3.2.0" />
+    <PackageReference Include="KristofferStrube.Blazor.FileSystemAccess" Version="3.2.2" />
     <PackageReference Include="Radzen.Blazor" Version="4.32.1" />
   </ItemGroup>
 

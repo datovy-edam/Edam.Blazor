@@ -1,0 +1,192 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Edam.Blazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\filesystemhelper\\filesystempicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\filesystemhelper\\filesystempicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|d:\\projects\\edam.blazor\\edam.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}|Edam.Web\\Edam.Web.csproj|solutionrelative:edam.web\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15133E74-C3C4-454F-BB99-51300CF8237A}|Edam.AppHost\\Edam.AppHost.csproj|d:\\projects\\edam.blazor\\edam.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15133E74-C3C4-454F-BB99-51300CF8237A}|Edam.AppHost\\Edam.AppHost.csproj|solutionrelative:edam.apphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 325,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileSystemPicker.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\FileSystemHelper\\FileSystemPicker.cs",
+              "RelativeDocumentMoniker": "Edam.Web\\FileSystemHelper\\FileSystemPicker.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\FileSystemHelper\\FileSystemPicker.cs",
+              "RelativeToolTip": "Edam.Web\\FileSystemHelper\\FileSystemPicker.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T20:06:35.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "Edam.Web\\Components\\Pages\\Counter.razor",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "Edam.Web\\Components\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T19:16:01.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Edam.Web\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Edam.Web\\Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T19:15:55.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Edam.Web\\Components\\Routes.razor",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Routes.razor",
+              "RelativeToolTip": "Edam.Web\\Components\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T19:15:23.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Edam.Web\\Components\\App.razor",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\App.razor",
+              "RelativeToolTip": "Edam.Web\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T19:15:14.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Edam.Web\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Edam.Web\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T19:14:54.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Edam.Web\\Program.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Web\\Program.cs",
+              "RelativeToolTip": "Edam.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T17:52:04.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.AppHost\\Program.cs",
+              "RelativeDocumentMoniker": "Edam.AppHost\\Program.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.AppHost\\Program.cs",
+              "RelativeToolTip": "Edam.AppHost\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T11:43:28.984Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

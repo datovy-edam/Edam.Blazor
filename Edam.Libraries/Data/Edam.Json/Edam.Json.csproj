@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="json-ld.net" Version="1.0.7" />
+    <PackageReference Include="Jsonata.Net.Native" Version="2.4.1" />
+    <PackageReference Include="Jsonata.Net.Native.JsonNet" Version="2.4.1" />
+    <PackageReference Include="Jsonata.Net.Native.SystemTextJson" Version="2.4.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.15" />
+    <PackageReference Include="YamlDotNet" Version="13.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\System\Edam.System\Edam.System.csproj" />
+    <ProjectReference Include="..\Edam.Data.Assets\Edam.Data.Assets.csproj" />
+  </ItemGroup>
+
+</Project>

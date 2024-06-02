@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\System\Edam.System\Edam.System.csproj" />
+    <ProjectReference Include="..\Edam.Data.Assets\Edam.Data.Assets.csproj" />
+    <ProjectReference Include="..\Edam.Xml\Edam.Xml.csproj" />
+  </ItemGroup>
+
+</Project>

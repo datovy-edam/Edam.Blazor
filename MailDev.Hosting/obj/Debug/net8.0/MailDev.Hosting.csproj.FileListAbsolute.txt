@@ -1,0 +1,13 @@
+D:\Projects\Edam.Blazor\MailDev.Hosting\bin\Debug\net8.0\MailDev.Hosting.deps.json
+D:\Projects\Edam.Blazor\MailDev.Hosting\bin\Debug\net8.0\MailDev.Hosting.dll
+D:\Projects\Edam.Blazor\MailDev.Hosting\bin\Debug\net8.0\MailDev.Hosting.pdb
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.csproj.AssemblyReference.cache
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.AssemblyInfoInputs.cache
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.AssemblyInfo.cs
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.csproj.CoreCompileInputs.cache
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.sourcelink.json
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.dll
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\refint\MailDev.Hosting.dll
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\MailDev.Hosting.pdb
+D:\Projects\Edam.Blazor\MailDev.Hosting\obj\Debug\net8.0\ref\MailDev.Hosting.dll

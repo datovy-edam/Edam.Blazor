@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\System\Edam.System\Edam.System.csproj" />
+    <ProjectReference Include="..\Edam.Data.AssetDb\Edam.Data.AssetDb.csproj" />
+    <ProjectReference Include="..\Edam.Data.Assets\Edam.Data.Assets.csproj" />
+    <ProjectReference Include="..\Edam.DataObjects\Edam.DataObjects.csproj" />
+    <ProjectReference Include="..\Edam.Xml\Edam.Xml.csproj" />
+  </ItemGroup>
+
+</Project>

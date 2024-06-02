@@ -12,11 +12,17 @@
   <ItemGroup>
     <ProjectReference Include="..\Edam.ApiService\Edam.ApiService.csproj" />
     <ProjectReference Include="..\Edam.Web\Edam.Web.csproj" />
+    <!-- The IsAspireProjectResource attribute tells .NET Aspire to treat this 
+       reference as a standard project reference and not attempt to generate
+       a metadata file -->
+    <ProjectReference Include="..\MailDev.Hosting\MailDev.Hosting.csproj"
+                      IsAspireProjectResource="false"/>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.0.1" />
   </ItemGroup>
 
 </Project>

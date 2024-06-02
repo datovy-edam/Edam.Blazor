@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3FbSVnm0K4fwN36ibFtELwAu3JzV+zi4RD70dSkC0Mvcbt7l1nCW6qc54zMPRQbXLkFg93V4Eopc5UYyrKJiXw==",
+  "success": true,
+  "projectFilePath": "C:\\prjs\\InXone.WinUI\\InXone.Libraries\\InXone.Libraries\\InXone.Data\\InXone.TigerGraph\\InXone.TigerGraph.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\esobr\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

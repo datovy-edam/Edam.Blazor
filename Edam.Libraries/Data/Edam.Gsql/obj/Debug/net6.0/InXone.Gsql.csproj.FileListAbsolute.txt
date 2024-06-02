@@ -1,0 +1,17 @@
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.Gsql.deps.json
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.Gsql.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.Gsql.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.Data.Assets.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.System.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.Data.Assets.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\bin\Debug\net6.0\InXone.System.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.csproj.AssemblyReference.cache
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.GeneratedMSBuildEditorConfig.editorconfig
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.AssemblyInfoInputs.cache
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.AssemblyInfo.cs
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.csproj.CoreCompileInputs.cache
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.csproj.CopyComplete
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\refint\InXone.Gsql.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\InXone.Gsql.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Gsql\obj\Debug\net6.0\ref\InXone.Gsql.dll

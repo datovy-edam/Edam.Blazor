@@ -2420,25 +2420,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/ed.sobrino/.nuget/packages/": {}
+    "C:\\Users\\esobr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/Edam.ServiceDefaults.csproj",
+      "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.ServiceDefaults\\Edam.ServiceDefaults.csproj",
       "projectName": "Edam.ServiceDefaults",
-      "projectPath": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/Edam.ServiceDefaults.csproj",
-      "packagesPath": "/Users/ed.sobrino/.nuget/packages/",
-      "outputPath": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.ServiceDefaults/obj/",
+      "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.ServiceDefaults\\Edam.ServiceDefaults.csproj",
+      "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.ServiceDefaults\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ed.sobrino/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2510,7 +2517,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

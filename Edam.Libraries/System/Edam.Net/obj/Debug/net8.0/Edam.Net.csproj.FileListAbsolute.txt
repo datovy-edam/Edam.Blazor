@@ -1,0 +1,16 @@
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\bin\Debug\net8.0\Edam.Net.deps.json
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\bin\Debug\net8.0\Edam.Net.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\bin\Debug\net8.0\Edam.Net.pdb
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\bin\Debug\net8.0\Edam.Common.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\bin\Debug\net8.0\Edam.Common.pdb
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.csproj.AssemblyReference.cache
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.AssemblyInfoInputs.cache
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.AssemblyInfo.cs
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.csproj.CoreCompileInputs.cache
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.sourcelink.json
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.csproj.Up2Date
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\refint\Edam.Net.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\Edam.Net.pdb
+D:\Projects\Edam.Blazor\Edam.Libraries\Edam.Common\Edam.Net\obj\Debug\net8.0\ref\Edam.Net.dll

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Edam.Data.AssetDb\Edam.Data.AssetDb.csproj" />
+    <ProjectReference Include="..\Edam.Data.Assets\Edam.Data.Assets.csproj" />
+    <ProjectReference Include="..\Edam.Data.Schema\Edam.Data.Schema.csproj" />
+    <ProjectReference Include="..\Edam.Data.Templates\Edam.Data.Templates.csproj" />
+    <ProjectReference Include="..\Edam.DataObjects\Edam.DataObjects.csproj" />
+    <ProjectReference Include="..\Edam.Json\Edam.Json.csproj" />
+    <ProjectReference Include="..\Edam.Xml\Edam.Xml.csproj" />
+  </ItemGroup>
+
+</Project>

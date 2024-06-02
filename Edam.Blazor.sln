@@ -15,6 +15,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.Libraries", "Edam.Libr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.Tests", "Edam.Tests", "{1F7529AB-BFCA-45A7-8F92-CC3D32148424}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.System", "Edam.System", "{AB91E3A9-D5F5-4DA2-A1B2-28BF7B0968AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailDev.Hosting", "MailDev.Hosting\MailDev.Hosting.csproj", "{5403EEA4-59DD-42C8-A016-ED6A5BC112D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.Data", "Edam.Data", "{001B5EA3-8FC1-45A7-AC98-3E267536975C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.Common", "Edam.Libraries\System\Edam.Common\Edam.Common.csproj", "{E98E5179-39EA-4E27-B857-19467BBC422B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,9 +45,22 @@ Global
 		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5308AEC7-3E56-4B60-B4DF-AD19A5F05398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5403EEA4-59DD-42C8-A016-ED6A5BC112D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5403EEA4-59DD-42C8-A016-ED6A5BC112D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5403EEA4-59DD-42C8-A016-ED6A5BC112D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5403EEA4-59DD-42C8-A016-ED6A5BC112D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98E5179-39EA-4E27-B857-19467BBC422B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98E5179-39EA-4E27-B857-19467BBC422B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98E5179-39EA-4E27-B857-19467BBC422B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98E5179-39EA-4E27-B857-19467BBC422B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB91E3A9-D5F5-4DA2-A1B2-28BF7B0968AE} = {E9935052-7104-4397-9B41-36E71D14FDB1}
+		{001B5EA3-8FC1-45A7-AC98-3E267536975C} = {E9935052-7104-4397-9B41-36E71D14FDB1}
+		{E98E5179-39EA-4E27-B857-19467BBC422B} = {AB91E3A9-D5F5-4DA2-A1B2-28BF7B0968AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5ABF3AEE-158F-45D0-A5AD-26CC61012971}

@@ -102,6 +102,22 @@
           }
         }
       },
+      "Aspire.Hosting.SqlServer/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Aspire.Hosting": "8.0.1"
+        },
+        "compile": {
+          "lib/net8.0/Aspire.Hosting.SqlServer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Aspire.Hosting.SqlServer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Fractions/7.3.0": {
         "type": "package",
         "compile": {
@@ -1125,6 +1141,19 @@
             "related": ".xml"
           }
         }
+      },
+      "MailDev.Hosting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Aspire.Hosting": "8.0.1"
+        },
+        "compile": {
+          "bin/placeholder/MailDev.Hosting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MailDev.Hosting.dll": {}
+        }
       }
     }
   },
@@ -1194,6 +1223,22 @@
         "aspire.hosting.redis.nuspec",
         "lib/net8.0/Aspire.Hosting.Redis.dll",
         "lib/net8.0/Aspire.Hosting.Redis.xml"
+      ]
+    },
+    "Aspire.Hosting.SqlServer/8.0.1": {
+      "sha512": "Svhh/erIzA99ZUafsdY6B+53xU1vLvnwTdX3lDIiUide1q224chm7MBT9arolTUockD+9s7mXNvbSADQzIy77g==",
+      "type": "package",
+      "path": "aspire.hosting.sqlserver/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "aspire.hosting.sqlserver.8.0.1.nupkg.sha512",
+        "aspire.hosting.sqlserver.nuspec",
+        "lib/net8.0/Aspire.Hosting.SqlServer.dll",
+        "lib/net8.0/Aspire.Hosting.SqlServer.xml"
       ]
     },
     "Fractions/7.3.0": {
@@ -2852,40 +2897,58 @@
         "yamldotnet.15.1.0.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "MailDev.Hosting/1.0.0": {
+      "type": "project",
+      "path": "../MailDev.Hosting/MailDev.Hosting.csproj",
+      "msbuildProject": "../MailDev.Hosting/MailDev.Hosting.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Aspire.Hosting.AppHost >= 8.0.1",
-      "Aspire.Hosting.Redis >= 8.0.1"
+      "Aspire.Hosting.Redis >= 8.0.1",
+      "Aspire.Hosting.SqlServer >= 8.0.1",
+      "MailDev.Hosting >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/ed.sobrino/.nuget/packages/": {}
+    "C:\\Users\\esobr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/Edam.AppHost.csproj",
+      "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.AppHost\\Edam.AppHost.csproj",
       "projectName": "Edam.AppHost",
-      "projectPath": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/Edam.AppHost.csproj",
-      "packagesPath": "/Users/ed.sobrino/.nuget/packages/",
-      "outputPath": "/Volumes/opk-mac-d01/Projects/Edam.Blazor/Edam.AppHost/obj/",
+      "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.AppHost\\Edam.AppHost.csproj",
+      "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.AppHost\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ed.sobrino/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\Edam.Blazor\\MailDev.Hosting\\MailDev.Hosting.csproj": {
+              "projectPath": "D:\\Projects\\Edam.Blazor\\MailDev.Hosting\\MailDev.Hosting.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2910,6 +2973,10 @@
           "Aspire.Hosting.Redis": {
             "target": "Package",
             "version": "[8.0.1, )"
+          },
+          "Aspire.Hosting.SqlServer": {
+            "target": "Package",
+            "version": "[8.0.1, )"
           }
         },
         "imports": [
@@ -2928,7 +2995,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

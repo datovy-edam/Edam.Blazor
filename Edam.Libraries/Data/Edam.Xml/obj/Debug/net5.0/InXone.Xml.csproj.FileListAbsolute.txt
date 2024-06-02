@@ -1,0 +1,17 @@
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.Xml.deps.json
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.Xml.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\ref\InXone.Xml.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.Xml.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.Data.Assets.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.System.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.System.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\bin\Debug\net5.0\InXone.Data.Assets.pdb
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.csproj.AssemblyReference.cache
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.GeneratedMSBuildEditorConfig.editorconfig
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.AssemblyInfoInputs.cache
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.AssemblyInfo.cs
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.csproj.CoreCompileInputs.cache
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.csproj.CopyComplete
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\ref\InXone.Xml.dll
+C:\prjs\InXone.WinUI\InXone.Libraries\InXone.Libraries\InXone.Data\InXone.Xml\obj\Debug\net5.0\InXone.Xml.pdb
