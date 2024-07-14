@@ -93,6 +93,8 @@ D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\ru\Aspire.Hosting.resource
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\tr\Aspire.Hosting.resources.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\zh-Hans\Aspire.Hosting.resources.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\zh-Hant\Aspire.Hosting.resources.dll
+D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\MailDev.Hosting.dll
+D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\MailDev.Hosting.pdb
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.csproj.AssemblyReference.cache
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.AssemblyInfoInputs.cache
@@ -108,5 +110,3 @@ D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\refint\Edam.AppHost.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.pdb
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.genruntimeconfig.cache
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\ref\Edam.AppHost.dll
-D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\MailDev.Hosting.dll
-D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\MailDev.Hosting.pdb

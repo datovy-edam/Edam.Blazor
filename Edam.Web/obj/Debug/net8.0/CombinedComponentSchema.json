@@ -223,5 +223,5 @@
     }
   },
   "type": "object",
-  "SourceSegments": "C:\\Users\\esobr\\.nuget\\packages\\aspire.stackexchange.redis\\8.0.1\\ConfigurationSchema.json;C:\\Users\\esobr\\.nuget\\packages\\aspire.stackexchange.redis.outputcaching\\8.0.1\\ConfigurationSchema.json;C:\\Users\\esobr\\.nuget\\packages\\aspire.microsoft.data.sqlclient\\8.0.1\\ConfigurationSchema.json"
+  "SourceSegments": "C:\\Users\\esobr\\.nuget\\packages\\aspire.stackexchange.redis\\8.0.2\\ConfigurationSchema.json;C:\\Users\\esobr\\.nuget\\packages\\aspire.stackexchange.redis.outputcaching\\8.0.2\\ConfigurationSchema.json;C:\\Users\\esobr\\.nuget\\packages\\aspire.microsoft.data.sqlclient\\8.0.2\\ConfigurationSchema.json"
 }

@@ -1,0 +1,136 @@
+﻿@using Edam.Web.Models;
+
+@page "/projects"
+
+<MudTabs @ref="TabsComponent" @bind-ActivePanelIndex="@ActiveItemNo"
+   Border="true" Outlined="true" PanelClass="px-4 py-6"
+   Rounded="true" ApplyEffectsToContainer="true">
+   @foreach (var tab in TabItems)
+   {
+      <MudTabPanel ID="@tab.Id" Text="@tab.Label" ShowCloseIcon="@tab.ShowCloseIcon">
+         @tab.Content
+      </MudTabPanel>
+   }
+</MudTabs>
+
+@code {
+
+   MudTabs TabsComponent { get; set; }
+   public List<TabItemInfo> TabItems = new();
+   public int ActiveItemNo;
+   bool _stateHasChanged;
+   bool _showCloseIcon = false;
+
+   #region -- 1.50 - Component support methods.
+
+   /// <summary>
+   /// Component initialize method.
+   /// </summary>
+   protected override void OnInitialized()
+   {
+      base.OnInitialized();
+      ResetTabs();
+   }
+
+   /// <summary>
+   /// Component After Render method.
+   /// </summary>
+   /// <param name="firstRender"></param>
+   protected override void OnAfterRender(bool firstRender)
+   {
+      base.OnAfterRender(firstRender);
+      if (_stateHasChanged)
+      {
+         _stateHasChanged = false;
+         StateHasChanged();
+      }
+
+      // do we need to render the code editor value-text...
+      if (ActiveItemNo >= 0 && TabItems[ActiveItemNo].CodeEditor != null)
+      {
+         var tab = TabItems[ActiveItemNo];
+         tab.CodeEditor.SetValue(tab.ValueText);
+      }
+   }
+
+   #endregion
+   #region -- 4.00 - TAB Support
+
+   /// <summary>
+   /// Add TAB.
+   /// </summary>
+   /// <param name="id"></param>
+   public void AddTab(Guid? id = null)
+   {
+      var tabItem = new TabItemInfo();
+      tabItem.Id = id.HasValue ? id.Value : Guid.NewGuid();
+      tabItem.Label = "dynamic tab";
+
+      int lastIndx = TabItems.Count - 1;
+      RenderFragment renderFragment = __builder =>
+      {
+         <CodeEditorComponent @ref="@tabItem.CodeEditor" />
+      };
+
+      tabItem.Content = renderFragment;
+      TabItems.Add(tabItem);
+
+      ActiveItemNo = TabItems.Count - 1; // Automatically switch to the new tab.
+
+      string codeText =
+         "\"use strict\";\n" +
+         "function Persona(name) {\n" +
+         "   if (name) {\n" +
+         "       this.name = name;\n" +
+         "   }\n" +
+         "}\n" +
+         "Person.prototype.getName = function () {\n" +
+         "   return this.name;\n" +
+         "};\n";
+      tabItem.ValueText = codeText;
+
+      _stateHasChanged = true;
+   }
+
+   /// <summary>
+   /// Reset TABs.
+   /// </summary>
+   void ResetTabs()
+   {
+      TabItems.Clear();
+      AddTab(new Guid());
+   }
+
+   /// <summary>
+   /// Remove Tab.
+   /// </summary>
+   /// <param name="id"></param>
+   public void RemoveTab(Guid id)
+   {
+      var tabView = TabItems.SingleOrDefault((t) => Equals(t.Id, id));
+      if (tabView is not null)
+      {
+         TabItems.Remove(tabView);
+         _stateHasChanged = true;
+
+         if (TabItems.Count == 0)
+         {
+            ResetTabs();
+         }
+      }
+   }
+
+   /// <summary>
+   /// Add TAB callback.
+   /// </summary>
+   void AddTabCallback() => AddTab(Guid.NewGuid());
+
+   /// <summary>
+   /// Close TAB callback.
+   /// </summary>
+   /// <param name="panel"></param>
+   void CloseTabCallback(MudTabPanel panel) => RemoveTab((Guid)panel.ID);
+
+   #endregion
+
+}

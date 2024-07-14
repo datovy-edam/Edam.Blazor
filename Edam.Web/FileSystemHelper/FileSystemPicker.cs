@@ -2,6 +2,8 @@
 using KristofferStrube.Blazor.FileSystemAccess;
 
 using Edam.Diagnostics;
+using Edam.DataObjects.Trees;
+
 namespace Edam.Web.FileSystemHelper;
 
 /// <summary>
@@ -84,7 +86,7 @@ public class FileSystemPicker
    public async Task<FileSystemItemInfo> GetItemAsync(IFileSystemHandle handle)
    {
       FileSystemItemInfo i = new FileSystemItemInfo();
-      i.KindText = (await handle.GetKindAsync()).ToString();
+      i.TypeText = (await handle.GetKindAsync()).ToString();
       i.Name = await handle.GetNameAsync();
       i.Handle = handle;
       return i;
@@ -97,8 +99,9 @@ public class FileSystemPicker
    /// <param name="items">items contain in the folder element</param>
    /// <returns>returns the child elements of the given folder and children if
    /// any</returns>
-   public async Task<List<FileSystemItemInfo>> GetFolderItemsAsync(
-      FileSystemDirectoryHandle handle, List<FileSystemItemInfo> items)
+   public async Task<HashSet<FileSystemItemInfo>> GetFolderItemsAsync(
+      FileSystemDirectoryHandle handle, 
+      HashSet<FileSystemItemInfo> items)
    {
       var ditm = await GetItemAsync(handle);
       items.Add(ditm);
@@ -106,7 +109,7 @@ public class FileSystemPicker
       foreach (var item in children)
       {
          var fitem = await GetItemAsync(item);
-         if (fitem.Kind == FileSystemItemKind.Directory)
+         if (fitem.Type == TreeItemType.Branch)
          {
             await GetFolderItemsAsync(
                (FileSystemDirectoryHandle)item, fitem.Children);
@@ -151,7 +154,8 @@ public class FileSystemPicker
       }
       finally
       {
-         List<FileSystemItemInfo> litems = new List<FileSystemItemInfo>();
+         HashSet<FileSystemItemInfo> litems = 
+            new HashSet<FileSystemItemInfo>();
          if (dirHandle is not null)
          {
             litems = await GetFolderItemsAsync(dirHandle, litems);

@@ -17,13 +17,16 @@ namespace Edam.DataObjects.Activities
       JsonString = 1
    }
 
-   public class ActivityContentNode : ITreeTag
+   public class ActivityContentNode : ITreeItem
    {
 
       public string Index { get; set; }
       public string Title { get; set; }
       public Object Tag { get; set; }
-
+      public string Icon { get; set; }
+      public string Name { get; set; }
+      public int? Number { get; set; }
+      public TreeItemType Type { get; set; }
    }
 
    public class ActivityContentTreeHelper

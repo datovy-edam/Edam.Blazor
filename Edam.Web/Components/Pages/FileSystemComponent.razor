@@ -1,0 +1,57 @@
+﻿@rendermode InteractiveServer
+
+@using Edam.Web.FileSystemHelper;
+@inject IStorageManagerService StorageManagerService
+
+@*
+Projects Directory implemented usign the "Local File System" based on Kristoffer
+Strube Blazor component.
+ *@
+
+<PageTitle>@Title</PageTitle>
+
+<MudPaper Width="350px" Elevation="0">
+   <MudTreeView Items="TreeItems" MultiSelection="false" @bind-SelectedValue="SelectedValue" Hover="true">
+      <ItemTemplate>
+         <MudTreeViewItem @bind-Expanded="@context.Expanded" Items="@context.Children" Value="@context.Value"
+                          Icon="@context.Icon" Text="@context.Text">
+            <Content>
+               <MudTreeViewItemToggleButton @bind-Expanded="@context.Expanded" Visible="@context.HasChildren" />
+               <MudIcon Icon="@context.Icon" Class="ml-0 mr-2" Color="@Color.Default" />
+               @if (Renaming && context.Text == SelectedName)
+               {
+                  <MudTextField @bind-Value="RenamingText" Margin="Margin.Dense"
+                                Variant="Variant.Outlined" Label="[ TAB to rename ]" OnBlur="OnBlur" />
+               }
+               else
+               {
+                  <MudText>
+                     @context.Text
+                  </MudText>
+               }
+               <MudMenu>
+                  <ActivatorContent>
+                     <MudTooltip Text="Options">
+                        <span id="@context.Text" style="font-weight: bolder; margin-left:10px; float: right">...</span>
+                     </MudTooltip>
+                  </ActivatorContent>
+                  <ChildContent>
+                     <MudMenuItem Disabled="@context.Value.IsLeaf" OnClick="@((e)=>OnAddDirectory(e))">Add Directory</MudMenuItem>
+                     <MudMenuItem Disabled="@context.Value.IsLeaf" OnClick="@((e)=>OnAddFile(e))">Add File</MudMenuItem>
+                     <MudMenuItem Disabled="@context.Value.IsBranch" OnClick="@((e)=>OnEditItem(e))">Edit</MudMenuItem>
+                     <MudMenuItem OnClick="@((e)=>OnDeleteItem(e))">Delete</MudMenuItem>
+                     <MudMenuItem OnClick="@((e)=>OnRenameItem(e))">Rename</MudMenuItem>
+                  </ChildContent>
+               </MudMenu>
+            </Content>
+         </MudTreeViewItem>
+      </ItemTemplate>
+   </MudTreeView>
+</MudPaper>
+
+<MudText Style="width: 100%" Typo="@Typo.subtitle1">Selected item: @SelectedTitle</MudText>
+
+@code {
+   [Parameter]
+   public string Title { get; set; } = "Projects";
+}

@@ -1,60 +1,81 @@
-﻿using KristofferStrube.Blazor.FileSystem;
+﻿using Edam.DataObjects.Trees;
+using KristofferStrube.Blazor.FileSystem;
+using Newtonsoft.Json;
+using MudBlazor;
 
 namespace Edam.Web.FileSystemHelper;
 
 /// <summary>
 /// File System Item support / helper class.
 /// </summary>
-public class FileSystemItemInfo : IDisposable
+public class FileSystemItemInfo : TreeItem, IDisposable, ITreeItem
 {
 
-   public const string KIND_DIRECTORY = "Directory";
-   public const string KIND_FILE = "File";
+   public const string TYPE_DIRECTORY = "Directory";
+   public const string TYPE_FILE = "File";
 
-   public FileSystemItemKind Kind { get; set; }
-   public string KindText
+   public string TypeText
    {
-      get { return Kind.ToString(); }
+      get { return Type.ToString(); }
       set
       {
-         Kind = value == KIND_DIRECTORY ?
-            FileSystemItemKind.Directory : FileSystemItemKind.File;
+         Type = value == TYPE_DIRECTORY ?
+            TreeItemType.Branch : TreeItemType.Leaf;
       }
    }
 
+   public new string Title
+   {
+      get { return CatalogEntry == null ? base.Title : CatalogEntry.Title; }
+      set
+      {
+         if (CatalogEntry != null)
+         {
+            CatalogEntry.Title = value;
+         }
+         else
+         {
+            base.Title = value;
+         }
+      }
+   }
+
+   public bool HasChildren
+   {
+      get { return Children != null && Children.Count > 0; }
+   }
+
+   public HashSet<FileSystemItemInfo> Children { get; set; } =
+      new HashSet<FileSystemItemInfo>();
+   public FileSystemItemInfo Parent { get; set; }
+
+   [JsonIgnore]
    public IFileSystemHandle? Handle { get; set; }
-   public string? Name { get; set; }
-   public List<FileSystemItemInfo> Children { get; set; } = 
-      new List<FileSystemItemInfo>();
+
+   [JsonIgnore]
+   public List<IFileSystemHandle> InstanceChildren { get; set; } =
+      new List<IFileSystemHandle>();
+
+   public TreeItem? CatalogEntry { get; set; } = null;
 
    /// <summary>
-   /// Dispose of file handle resources async.
+   /// From a root element to 
    /// </summary>
-   /// <returns>instance to Task is returned</returns>
-   public async Task DisposeAsync()
+   /// <param name="root"></param>
+   /// <returns></returns>
+   public String ToDirectoryJsonText(FileSystemItemInfo? root)
    {
-      if (Handle != null)
-      {
-         switch (Kind)
-         {
-            case FileSystemItemKind.Directory:
-               FileSystemDirectoryHandle? dhandle =
-                  Handle as FileSystemDirectoryHandle;
-               if (dhandle != null)
-               {
-                  await dhandle.DisposeAsync();
-               }
-               break;
-            case FileSystemItemKind.File:
-               FileSystemFileHandle? fhandle = Handle as FileSystemFileHandle;
-               if (fhandle != null)
-               {
-                  await fhandle.DisposeAsync(); 
-               }
-               break;
-         }
-         Handle = null;
-      }
+      return TreeItem.ToDirectoryJsonText(root);
+   }
+
+   /// <summary>
+   /// From a JSON file system info to 
+   /// </summary>
+   /// <param name="jsonText"></param>
+   /// <returns></returns>
+   public FileSystemItemInfo? FromDirectoryJsonText(string jsonText)
+   {
+      return TreeItem.FromDirectoryJsonText<FileSystemItemInfo?>(jsonText);
    }
 
    /// <summary>
@@ -65,7 +86,7 @@ public class FileSystemItemInfo : IDisposable
    public async Task<string?> GetFileTextAsync()
    {
       string? text = null;
-      if (Handle != null && Kind == FileSystemItemKind.File)
+      if (Handle != null && Type == TreeItemType.Leaf)
       {
          FileSystemFileHandle? fhandle = Handle as FileSystemFileHandle;
          if (fhandle != null)
@@ -75,6 +96,36 @@ public class FileSystemItemInfo : IDisposable
          }
       }
       return text;
+   }
+
+   /// <summary>
+   /// Dispose of file handle resources async.
+   /// </summary>
+   /// <returns>instance to Task is returned</returns>
+   public async Task DisposeAsync()
+   {
+      if (Handle != null)
+      {
+         switch (Type)
+         {
+            case TreeItemType.Branch:
+               FileSystemDirectoryHandle? dhandle =
+                  Handle as FileSystemDirectoryHandle;
+               if (dhandle != null)
+               {
+                  await dhandle.DisposeAsync();
+               }
+               break;
+            case TreeItemType.Leaf:
+               FileSystemFileHandle? fhandle = Handle as FileSystemFileHandle;
+               if (fhandle != null)
+               {
+                  await fhandle.DisposeAsync();
+               }
+               break;
+         }
+         Handle = null;
+      }
    }
 
    /// <summary>

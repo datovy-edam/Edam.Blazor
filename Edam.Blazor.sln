@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Edam.Data", "Edam.Data", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.Common", "Edam.Libraries\System\Edam.Common\Edam.Common.csproj", "{E98E5179-39EA-4E27-B857-19467BBC422B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.GraphClient", "Edam.Libraries\Data\Edam.OneDrive\Edam.GraphClient.csproj", "{431B53F9-6CCB-427D-942F-BBEC9F3902CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{E98E5179-39EA-4E27-B857-19467BBC422B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E98E5179-39EA-4E27-B857-19467BBC422B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E98E5179-39EA-4E27-B857-19467BBC422B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431B53F9-6CCB-427D-942F-BBEC9F3902CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431B53F9-6CCB-427D-942F-BBEC9F3902CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431B53F9-6CCB-427D-942F-BBEC9F3902CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431B53F9-6CCB-427D-942F-BBEC9F3902CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{AB91E3A9-D5F5-4DA2-A1B2-28BF7B0968AE} = {E9935052-7104-4397-9B41-36E71D14FDB1}
 		{001B5EA3-8FC1-45A7-AC98-3E267536975C} = {E9935052-7104-4397-9B41-36E71D14FDB1}
 		{E98E5179-39EA-4E27-B857-19467BBC422B} = {AB91E3A9-D5F5-4DA2-A1B2-28BF7B0968AE}
+		{431B53F9-6CCB-427D-942F-BBEC9F3902CF} = {001B5EA3-8FC1-45A7-AC98-3E267536975C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5ABF3AEE-158F-45D0-A5AD-26CC61012971}

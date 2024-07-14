@@ -23,3 +23,21 @@ h1:focus {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+.editor-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   border: 1px solid #EFEFEF;
+   height: 100vh;
+}
+
+.monaco-editor-container {
+   height: 93.4vh;
+}
+
+.invisible {
+   visibility: hidden;
+}

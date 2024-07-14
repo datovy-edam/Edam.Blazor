@@ -1,6 +1,9 @@
 using Edam.Web;
 using Edam.Web.Components;
+using KristofferStrube.Blazor.FileSystem;
 using KristofferStrube.Blazor.FileSystemAccess;
+using KristofferStrube.Blazor.FileAPI;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +26,12 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
    client.BaseAddress = new("https+http://apiservice");
 });
 
+builder.Services.AddMudServices();
+
+builder.Services.AddURLService();
+
 builder.Services.AddFileSystemAccessService();
+builder.Services.AddStorageManagerService();
 
 var app = builder.Build();
 
@@ -42,7 +50,7 @@ app.UseAntiforgery();
 app.UseOutputCache();
 
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+   .AddInteractiveServerRenderMode();
 
 app.MapDefaultEndpoints();
 

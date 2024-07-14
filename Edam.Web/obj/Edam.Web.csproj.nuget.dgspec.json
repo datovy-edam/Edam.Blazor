@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -185,7 +185,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -244,23 +244,47 @@
           "dependencies": {
             "Aspire.Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
             },
             "Aspire.StackExchange.Redis.OutputCaching": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.0, )"
             },
             "BlazorMonaco": {
               "target": "Package",
               "version": "[3.2.0, )"
             },
+            "CodeBeam.MudBlazor.Extensions": {
+              "target": "Package",
+              "version": "[6.9.2, )"
+            },
+            "KristofferStrube.Blazor.FileAPI": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "KristofferStrube.Blazor.FileSystem": {
+              "target": "Package",
+              "version": "[0.3.1, )"
+            },
             "KristofferStrube.Blazor.FileSystemAccess": {
               "target": "Package",
               "version": "[3.2.2, )"
             },
-            "Radzen.Blazor": {
+            "Microsoft.JSInterop.WebAssembly": {
               "target": "Package",
-              "version": "[4.32.1, )"
+              "version": "[8.0.7, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[7.1.1, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             }
           },
           "imports": [
@@ -282,7 +306,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

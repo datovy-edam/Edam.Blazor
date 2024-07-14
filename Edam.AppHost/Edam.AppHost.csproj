@@ -15,8 +15,7 @@
     <!-- The IsAspireProjectResource attribute tells .NET Aspire to treat this 
        reference as a standard project reference and not attempt to generate
        a metadata file -->
-    <ProjectReference Include="..\MailDev.Hosting\MailDev.Hosting.csproj"
-                      IsAspireProjectResource="false"/>
+    <ProjectReference Include="..\MailDev.Hosting\MailDev.Hosting.csproj" IsAspireProjectResource="false" />
   </ItemGroup>
 
   <ItemGroup>

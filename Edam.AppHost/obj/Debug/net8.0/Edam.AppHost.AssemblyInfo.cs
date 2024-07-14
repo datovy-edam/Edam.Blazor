@@ -12,19 +12,19 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("77ed20ae-9835-450b-b789-c82b34a8ee1a")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.0.0\\tools\\dc" +
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.0.1\\tools\\dc" +
     "p.exe")]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.0.0\\tools\\ex" +
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.0.1\\tools\\ex" +
     "t\\")]
-[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.0.0\\tools\\ex" +
+[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Hosting.Orchestration.win-x64\\8.0.1\\tools\\ex" +
     "t\\bin\\")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "D:\\Projects\\Edam.Blazor\\Edam.AppHost")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Dashboard.Sdk.win-x64\\8.0.0\\tools\\Aspire.Das" +
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Program Files\\dotnet\\packs\\Aspire.Dashboard.Sdk.win-x64\\8.0.1\\tools\\Aspire.Das" +
     "hboard.exe")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Edam.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98635715d46295d425b0a6d551fd7a4165c9898b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2d95cc7ef320da9981615e0d9db60458923569c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Edam.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Edam.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
