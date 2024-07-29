@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KristofferStrube.Blazor.FileSystem</name>
+    </assembly>
+    <members>
+        <member name="M:KristofferStrube.Blazor.FileSystem.BaseJSWrapper.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            Constructs a wrapper instance for an equivalent JS instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemCreateWritableOptions">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dictdef-filesystemcreatewritableoptions">FileSystemCreateWritableOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemHandleKind">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#enumdef-filesystemhandlekind">FileSystemHandleKind browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.WriteCommandType">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#enumdef-writecommandtype">WriteCommandType browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemDirectoryHandle">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemdirectoryhandle">FileSystemDirectoryHandle browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemDirectoryHandleInProcess">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemdirectoryhandle">FileSystemDirectoryHandle browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemFileHandle">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemfilehandle">FileSystemFileHandle browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemFileHandleInProcess">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemfilehandle">FileSystemFileHandle browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemHandle">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemhandle">FileSystemHandle browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemHandleInProcess">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemhandle">FileSystemHandle browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemWritableFileStream">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemwritablefilestream">FileSystemWritableFileStream browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.FileSystem.FileSystemWritableFileStream.fileSystemHelperTask">
+            <summary>
+            A lazily evaluated task that gives access to helper methods for the File System API.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemWritableFileStreamInProcess">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#filesystemwritablefilestream">FileSystemWritableFileStream browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemGetDirectoryOptions">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dictdef-filesystemgetdirectoryoptions">FileSystemGetDirectoryOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemGetFileOptions">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dictdef-filesystemgetfileoptions">FileSystemGetFileOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystem.FileSystemRemoveOptions">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dictdef-filesystemremoveoptions">FileSystemRemoveOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystem.StorageManagerService.GetOriginPrivateDirectoryAsync">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory">getDirectory() for StorageManager browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystem.StorageManagerService.GetOriginPrivateDirectoryAsync(KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory">getDirectory() for StorageManager browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystem.StorageManagerServiceInProcess.GetOriginPrivateDirectoryAsync">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory">getDirectory() for StorageManager browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystem.StorageManagerServiceInProcess.GetOriginPrivateDirectoryAsync(KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://fs.spec.whatwg.org/#dom-storagemanager-getdirectory">getDirectory() for StorageManager browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

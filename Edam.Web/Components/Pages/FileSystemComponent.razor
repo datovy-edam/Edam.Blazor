@@ -1,6 +1,7 @@
 ﻿@rendermode InteractiveServer
 
 @using Edam.Web.FileSystemHelper;
+@inject IJSRuntime jsRuntimes
 @inject IStorageManagerService StorageManagerService
 
 @*
@@ -50,8 +51,3 @@ Strube Blazor component.
 </MudPaper>
 
 <MudText Style="width: 100%" Typo="@Typo.subtitle1">Selected item: @SelectedTitle</MudText>
-
-@code {
-   [Parameter]
-   public string Title { get; set; } = "Projects";
-}

@@ -1,0 +1,785 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KristofferStrube.Blazor.DOM</name>
+    </assembly>
+    <members>
+        <member name="T:KristofferStrube.Blazor.DOM.AbortController">
+            <summary>
+            Though promises do not have a built-in aborting mechanism, many APIs using them require abort semantics.
+            <see cref="T:KristofferStrube.Blazor.DOM.AbortController"/> is meant to support these requirements by providing an <see cref="M:KristofferStrube.Blazor.DOM.AbortController.AbortAsync(Microsoft.JSInterop.IJSObjectReference)"/> method that toggles the state of a corresponding <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/> object.
+            The API which wishes to support aborting can accept an <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/> object, and use its state to determine how to proceed.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#abortcontroller">See the API definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.AbortController"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.GetSignalAsync">
+            <summary>
+            Returns the <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/> object associated with this object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.AbortAsync(System.String)">
+            <summary>
+            Invoking this method will store reason in this object’s <see cref="M:KristofferStrube.Blazor.DOM.AbortSignal.GetReasonAsync"/>, and signal to any observers that the associated activity is to be aborted.
+            If reason is undefined, then an <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException"/> will be stored.
+            </summary>
+            <param name="reason">The reason for why the activity is aborted.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.AbortAsync(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Invoking this method will store reason in this object’s <see cref="M:KristofferStrube.Blazor.DOM.AbortSignal.GetReasonAsync"/>, and signal to any observers that the associated activity is to be aborted.
+            If reason is undefined, then an <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException"/> will be stored.
+            </summary>
+            <param name="reason">The reason for why the activity is aborted.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.AbortAsync(KristofferStrube.Blazor.WebIDL.IJSWrapper)">
+            <summary>
+            Invoking this method will store reason in this object’s <see cref="M:KristofferStrube.Blazor.DOM.AbortSignal.GetReasonAsync"/>, and signal to any observers that the associated activity is to be aborted.
+            If reason is undefined, then an <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException"/> will be stored.
+            </summary>
+            <param name="reason">The reason for why the activity is aborted.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortController.AbortAsync">
+            <summary>
+            Invoking this method will store reason in this object’s <see cref="M:KristofferStrube.Blazor.DOM.AbortSignal.GetReasonAsync"/>, and signal to any observers that the associated activity is to be aborted.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.AbortSignal">
+            <summary>
+            An object that holds a reason for why some action was aborted if it was aborted.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#abortsignal">See the API definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.Abort(Microsoft.JSInterop.IJSRuntime,System.String)">
+            <summary>
+            Returns an <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/> instance whose abort reason is set to reason if not undefined; otherwise to an <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="reason">The reason for why the activity is aborted.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.Abort(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Returns an <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/> instance whose abort reason is set to reason if not undefined; otherwise to an <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="reason">The reason for why the activity is aborted.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.Timeout(Microsoft.JSInterop.IJSRuntime,System.UInt64)">
+            <summary>
+            Returns an AbortSignal instance which will be aborted in milliseconds milliseconds. Its abort reason will be set to a "TimeoutError" DOMException.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="milliseconds">The duration before timeout.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.GetAbortedAsync">
+            <summary>
+            Gets the aborted flag of this <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/>.
+            </summary>
+            <returns>Returns <see langword="true"/> if signal’s AbortController has signaled to abort; otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.GetReasonAsync">
+            <summary>
+            Gets the reason for this <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/>.
+            </summary>
+            <returns>Returns signal’s abort reason.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.ThrowIfAbortedAsync">
+            <summary>
+            Throws signal’s abort reason, if signal’s AbortController has signaled to abort; otherwise, does nothing.
+            </summary>
+        </member>
+        <member name="E:KristofferStrube.Blazor.DOM.AbortSignal.OnAbort">
+            <summary>
+            The onabort attribute is an event handler IDL attribute for the onabort event handler, whose event handler event type is abort.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.AddOnAbortEventListener(System.Func{KristofferStrube.Blazor.DOM.Event,System.Threading.Tasks.Task},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <summary>
+            Adds an <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> for when the the signal is aborted.
+            </summary>
+            <param name="callback">Callback that will be invoked when the event is dispatched.</param>
+            <param name="options"><inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.AddEventListenerAsync``1(System.String,KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.AddEventListenerOptions)" path="/param[@name='options']"/></param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.AbortSignal.RemoveOnAbortEventListener(KristofferStrube.Blazor.DOM.EventListener{KristofferStrube.Blazor.DOM.Event},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <summary>
+            Removes the event listener from the event listener list if it has been parsed to <see cref="M:KristofferStrube.Blazor.DOM.AbortSignal.AddOnAbortEventListener(System.Func{KristofferStrube.Blazor.DOM.Event,System.Threading.Tasks.Task},KristofferStrube.Blazor.DOM.AddEventListenerOptions)"/> previously.
+            </summary>
+            <param name="callback">The callback <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> that you want to stop listening to events.</param>
+            <param name="options"><inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.RemoveEventListenerAsync``1(System.String,KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.EventListenerOptions)" path="/param[@name='options']"/></param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.BaseJSWrapper">
+            <summary>
+            A base class for all wrapper classes from the Blazor.DOM library.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.BaseJSWrapper.helperTask">
+            <summary>
+            A lazily loaded task that provide access to JS helper functions.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.BaseJSWrapper.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.BaseJSWrapper.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.BaseJSWrapper.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.BaseJSWrapper.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.BaseJSWrapper.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.AddEventListenerOptions">
+            <summary>
+            Options for when an <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> subscribes to an <see cref="T:KristofferStrube.Blazor.DOM.Event"/> with a callback.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#dictdef-addeventlisteneroptions">See the API definition here</see></remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.AddEventListenerOptions.Passive">
+            <summary>
+            When set to <see langword="true"/> it indicates that the callback will not cancel the event by invoking <see cref="M:KristofferStrube.Blazor.DOM.Event.PreventDefaultAsync"/>. This is used to enable performance optimizations.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.AddEventListenerOptions.Once">
+            <summary>
+            When set to <see langword="true"/> it indicates that the callback will only be invoked once after which the event listener will be removed.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.CustomEvent">
+            <summary>
+            <see cref="T:KristofferStrube.Blazor.DOM.Event"/>s using the <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/> interface can be used to carry custom data which is accessible using the <see cref="M:KristofferStrube.Blazor.DOM.CustomEvent.GetDetailAsync"/> method.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#customevent">See the API definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEvent.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEvent.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEvent.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.String,KristofferStrube.Blazor.DOM.CustomEventInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="type">The type of the new <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.</param>
+            <param name="eventInitDict">Extra options for setting whether the event bubbles and is cancelable.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEvent.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEvent.GetDetailAsync">
+            <summary>
+            The details of the <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/>.
+            </summary>
+            <returns>Any custom data the event was created with. Typically used for synthetic events.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.CustomEventInProcess">
+            <summary>
+            <see cref="T:KristofferStrube.Blazor.DOM.Event"/>s using the <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/> interface can be used to carry custom data which is accessible from <see cref="P:KristofferStrube.Blazor.DOM.CustomEventInProcess.Detail"/>.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#customevent">See the API definition here</see></remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.CustomEventInProcess.inProcessHelper">
+            <summary>
+            An in-process helper.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.CustomEventInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEventInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEventInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.CustomEventInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.CustomEventInProcess.Detail">
+            <summary>
+            The details of the <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.CustomEventInit">
+            <summary>
+            Allows to set whether an <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/> bubbles and/or is cancelable and to set extra detail on the <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/>.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#dictdef-customeventinit">See the API definition here</see></remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.CustomEventInit.Detail">
+            <summary>
+            Any custom data that a <see cref="T:KristofferStrube.Blazor.DOM.CustomEvent"/> should contain. Typically used for synthetic events.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.Event">
+            <summary>
+            An <see cref="T:KristofferStrube.Blazor.DOM.Event"/> object is simply named an event. It allows for signaling that something has occurred, e.g., that an image has completed downloading.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#event">See the API definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.String,KristofferStrube.Blazor.DOM.EventInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="type">The type of the new <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.</param>
+            <param name="eventInitDict">Extra options for setting whether the event bubbles and is cancelable.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetTypeAsync">
+            <summary>
+            Gets the type of this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>
+            </summary>
+            <returns>A string representing the type of event, e.g. "click", "hashchange", or "submit".</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetTargetAsync">
+            <summary>
+            Gets the target of this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.
+            </summary>
+            <returns>The object to which this event is dispatched (its target).</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetCurrentTargetAsync">
+            <summary>
+            Gets the current target of this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.
+            </summary>
+            <returns>The object whose event listener’s callback is currently being invoked.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.ComposedPathAsync">
+            <summary>
+            Returns the invocation target objects of event’s path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root’s mode is "closed" that are not reachable from event’s currentTarget.
+            </summary>
+            <returns>An array of <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/>s</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetEventPhaseAsync">
+            <summary>
+            Gets this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>'s phase.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.StopPropagationAsync">
+            <summary>
+            When dispatched in a tree, invoking this method prevents event from reaching any objects other than the current object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.StopImmediatePropagationAsync">
+            <summary>
+            Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetBubblesAsync">
+            <summary>
+            Returns <see langword="true"/> if the event goes through its target’s ancestors in reverse tree order; otherwise <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetCancelableAsync">
+            <summary>
+            Returns <see langword="true"/> or <see langword="false"/> depending on how event was initialized.
+            </summary>
+            <returns>Its return value does not always carry meaning, but <see langword="true"/> can indicate that part of the operation during which event was dispatched,can be canceled by invoking the <see cref="M:KristofferStrube.Blazor.DOM.Event.PreventDefaultAsync"/> method.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.PreventDefaultAsync">
+            <summary>
+            If invoked when the cancelable attribute value is <see langword="true"/>, and while executing a listener for the event with passive set to <see langword="false"/>, signals to the operation that caused event to be dispatched that it needs to be canceled.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetDefaultPreventedAsync">
+            <summary>
+            Returns <see langword="true"/> if <see cref="M:KristofferStrube.Blazor.DOM.Event.PreventDefaultAsync"/> was invoked successfully to indicate cancelation; otherwise <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetComposedAsync">
+            <summary>
+            Returns <see langword="true"/> if the event invokes listeners past a ShadowRoot node that is the root of its target; otherwise <see langword="false"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetIsTrustedAsync">
+            <summary>
+            Returns <see langword="true"/> if the event was dispatched by the user agent, and <see langword="false"/> otherwise.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Event.GetTimeStampAsync">
+            <summary>
+            Returns the event’s timestamp as the number of milliseconds measured relative to the <see href="https://w3c.github.io/hr-time/#dfn-get-time-origin-timestamp">time origin</see>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventInProcess">
+            <inheritdoc/>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventInProcess.inProcessHelper">
+            <summary>
+            An in-process helper.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.String,KristofferStrube.Blazor.DOM.EventInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="type">The type of the new <see cref="T:KristofferStrube.Blazor.DOM.EventInProcess"/>.</param>
+            <param name="eventInitDict">Extra options for setting whether the event bubbles and is cancelable.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.Type">
+            <summary>
+            Returns the type of this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.GetTargetAsync">
+            <summary>
+            Gets the target of this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.GetCurrentTargetAsync">
+            <summary>
+            Gets the current target of this <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.
+            </summary>
+            <returns>The object whose event listener’s callback is currently being invoked.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.ComposedPathAsync">
+            <summary>
+            Returns the invocation target objects of event’s path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root’s mode is "closed" that are not reachable from event’s currentTarget.
+            </summary>
+            <returns>An array of <see cref="T:KristofferStrube.Blazor.DOM.EventTargetInProcess"/>s</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.EventPhase">
+            <summary>
+            Returns the <see cref="T:KristofferStrube.Blazor.DOM.Event"/>'s phase.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.StopPropagation">
+            <summary>
+            When dispatched in a tree, invoking this method prevents the event from reaching any objects other than the current object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.StopImmediatePropagation">
+            <summary>
+            Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.Bubbles">
+            <summary>
+            Returns <see langword="true"/> if the event goes through its target’s ancestors in reverse tree order; otherwise <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.Cancelable">
+            <summary>
+            Its value does not always carry meaning, but <see langword="true"/> can indicate that part of the operation during which event was dispatched,can be canceled by invoking the <see cref="M:KristofferStrube.Blazor.DOM.EventInProcess.PreventDefault"/> method.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventInProcess.PreventDefault">
+            <summary>
+            If invoked when the cancelable attribute value is <see langword="true"/>, and while executing a listener for the event with passive set to <see langword="false"/>, then it signals to the operation that caused event to be dispatched that it needs to be canceled.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.DefaultPrevented">
+            <summary>
+            Returns <see langword="true"/> if <see cref="M:KristofferStrube.Blazor.DOM.EventInProcess.PreventDefault"/> was invoked successfully to indicate cancelation; otherwise <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.Composed">
+            <summary>
+            Returns <see langword="true"/> if the event invokes listeners past a ShadowRoot node that is the root of its target; otherwise <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.IsTrusted">
+            <summary>
+            Returns <see langword="true"/> if the event was dispatched by the user agent, and <see langword="false"/> otherwise.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInProcess.TimeStamp">
+            <summary>
+            Returns the event’s timestamp as the number of milliseconds measured relative to the <see href="https://w3c.github.io/hr-time/#dfn-get-time-origin-timestamp">time origin</see>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventInit">
+            <summary>
+            Allows to set whether an <see cref="T:KristofferStrube.Blazor.DOM.Event"/> bubbles and/or is cancelable.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#dictdef-eventinit">See the API definition here</see></remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInit.Bubbles">
+            <summary>
+            <see langword="true"/> if the <see cref="T:KristofferStrube.Blazor.DOM.Event"/> should go through its targets's ancestors in reverse tree order; otherwise <see langword="false"/>
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInit.Cancelable">
+            <summary>
+            <see langword="true"/> if the <see cref="T:KristofferStrube.Blazor.DOM.Event"/> should be able to be canceled; otherwise <see langword="false"/>
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventInit.Composed">
+            <summary>
+            <see langword="true"/> if the <see cref="T:KristofferStrube.Blazor.DOM.Event"/> invokes listeners that are outside a <see href="https://dom.spec.whatwg.org/#shadowroot">ShadowRoot</see> node; otherwise <see langword="false"/>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventListener`1">
+            <summary>
+            An <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1" /> can be used to observe a specific <see cref="T:KristofferStrube.Blazor.DOM.Event"/>.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#callbackdef-eventlistener">See the API definition here</see></remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventListener`1.callback">
+            <summary>
+            The synchronous callback.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventListener`1.asyncCallback">
+            <summary>
+            The asynchronous callback.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListener`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListener`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListener`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Action{`0})">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="callback">The action that will be invoked once the event happen.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListener`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Func{`0,System.Threading.Tasks.Task})">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="callback">The async action that will be invoked once the event happen.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListener`1.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListener`1.HandleEventAsync(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            The method that will be invoked from JS when the event happens which will invoke the action that this <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> was constructed from.
+            </summary>
+            <param name="jSObjectReference">A JS reference to the event.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventListenerInProcess`1">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`1.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventListenerInProcess`2">
+            <inheritdoc/>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.callback">
+            <summary>
+            The synchronous callback.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.asyncCallback">
+            <summary>
+            The asynchronous callback.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.inProcessHelper">
+            <summary>s
+            An in-process helper.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.JSReference">
+            <inheritdoc cref="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSReference" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Action{`0})">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventListener`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Action{`0})"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Func{`0,System.Threading.Tasks.Task})">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventListener`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Func{`0,System.Threading.Tasks.Task})"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventListenerInProcess`2.HandleEventInProcessAsync(Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventListenerOptions">
+            <summary>
+            Options for when an <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> is removed from an <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/>s listener list.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#dictdef-eventlisteneroptions">See the API definition here</see></remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventListenerOptions.Capture">
+            <summary>
+            When set to <see langword="true"/> prevents callback from being invoked when the <see cref="M:KristofferStrube.Blazor.DOM.Event.GetEventPhaseAsync"/> method returns <c>None</c>. When false, callback will not be invoked when the <see cref="M:KristofferStrube.Blazor.DOM.Event.GetEventPhaseAsync"/> method returns <c>CapturingPhase</c>. Either way, callback will be invoked if the <see cref="M:KristofferStrube.Blazor.DOM.Event.GetEventPhaseAsync"/> method returns <c>AtTarget</c>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventPhase">
+            <summary>
+            The phase that the event is in.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#dom-event-eventphase">See the API definition here</see></remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventPhase.None">
+            <summary>
+            <see cref="T:KristofferStrube.Blazor.DOM.Event"/>s not currently dispatched are in this phase.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventPhase.CapturingPhase">
+            <summary>
+            When an <see cref="T:KristofferStrube.Blazor.DOM.Event"/> is dispatched to an object that participates in a tree it will be in this phase before it reaches its target.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventPhase.AtTarget">
+            <summary>
+            When an <see cref="T:KristofferStrube.Blazor.DOM.Event"/> is dispatched it will be in this phase on its target.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventPhase.BubblingPhase">
+            <summary>
+            When an <see cref="T:KristofferStrube.Blazor.DOM.Event"/> is dispatched to an object that participates in a tree it will be in this phase after it reaches its target.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventTarget">
+            <summary>
+            An <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/> object represents a target to which an event can be dispatched when something has occurred.
+            Each <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/> object has an associated event listener list (a list of zero or more event listeners). It is initially the empty list.
+            </summary>
+            <remarks><see href="https://dom.spec.whatwg.org/#eventtarget">See the API definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.Components.ElementReference)">
+            <summary>
+            Constructs a wrapper instance for a given a targetable <see cref="T:Microsoft.AspNetCore.Components.ElementReference"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="element">A <see cref="T:Microsoft.AspNetCore.Components.ElementReference"/> to some element that is targetable.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.AddEventListenerAsync``1(System.String,KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <summary>
+            Appends an event listener for events whose type attribute value is <paramref name="type"/>.
+            The <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> is appended to target’s <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> list and is not appended if it has the same type, callback, and capture.
+            </summary>
+            <param name="type">The type of events that the event listener will listen to.</param>
+            <param name="callback">The callback argument sets the callback that will be invoked when the event is dispatched.</param>
+            <param name="options">The options argument sets listener-specific options.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.AddEventListenerAsync``1(KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <summary>
+            Appends an <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> for events whose type attribute value is name is the name of the type.
+            The <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> is appended to target’s <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> list and is not appended if it has the same type, callback, and capture.
+            </summary>
+            <param name="callback">The callback argument sets the callback that will be invoked when the event is dispatched.</param>
+            <param name="options">The options argument sets listener-specific options.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.RemoveEventListenerAsync``1(System.String,KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <summary>
+            Removes the <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> in target’s <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> list with the same type, callback, and options.
+            </summary>
+            <param name="type">The type of event that you want to remove the listener for.</param>
+            <param name="callback">the callback EventListener that you want to stop listening to events.</param>
+            <param name="options">The options argument sets listener-specific options.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.RemoveEventListenerAsync``1(KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <summary>
+            Removes the <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> in target’s <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> list with the same type, callback, and options.  The type is implicitly set to the <see langword="nameof"/> concrete <see cref="T:KristofferStrube.Blazor.DOM.Event"/> type for this <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> for this overload.
+            </summary>
+            <param name="callback">the callback <see cref="T:KristofferStrube.Blazor.DOM.EventListener`1"/> that you want to stop listening to events.</param>
+            <param name="options">The options argument sets listener-specific options.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTarget.DispatchEventAsync(KristofferStrube.Blazor.DOM.Event)">
+            <summary>
+            Dispatches a synthetic <see cref="T:KristofferStrube.Blazor.DOM.Event"/> to target.
+            </summary>
+            <param name="eventInstance">The event you will dispatch.</param>
+            <returns>Returns <see langword="true"/> if either event’s cancelable attribute value is <see langword="false"/> or its preventDefault() method was not invoked; otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.EventTargetInProcess">
+            <inheritdoc/>
+        </member>
+        <member name="F:KristofferStrube.Blazor.DOM.EventTargetInProcess.inProcessHelper">
+            <summary>
+            An in-process helper.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.EventTargetInProcess.JSReference">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.AspNetCore.Components.ElementReference)">
+            <summary>
+            Constructs a wrapper instance for a given a targetable <see cref="T:Microsoft.AspNetCore.Components.ElementReference"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="element">A <see cref="T:Microsoft.AspNetCore.Components.ElementReference"/> to some element that is targetable.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.DOM.EventTarget"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.AddEventListener``2(System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.AddEventListener``2(KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.RemoveEventListener``2(System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.RemoveEventListener``2(KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.EventTargetInProcess.DispatchEvent(KristofferStrube.Blazor.DOM.Event)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.IEventTargetInProcess">
+            <summary>
+            An interface that defines the method and members accessible in <see cref="T:KristofferStrube.Blazor.DOM.EventTargetInProcess"/> or classes alike it.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.DOM.IEventTargetInProcess.JSReference">
+            <inheritdoc cref="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSReference" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.AddEventListener``2(System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.AddEventListenerAsync``1(System.String,KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.AddEventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.AddEventListener``2(KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.AddEventListenerAsync``1(KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.AddEventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.RemoveEventListener``2(System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.RemoveEventListenerAsync``1(System.String,KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.EventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.RemoveEventListener``2(KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.RemoveEventListenerAsync``1(KristofferStrube.Blazor.DOM.EventListener{``0},KristofferStrube.Blazor.DOM.EventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.DispatchEvent(KristofferStrube.Blazor.DOM.Event)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.EventTarget.DispatchEventAsync(KristofferStrube.Blazor.DOM.Event)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.Extensions.IEventTargetInProcessExtensions">
+            <summary>
+            Extension methods that hold the implementations for <see cref="T:KristofferStrube.Blazor.DOM.EventTargetInProcess"/> so that they can be used even though a consumer of the libary is not able to extend that class.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IEventTargetInProcessExtensions.AddEventListener``2(KristofferStrube.Blazor.DOM.IEventTargetInProcess,Microsoft.JSInterop.IJSInProcessObjectReference,System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.AddEventListener``2(System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IEventTargetInProcessExtensions.AddEventListener``2(KristofferStrube.Blazor.DOM.IEventTargetInProcess,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.AddEventListener``2(KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.AddEventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IEventTargetInProcessExtensions.RemoveEventListener``2(KristofferStrube.Blazor.DOM.IEventTargetInProcess,Microsoft.JSInterop.IJSInProcessObjectReference,System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.RemoveEventListener``2(System.String,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IEventTargetInProcessExtensions.RemoveEventListener``2(KristofferStrube.Blazor.DOM.IEventTargetInProcess,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.RemoveEventListener``2(KristofferStrube.Blazor.DOM.EventListenerInProcess{``0,``1},KristofferStrube.Blazor.DOM.EventListenerOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IEventTargetInProcessExtensions.DispatchEvent(KristofferStrube.Blazor.DOM.IEventTargetInProcess,KristofferStrube.Blazor.DOM.Event)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.DOM.IEventTargetInProcess.DispatchEvent(KristofferStrube.Blazor.DOM.Event)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.DOM.Extensions.IJSRuntimeExtensions">
+            <summary>
+            Extension methods for getting helper tasks for JSInterop.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IJSRuntimeExtensions.GetHelperAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Gets a helper that enables asynchronous invocation of helper methods.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.DOM.Extensions.IJSRuntimeExtensions.GetInProcessHelperAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Gets a helper that enables synchronous invocation of helper methods.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+        </member>
+    </members>
+</doc>

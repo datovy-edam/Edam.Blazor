@@ -1,5 +1,13 @@
 ﻿@page "/"
+
+@inject FileSystemHelper.FileSystemApiClient FileSystemApi
+
 <PageTitle>Home</PageTitle>
 @code {
+   private string sessionId = "xx";
 
+   protected override async Task OnInitializedAsync()
+   {
+      var value = await FileSystemApi.InitializeAsync();
+   }
 }

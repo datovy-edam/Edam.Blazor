@@ -7,7 +7,7 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\esobr\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.1</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\esobr\.nuget\packages\" />
@@ -16,15 +16,8 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor\7.1.1\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\7.1.1\buildTransitive\MudBlazor.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.telemetry.abstractions\8.3.0\buildTransitive\net6.0\Microsoft.Extensions.Telemetry.Abstractions.props')" />
-    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.webidl\0.1.0-alpha.1\buildTransitive\KristofferStrube.Blazor.WebIDL.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.webidl\0.1.0-alpha.1\buildTransitive\KristofferStrube.Blazor.WebIDL.props')" />
-    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.streams\0.3.0\buildTransitive\KristofferStrube.Blazor.Streams.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.streams\0.3.0\buildTransitive\KristofferStrube.Blazor.Streams.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.7\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
     <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.fileapi\0.3.0\buildTransitive\KristofferStrube.Blazor.FileAPI.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.fileapi\0.3.0\buildTransitive\KristofferStrube.Blazor.FileAPI.props')" />
-    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.filesystem\0.3.1\buildTransitive\KristofferStrube.Blazor.FileSystem.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.filesystem\0.3.1\buildTransitive\KristofferStrube.Blazor.FileSystem.props')" />
-    <Import Project="$(NuGetPackageRoot)kristofferstrube.blazor.filesystemaccess\3.2.2\buildTransitive\KristofferStrube.Blazor.FileSystemAccess.props" Condition="Exists('$(NuGetPackageRoot)kristofferstrube.blazor.filesystemaccess\3.2.2\buildTransitive\KristofferStrube.Blazor.FileSystemAccess.props')" />
-    <Import Project="$(NuGetPackageRoot)codebeam.mudblazor.extensions\6.9.2\buildTransitive\CodeBeam.MudBlazor.Extensions.props" Condition="Exists('$(NuGetPackageRoot)codebeam.mudblazor.extensions\6.9.2\buildTransitive\CodeBeam.MudBlazor.Extensions.props')" />
     <Import Project="$(NuGetPackageRoot)blazormonaco\3.2.0\buildTransitive\BlazorMonaco.props" Condition="Exists('$(NuGetPackageRoot)blazormonaco\3.2.0\buildTransitive\BlazorMonaco.props')" />
   </ImportGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgBuildBundlerMinifier Condition=" '$(PkgBuildBundlerMinifier)' == '' ">C:\Users\esobr\.nuget\packages\buildbundlerminifier\3.2.449</PkgBuildBundlerMinifier>
-  </PropertyGroup>
 </Project>

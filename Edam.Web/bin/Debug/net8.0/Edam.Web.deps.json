@@ -12,10 +12,9 @@
           "Aspire.StackExchange.Redis.OutputCaching": "8.0.2",
           "Azure.Identity": "1.12.0",
           "BlazorMonaco": "3.2.0",
-          "CodeBeam.MudBlazor.Extensions": "6.9.2",
           "Edam.Common": "1.0.0",
+          "Edam.Data.FileSystemModel": "1.0.0",
           "Edam.ServiceDefaults": "1.0.0",
-          "KristofferStrube.Blazor.FileAPI": "0.3.0",
           "KristofferStrube.Blazor.FileSystem": "0.3.1",
           "KristofferStrube.Blazor.FileSystemAccess": "3.2.2",
           "Microsoft.JSInterop.WebAssembly": "8.0.7",
@@ -131,38 +130,13 @@
       },
       "BlazorMonaco/3.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.6",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
+          "Microsoft.AspNetCore.Components": "8.0.7",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
         },
         "runtime": {
           "lib/net8.0/BlazorMonaco.dll": {
             "assemblyVersion": "3.2.0.0",
             "fileVersion": "3.2.0.0"
-          }
-        }
-      },
-      "BuildBundlerMinifier/3.2.449": {},
-      "CodeBeam.MudBlazor.Extensions/6.9.2": {
-        "dependencies": {
-          "BuildBundlerMinifier": "3.2.449",
-          "CsvHelper": "30.0.1",
-          "Microsoft.AspNetCore.Components": "8.0.6",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6",
-          "MudBlazor": "7.1.1",
-          "ZXing.Net": "0.16.9"
-        },
-        "runtime": {
-          "lib/net8.0/CodeBeam.MudBlazor.Extensions.dll": {
-            "assemblyVersion": "6.9.2.0",
-            "fileVersion": "6.9.2.0"
-          }
-        }
-      },
-      "CsvHelper/30.0.1": {
-        "runtime": {
-          "lib/net6.0/CsvHelper.dll": {
-            "assemblyVersion": "30.0.0.0",
-            "fileVersion": "30.0.1.0"
           }
         }
       },
@@ -210,8 +184,8 @@
       },
       "KristofferStrube.Blazor.FileAPI/0.3.0": {
         "dependencies": {
-          "KristofferStrube.Blazor.Streams": "0.3.0",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
+          "KristofferStrube.Blazor.Streams": "0.4.2",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
         },
         "runtime": {
           "lib/net7.0/KristofferStrube.Blazor.FileAPI.dll": {
@@ -220,94 +194,47 @@
           }
         }
       },
-      "KristofferStrube.Blazor.FileSystem/0.3.1": {
+      "Microsoft.AspNetCore.Authorization/8.0.7": {
         "dependencies": {
-          "KristofferStrube.Blazor.FileAPI": "0.3.0",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.FileSystem.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
-        "dependencies": {
-          "KristofferStrube.Blazor.FileSystem": "0.3.1",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.FileSystemAccess.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "KristofferStrube.Blazor.Streams/0.3.0": {
-        "dependencies": {
-          "KristofferStrube.Blazor.WebIDL": "0.1.0-alpha.1",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.Streams.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "KristofferStrube.Blazor.WebIDL/0.1.0-alpha.1": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "8.0.6"
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.WebIDL.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/8.0.6": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "8.0.6",
+          "Microsoft.AspNetCore.Metadata": "8.0.7",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
           "Microsoft.Extensions.Options": "8.0.2"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Authorization.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+            "fileVersion": "8.0.724.31402"
           }
         }
       },
-      "Microsoft.AspNetCore.Components/8.0.6": {
+      "Microsoft.AspNetCore.Components/8.0.7": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "8.0.6",
-          "Microsoft.AspNetCore.Components.Analyzers": "8.0.6"
+          "Microsoft.AspNetCore.Authorization": "8.0.7",
+          "Microsoft.AspNetCore.Components.Analyzers": "8.0.7"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Components.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+            "fileVersion": "8.0.724.31402"
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/8.0.6": {},
-      "Microsoft.AspNetCore.Components.Forms/8.0.6": {
+      "Microsoft.AspNetCore.Components.Analyzers/8.0.7": {},
+      "Microsoft.AspNetCore.Components.Forms/8.0.7": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.6"
+          "Microsoft.AspNetCore.Components": "8.0.7"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+            "fileVersion": "8.0.724.31402"
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/8.0.6": {
+      "Microsoft.AspNetCore.Components.Web/8.0.7": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.6",
-          "Microsoft.AspNetCore.Components.Forms": "8.0.6",
+          "Microsoft.AspNetCore.Components": "8.0.7",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.7",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
           "Microsoft.JSInterop": "8.0.7",
@@ -316,15 +243,15 @@
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+            "fileVersion": "8.0.724.31402"
           }
         }
       },
-      "Microsoft.AspNetCore.Metadata/8.0.6": {
+      "Microsoft.AspNetCore.Metadata/8.0.7": {
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+            "fileVersion": "8.0.724.31402"
           }
         }
       },
@@ -446,6 +373,29 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore/8.0.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.7",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.7",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "8.0.7.0",
+            "fileVersion": "8.0.724.31404"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.7": {
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "8.0.7.0",
+            "fileVersion": "8.0.724.31404"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.7": {},
       "Microsoft.Extensions.AmbientMetadata.Application/8.3.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -458,6 +408,20 @@
             "assemblyVersion": "8.3.0.0",
             "fileVersion": "8.300.24.16106"
           }
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Options": "8.0.2",
+          "Microsoft.Extensions.Primitives": "8.0.0"
         }
       },
       "Microsoft.Extensions.Compliance.Abstractions/8.3.0": {
@@ -968,8 +932,8 @@
       },
       "MudBlazor/7.1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.6",
-          "Microsoft.AspNetCore.Components.Web": "8.0.6",
+          "Microsoft.AspNetCore.Components": "8.0.7",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7",
           "Microsoft.Extensions.Localization": "8.0.6"
         },
         "runtime": {
@@ -1311,14 +1275,6 @@
       },
       "System.Threading.RateLimiting/8.0.0": {},
       "System.Threading.Tasks.Extensions/4.5.4": {},
-      "ZXing.Net/0.16.9": {
-        "runtime": {
-          "lib/net7.0/zxing.dll": {
-            "assemblyVersion": "0.16.9.0",
-            "fileVersion": "0.16.9.0"
-          }
-        }
-      },
       "Edam.Common/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -1329,6 +1285,15 @@
         },
         "runtime": {
           "Edam.Common.dll": {}
+        }
+      },
+      "Edam.Data.FileSystemModel/1.0.0": {
+        "dependencies": {
+          "Edam.Common": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.7"
+        },
+        "runtime": {
+          "Edam.Data.FileSystemModel.dll": {}
         }
       },
       "Edam.ServiceDefaults/1.0.0": {
@@ -1343,6 +1308,51 @@
         },
         "runtime": {
           "Edam.ServiceDefaults.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.DOM/0.2.2": {
+        "dependencies": {
+          "KristofferStrube.Blazor.WebIDL": "0.5.1",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "runtime": {
+          "KristofferStrube.Blazor.DOM.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.FileSystem/0.3.1": {
+        "dependencies": {
+          "KristofferStrube.Blazor.FileAPI": "0.3.0",
+          "KristofferStrube.Blazor.Streams": "0.4.2",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "runtime": {
+          "KristofferStrube.Blazor.FileSystem.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
+        "dependencies": {
+          "KristofferStrube.Blazor.FileSystem": "0.3.1",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "runtime": {
+          "KristofferStrube.Blazor.FileSystemAccess.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.Streams/0.4.2": {
+        "dependencies": {
+          "KristofferStrube.Blazor.DOM": "0.2.2",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "runtime": {
+          "KristofferStrube.Blazor.Streams.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.WebIDL/0.5.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "runtime": {
+          "KristofferStrube.Blazor.WebIDL.dll": {}
         }
       }
     }
@@ -1409,27 +1419,6 @@
       "path": "blazormonaco/3.2.0",
       "hashPath": "blazormonaco.3.2.0.nupkg.sha512"
     },
-    "BuildBundlerMinifier/3.2.449": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
-      "path": "buildbundlerminifier/3.2.449",
-      "hashPath": "buildbundlerminifier.3.2.449.nupkg.sha512"
-    },
-    "CodeBeam.MudBlazor.Extensions/6.9.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uvAdli09L0F9m58a+dYVnwiWNusbw8xbBAahBmKDuDUsIi//7IdTCruCCNVKYhxKG0SKUlG9lebEyuossCSbLw==",
-      "path": "codebeam.mudblazor.extensions/6.9.2",
-      "hashPath": "codebeam.mudblazor.extensions.6.9.2.nupkg.sha512"
-    },
-    "CsvHelper/30.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
-      "path": "csvhelper/30.0.1",
-      "hashPath": "csvhelper.30.0.1.nupkg.sha512"
-    },
     "Google.Protobuf/3.22.5": {
       "type": "package",
       "serviceable": true,
@@ -1465,75 +1454,47 @@
       "path": "kristofferstrube.blazor.fileapi/0.3.0",
       "hashPath": "kristofferstrube.blazor.fileapi.0.3.0.nupkg.sha512"
     },
-    "KristofferStrube.Blazor.FileSystem/0.3.1": {
+    "Microsoft.AspNetCore.Authorization/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dEQkBDDEOsBc8BGqDnZJ2XoKlwdeOpctmLIMgxwERLIAmDKk9bjwFMR2xS5gUh6ccqyp3GoRKPRYrOTieDX4TA==",
-      "path": "kristofferstrube.blazor.filesystem/0.3.1",
-      "hashPath": "kristofferstrube.blazor.filesystem.0.3.1.nupkg.sha512"
+      "sha512": "sha512-Oz8BvQ1iYwOTH5QcT5I+EGphgJbqCGuBRDk1BK7Hscx1xC8Bg6H0rtYcmiWdNn/cZ4Uu5FMr6z46sEZSSZ6ycw==",
+      "path": "microsoft.aspnetcore.authorization/8.0.7",
+      "hashPath": "microsoft.aspnetcore.authorization.8.0.7.nupkg.sha512"
     },
-    "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
+    "Microsoft.AspNetCore.Components/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-owZeGnzlPNBU2ITVuVFMqXbSxw70nJSe0fF27JOiE00WTSDgW+CoJ0Mi/62+acXzibamNtS1vrTFu9KJnUTUAQ==",
-      "path": "kristofferstrube.blazor.filesystemaccess/3.2.2",
-      "hashPath": "kristofferstrube.blazor.filesystemaccess.3.2.2.nupkg.sha512"
+      "sha512": "sha512-rXAeBI1NpcqZ0s+LkVxe3zVJqow8GXZyTkw2pThnh/IWz/qsZshU8rve/23EXN14+l+7b3Ragt0JSO8+iwcMUw==",
+      "path": "microsoft.aspnetcore.components/8.0.7",
+      "hashPath": "microsoft.aspnetcore.components.8.0.7.nupkg.sha512"
     },
-    "KristofferStrube.Blazor.Streams/0.3.0": {
+    "Microsoft.AspNetCore.Components.Analyzers/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2qofmH/n0oFiZQ693/nTyAN6wF7NdX1PM12/qmV+2UQPijlxUqpYqmn1uensng3+U406hUfGmcdZEeNJalsR/A==",
-      "path": "kristofferstrube.blazor.streams/0.3.0",
-      "hashPath": "kristofferstrube.blazor.streams.0.3.0.nupkg.sha512"
+      "sha512": "sha512-S186J2WX2+7wM43u1kJ/BGy2fndKCSe6Swhd2f3xKr0p5VcQUUsQMhkWslmpXuNTQlZyeNw1w6IWXbzQoU347Q==",
+      "path": "microsoft.aspnetcore.components.analyzers/8.0.7",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.8.0.7.nupkg.sha512"
     },
-    "KristofferStrube.Blazor.WebIDL/0.1.0-alpha.1": {
+    "Microsoft.AspNetCore.Components.Forms/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7Fm42iLu+I4Kb0zbRMok2XcR/+CDwkco0O8VdPUgBk+NwY9jCujgmChXrs7AjfoThxTlsEVr4k+pm0C7bP6TLA==",
-      "path": "kristofferstrube.blazor.webidl/0.1.0-alpha.1",
-      "hashPath": "kristofferstrube.blazor.webidl.0.1.0-alpha.1.nupkg.sha512"
+      "sha512": "sha512-W6B1ARyh+vOtBbAYap1ekDIA+8U3N6hwnli6gG3WYAOmC+4bFlbfpoVoQvpLVTaFH2CSCwEM4NAA16dmTFv3kA==",
+      "path": "microsoft.aspnetcore.components.forms/8.0.7",
+      "hashPath": "microsoft.aspnetcore.components.forms.8.0.7.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authorization/8.0.6": {
+    "Microsoft.AspNetCore.Components.Web/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-H1CSbD7UeSPsrJSUpvbms6SqWMa5y8ch4Rw+gyHh2uztOEb20fTP2r0AUnStn1Q9WYghikiDO5wzkgV+n6KC2Q==",
-      "path": "microsoft.aspnetcore.authorization/8.0.6",
-      "hashPath": "microsoft.aspnetcore.authorization.8.0.6.nupkg.sha512"
+      "sha512": "sha512-InawfVQAvvxHZYiaHfMgdZge6Dc7wdFFAQDhgYKO6Ezh3cm+STVHATlR4nygZAV4df58AG3rhZ0uuv7EPXvPMA==",
+      "path": "microsoft.aspnetcore.components.web/8.0.7",
+      "hashPath": "microsoft.aspnetcore.components.web.8.0.7.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components/8.0.6": {
+    "Microsoft.AspNetCore.Metadata/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Je2l+rd5i8gB+ZWsN5wBHOsnyAh81h6+a5vNq6rjfQhM2ZYxH+BVsmanCYa+F8BFy6rmd+ZL61SEiNaAyAOgtg==",
-      "path": "microsoft.aspnetcore.components/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.8.0.6.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Components.Analyzers/8.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SEL0CN1jJdJkCDwRox3kSY1ffMnahlOCDJZYrYWfQ6ftjqRuuiPtwyvI3VIeVHLcpT3VP1AXww8wzKDK3oeFxg==",
-      "path": "microsoft.aspnetcore.components.analyzers/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.analyzers.8.0.6.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Components.Forms/8.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-49wIE1ns3ZGDU4NPMcKCSTC716IxujUeaynsUyflM5Qmb2WlF6M6m4pMcJ6UET1Ixmn027nZjMEc8J7pU4BLBg==",
-      "path": "microsoft.aspnetcore.components.forms/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.forms.8.0.6.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Components.Web/8.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xxYlTpcTEWsxaWUscDLN32mM32ysslLFtNQBS6wJOxaKJ9LCvusXDyBVEKL2DPbB8PZdereNvyrVr0deHkuOEw==",
-      "path": "microsoft.aspnetcore.components.web/8.0.6",
-      "hashPath": "microsoft.aspnetcore.components.web.8.0.6.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Metadata/8.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3e7S/kz1MGds8zDA8SfQiutqifyVcULs5P/8Bxpes0WIkJRMGkU/l+XlMllj9KrDfCGwHW8bgjRy/zxfoILgfg==",
-      "path": "microsoft.aspnetcore.metadata/8.0.6",
-      "hashPath": "microsoft.aspnetcore.metadata.8.0.6.nupkg.sha512"
+      "sha512": "sha512-CD5PNOSnOh3XcqZaaxp0uENK4WTFifSkhWkuO9dQ/Mo7gpXwAMvrfwdqW2T7Z4YS+VXuka7Gf70f29HND9oQ3w==",
+      "path": "microsoft.aspnetcore.metadata/8.0.7",
+      "hashPath": "microsoft.aspnetcore.metadata.8.0.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OutputCaching.StackExchangeRedis/8.0.6": {
       "type": "package",
@@ -1577,12 +1538,47 @@
       "path": "microsoft.data.sqlclient.sni.runtime/5.2.0",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.2.0.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UOyPNAgyzw/E4hUCurqvZxi0WWVLQAGZuntFPzkTXtvJLTqRjKvokvhv+XazAUSODLsU1DZ67GjZ4mT9d82+0g==",
+      "path": "microsoft.entityframeworkcore/8.0.7",
+      "hashPath": "microsoft.entityframeworkcore.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DHX6nxcg4/tpWfTjAleKrXveDiNFY/OGOK6nm27GipUXNI2Uofev9cH5SYXmtGIgHWxlvfn754TXN4WnrixOwg==",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.7",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nerD0vEOYJVhVapamRVH9DrUYbDNMJ5bPfWze4SibDDaDaekzgwQqBht97/tV+8pgdKoPAXmtiJsB+lDajwVrQ==",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.7",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512"
+    },
     "Microsoft.Extensions.AmbientMetadata.Application/8.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-NktDh/Qbj7DdI+zLixvigvK8FB/pu/aPIG3VLh6+VlwNi769mWPjV6aVE1kmgNP/2kgF7UDEkqrfdNdzQAPXZw==",
       "path": "microsoft.extensions.ambientmetadata.application/8.3.0",
       "hashPath": "microsoft.extensions.ambientmetadata.application.8.3.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
+      "path": "microsoft.extensions.caching.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7pqivmrZDzo1ADPkRwjy+8jtRKWRCPag9qPI+p7sgu7Q4QreWhcvbiWXsbhP+yY8XSiDvZpu2/LWdBv7PnmOpQ==",
+      "path": "microsoft.extensions.caching.memory/8.0.0",
+      "hashPath": "microsoft.extensions.caching.memory.8.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Compliance.Abstractions/8.3.0": {
       "type": "package",
@@ -2228,19 +2224,42 @@
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
-    "ZXing.Net/0.16.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
-      "path": "zxing.net/0.16.9",
-      "hashPath": "zxing.net.0.16.9.nupkg.sha512"
-    },
     "Edam.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
+    "Edam.Data.FileSystemModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Edam.ServiceDefaults/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KristofferStrube.Blazor.DOM/0.2.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KristofferStrube.Blazor.FileSystem/0.3.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KristofferStrube.Blazor.Streams/0.4.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KristofferStrube.Blazor.WebIDL/0.5.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,6 +4,8 @@ using KristofferStrube.Blazor.FileSystem;
 using KristofferStrube.Blazor.FileSystemAccess;
 using KristofferStrube.Blazor.FileAPI;
 using MudBlazor.Services;
+using Edam.Web.FileSystemHelper;
+using Edam.Web.Models.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,12 +28,21 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
    client.BaseAddress = new("https+http://apiservice");
 });
 
+builder.Services.AddHttpClient<FileSystemApiClient>(client =>
+{
+   // This URL uses "https+http://" to indicate HTTPS is preferred over HTTP.
+   // Learn more about service discovery scheme resolution at https://aka.ms/dotnet/sdschemes.
+   client.BaseAddress = new("https+http://apifilesystemservice");
+});
+
 builder.Services.AddMudServices();
 
 builder.Services.AddURLService();
 
 builder.Services.AddFileSystemAccessService();
 builder.Services.AddStorageManagerService();
+
+builder.Services.AddScoped<AppSession>();
 
 var app = builder.Build();
 
@@ -55,3 +66,4 @@ app.MapRazorComponents<App>()
 app.MapDefaultEndpoints();
 
 app.Run();
+

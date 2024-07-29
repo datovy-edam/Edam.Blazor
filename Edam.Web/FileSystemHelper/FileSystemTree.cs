@@ -32,10 +32,11 @@ namespace Edam.Web.FileSystemHelper
       public async Task<FileSystemItemInfo> GetItemAsync(
          IFileSystemHandle handle)
       {
+         var info = new FileSystemItemInfo();
+
          var name = await handle.GetNameAsync();
          var kind = await handle.GetKindAsync();
 
-         var info = new FileSystemItemInfo();
          info.Name = name;
          info.Title = name;
          info.Type = kind == FileSystemHandleKind.File ?
@@ -44,7 +45,7 @@ namespace Edam.Web.FileSystemHelper
          info.Tag = null;
          info.Handle = handle;
 
-         switch(info.Type)
+         switch (info.Type)
          {
             case TreeItemType.Leaf:
                info.Icon = Icons.Material.Outlined.ListAlt;

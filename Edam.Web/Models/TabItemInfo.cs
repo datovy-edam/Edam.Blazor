@@ -5,7 +5,7 @@ namespace Edam.Web.Models;
 
 public class TabItemInfo
 {
-   public RenderFragment Content { get; set; }
+   public RenderFragment? Content { get; set; }
    public string Label { get; set; }
    public Guid Id { get; set; } = Guid.NewGuid();
    public bool ShowCloseIcon { get; set; } = true;
@@ -13,7 +13,7 @@ public class TabItemInfo
    public string? ValueText { get; set; } = null;
    public CodeEditorComponent? CodeEditor { get; set; } = null;
 
-   public TabItemInfo(string label = null)
+   public TabItemInfo(string? label = null)
    {
       Label = label ?? Id.ToString();
    }

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\wwwroot\\KristofferStrube.Blazor.WebIDL.js",
+      "PackagePath": "staticwebassets\\KristofferStrube.Blazor.WebIDL.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KristofferStrube.Blazor.WebIDL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KristofferStrube.Blazor.WebIDL.props",
+      "PackagePath": "build\\KristofferStrube.Blazor.WebIDL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KristofferStrube.Blazor.WebIDL.props",
+      "PackagePath": "buildMultiTargeting\\KristofferStrube.Blazor.WebIDL.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KristofferStrube.Blazor.WebIDL.props",
+      "PackagePath": "buildTransitive\\KristofferStrube.Blazor.WebIDL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

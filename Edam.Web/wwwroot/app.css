@@ -24,18 +24,13 @@ h1:focus {
         content: "An error has occurred."
     }
 
-
-.editor-container {
-   position: absolute;
-   top: 0px;
-   left: 0px;
-   right: 0px;
+/*.editor-container {
    border: 1px solid #EFEFEF;
-   height: 100vh;
-}
+   height: calc(100vh - 65px);
+}*/
 
 .monaco-editor-container {
-   height: 93.4vh;
+   height: calc(100vh - 1px);
 }
 
 .invisible {

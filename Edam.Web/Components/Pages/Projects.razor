@@ -1,42 +1,55 @@
-﻿@using Edam.Web.Models;
+﻿@page "/projects"
 
-@page "/projects"
+@using Edam.Web.Models;
+@using Edam.Web.Components.Pages;
 
-<MudTabs @ref="TabsComponent" @bind-ActivePanelIndex="@ActiveItemNo"
-   Border="true" Outlined="true" PanelClass="px-4 py-6"
-   Rounded="true" ApplyEffectsToContainer="true">
-   @foreach (var tab in TabItems)
-   {
-      <MudTabPanel ID="@tab.Id" Text="@tab.Label" ShowCloseIcon="@tab.ShowCloseIcon">
-         @tab.Content
-      </MudTabPanel>
-   }
-</MudTabs>
+<MudPaper Style="overflow:hidden; position:relative; border-left: 1px solid #ddffff">
+   <MudDrawerContainer Class="mud-height-full">
+      <MudDrawer @bind-Open="@_openLeft" Anchor="Anchor.Left" Elevation="0"
+                 Variant="@DrawerVariant.Persistent" Style="padding: 6px">
+         <FileSystemComponent @ref="_fileSystem" />
+      </MudDrawer>
+
+      <div style="height: calc(100vh - 65px); border-left: 1px solid #D0D0D0">
+         <div style="height: 54px; padding:4px; background-color: #F0F0F0; border-bottom: 1px solid #D0D0D0">
+            <MudTooltip Text="Save">
+               <MudIconButton Icon="@Icons.Material.Outlined.Save" Color="Color.Success" aria-label="save" OnClick="OnSaveClick"></MudIconButton>
+            </MudTooltip>
+            <MudTooltip Text="Delete">
+               <MudIconButton Icon="@Icons.Material.Outlined.Delete" Color="Color.Error" aria-label="delete" OnClick="OnDeleteClick"></MudIconButton>
+            </MudTooltip>
+         </div>
+
+         <div style="padding: 1px; background-color: dimgray; height: calc(100vh - 65px);">
+            <EditorComponent @ref="_editorComponent" />
+         </div>
+
+         <div style="height: 54px; padding:4px; background-color: #F0F0F0; border-bottom: 1px solid #D0D0D0">
+            Status Bar
+         </div>
+      </div>
+
+   </MudDrawerContainer>
+</MudPaper>
 
 @code {
 
-   MudTabs TabsComponent { get; set; }
-   public List<TabItemInfo> TabItems = new();
-   public int ActiveItemNo;
+   bool _openLeft = true;
    bool _stateHasChanged;
-   bool _showCloseIcon = false;
+   FileSystemComponent? _fileSystem;
+   EditorComponent? _editorComponent;
 
-   #region -- 1.50 - Component support methods.
-
-   /// <summary>
-   /// Component initialize method.
-   /// </summary>
-   protected override void OnInitialized()
+   protected override async Task OnInitializedAsync()
    {
-      base.OnInitialized();
-      ResetTabs();
+      await base.OnInitializedAsync();
    }
+
 
    /// <summary>
    /// Component After Render method.
    /// </summary>
    /// <param name="firstRender"></param>
-   protected override void OnAfterRender(bool firstRender)
+   protected async override Task OnAfterRenderAsync(bool firstRender)
    {
       base.OnAfterRender(firstRender);
       if (_stateHasChanged)
@@ -45,92 +58,16 @@
          StateHasChanged();
       }
 
-      // do we need to render the code editor value-text...
-      if (ActiveItemNo >= 0 && TabItems[ActiveItemNo].CodeEditor != null)
-      {
-         var tab = TabItems[ActiveItemNo];
-         tab.CodeEditor.SetValue(tab.ValueText);
-      }
    }
 
-   #endregion
-   #region -- 4.00 - TAB Support
-
-   /// <summary>
-   /// Add TAB.
-   /// </summary>
-   /// <param name="id"></param>
-   public void AddTab(Guid? id = null)
+   public async Task OnSaveClick()
    {
-      var tabItem = new TabItemInfo();
-      tabItem.Id = id.HasValue ? id.Value : Guid.NewGuid();
-      tabItem.Label = "dynamic tab";
-
-      int lastIndx = TabItems.Count - 1;
-      RenderFragment renderFragment = __builder =>
-      {
-         <CodeEditorComponent @ref="@tabItem.CodeEditor" />
-      };
-
-      tabItem.Content = renderFragment;
-      TabItems.Add(tabItem);
-
-      ActiveItemNo = TabItems.Count - 1; // Automatically switch to the new tab.
-
-      string codeText =
-         "\"use strict\";\n" +
-         "function Persona(name) {\n" +
-         "   if (name) {\n" +
-         "       this.name = name;\n" +
-         "   }\n" +
-         "}\n" +
-         "Person.prototype.getName = function () {\n" +
-         "   return this.name;\n" +
-         "};\n";
-      tabItem.ValueText = codeText;
-
-      _stateHasChanged = true;
+      
    }
 
-   /// <summary>
-   /// Reset TABs.
-   /// </summary>
-   void ResetTabs()
+   public async Task OnDeleteClick()
    {
-      TabItems.Clear();
-      AddTab(new Guid());
+
    }
-
-   /// <summary>
-   /// Remove Tab.
-   /// </summary>
-   /// <param name="id"></param>
-   public void RemoveTab(Guid id)
-   {
-      var tabView = TabItems.SingleOrDefault((t) => Equals(t.Id, id));
-      if (tabView is not null)
-      {
-         TabItems.Remove(tabView);
-         _stateHasChanged = true;
-
-         if (TabItems.Count == 0)
-         {
-            ResetTabs();
-         }
-      }
-   }
-
-   /// <summary>
-   /// Add TAB callback.
-   /// </summary>
-   void AddTabCallback() => AddTab(Guid.NewGuid());
-
-   /// <summary>
-   /// Close TAB callback.
-   /// </summary>
-   /// <param name="panel"></param>
-   void CloseTabCallback(MudTabPanel panel) => RemoveTab((Guid)panel.ID);
-
-   #endregion
 
 }

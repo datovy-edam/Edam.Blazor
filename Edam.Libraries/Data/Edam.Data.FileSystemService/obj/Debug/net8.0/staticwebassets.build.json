@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xjzH4k+uOXsn7UZWs37Okbsxdx9qg4h3+62qhFcJfBY=",
+  "Source": "Edam.Data.FileSystemService",
+  "BasePath": "_content/Edam.Data.FileSystemService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

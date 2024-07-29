@@ -1,0 +1,16 @@
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\bin\Debug\net8.0\Edam.Data.FileSystemModel.deps.json
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\bin\Debug\net8.0\Edam.Data.FileSystemModel.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\bin\Debug\net8.0\Edam.Data.FileSystemModel.pdb
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\bin\Debug\net8.0\Edam.Common.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\bin\Debug\net8.0\Edam.Common.pdb
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.csproj.AssemblyReference.cache
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.AssemblyInfoInputs.cache
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.AssemblyInfo.cs
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.csproj.CoreCompileInputs.cache
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.sourcelink.json
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Dat.CAEFA179.Up2Date
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\refint\Edam.Data.FileSystemModel.dll
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\Edam.Data.FileSystemModel.pdb
+D:\Projects\Edam.Blazor\Edam.Libraries\Data\Edam.Data.FileSystemModel\obj\Debug\net8.0\ref\Edam.Data.FileSystemModel.dll

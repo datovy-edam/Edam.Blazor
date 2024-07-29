@@ -1,0 +1,1973 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KristofferStrube.Blazor.WebIDL</name>
+    </assembly>
+    <members>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer">
+            <summary>
+            An object that holds a pointer (which can be null) to a buffer of a fixed number of bytes.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-objects">See the API definition here</see>.</remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.ArrayBuffer.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ArrayBuffer.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ArrayBuffer.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ArrayBuffer.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <summary>
+            Creates an <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="length">The initial length of the <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBuffer.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/>.</param>
+            <param name="options">The options for constructing this wrapper</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBuffer.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess">
+            <summary>
+            An object that holds a pointer (which can be null) to a buffer of a fixed number of bytes.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-objects">See the API definition here</see>.</remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess.inProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.ArrayBuffer.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IArrayBuffer">
+            <summary>
+            A common interface for <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> and <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IArrayBufferInProcess">
+            <summary>
+            A common interface for <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess"/> and <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView">
+            <summary>
+            A common interface for objects that provide a view on to an <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> or <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/>.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-objects">See the API definition here</see>.</remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IArrayBufferView.GetBufferAsync">
+            <summary>
+            Gets the internal array buffer. This can either be an <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> or a <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer">
+            <summary>
+            An object that holds a pointer (which cannot be null) to a shared buffer of a fixed number of bytes
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects">See the API definition here</see>.</remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <summary>
+            Creates an <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/> using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="length">The initial length of the <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess">
+            <summary>
+            An object that holds a pointer (which cannot be null) to a shared buffer of a fixed number of bytes
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects">See the API definition here</see>.</remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess.inProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.CreationOptions">
+            <summary>
+            The standard option type used to construct a <see cref="T:KristofferStrube.Blazor.WebIDL.IJSCreatable`1"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.CreationOptions.DisposesJSReference">
+            <summary>
+            Whether the constructed <see cref="T:KristofferStrube.Blazor.WebIDL.IJSCreatable`1"/> should dispose its <see cref="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSReference"/> when it is disposed.
+            </summary>
+            <remarks>
+            The default is <see langword="false"/>.
+            </remarks>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IReadonlyMapLike`3">
+            <summary>
+            Objects implementing an interface that is declared to be maplike represent an ordered map of key–value pairs, initially empty, known as that object’s map entries.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-maplike">See the API definition here</see>.</remarks>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference">
+            <inheritdoc cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessObjectReference"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.#ctor(Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Creates a new instance of a <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessRuntime"/>.
+            </summary>
+            <param name="jSReference">The JS object that the methods will be called on.</param>
+            <returns>A new instance of a <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessRuntime"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.InvokeVoid(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.Invoke``1(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.InvokeVoidAsync(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.InvokeVoidAsync(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.InvokeAsync``1(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessObjectReference.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime">
+            <inheritdoc cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessRuntime"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime.InvokeVoid(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime.Invoke``1(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime.InvokeVoidAsync(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime.InvokeVoidAsync(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime.InvokeAsync``1(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInProcessRuntime.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop">
+            <summary>
+            The base class for all Error Handling JSInterop in Blazor.WebIDL.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.ErrorHandlingJSInteropHasBeenSetup">
+            <summary>
+            Indicated whether the `ErrorHandlingJSInterop` has been setup.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.ErrorMapper">
+            <summary>
+            A dictionary that maps from error names to a creator method that takes the name, message, stack trace, and inner exception and creates a new <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException"/>. Can be used to add handlers for additional JS error types.
+            <br />
+            The default value is <see cref="P:KristofferStrube.Blazor.WebIDL.ErrorMappers.Default"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.ExtraErrorProperties">
+            <summary>
+            A property that can be used to get extra properties from all errors.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.UnpackMessageOfExeption(Microsoft.JSInterop.JSException)">
+            <summary>
+            Unpacks the custom structure that we have packaged the exception in.
+            </summary>
+            <param name="exception">The exception that should contain the name, message, and optional stack trace of the error in a JSON format in its <see cref="P:System.Exception.Message"/>.</param>
+            <returns>Returns a <see cref="T:KristofferStrube.Blazor.WebIDL.JSError"/> that contains the name, message, and stack. If the exception message was not in the right format it returns null instead.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.MapToWebIDLException(KristofferStrube.Blazor.WebIDL.JSError,Microsoft.JSInterop.JSException)">
+            <summary>
+            Maps a given name, message and JSException to a typed <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException"/>.
+            </summary>
+            <param name="error">The details of the original error.</param>
+            <param name="exception">The exception that will be parsed as the inner exception for the returned exception.</param>
+            <returns>Returns one of the types that derive from the <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException"/> type or returns a <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException"/> if the type was not one of the supported types.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.ConstructErrorHandlingInstanceIfJSInProcessObjectReference``1(``0)">
+            <summary>
+            Changes the returned value to a <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessObjectReference"/> if the given <paramref name="value"/> is a <see cref="T:Microsoft.JSInterop.IJSInProcessObjectReference"/>
+            <br />
+            or changes the returned value to a <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference"/> if the given <paramref name="value"/> is a <see cref="T:Microsoft.JSInterop.IJSObjectReference"/>.
+            </summary>
+            <typeparam name="TValue">The return type.</typeparam>
+            <param name="value">The returned value.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.ConstructErrorHandlingInstanceIfJSObjectReference``1(Microsoft.JSInterop.IJSRuntime,``0)">
+            <summary>
+            Changes the returned value to a <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessObjectReference"/> if the given <paramref name="value"/> is a <see cref="T:Microsoft.JSInterop.IJSInProcessObjectReference"/>
+            <br />
+            or changes the returned value to a <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference"/> if the given <paramref name="value"/> is a <see cref="T:Microsoft.JSInterop.IJSObjectReference"/>.
+            </summary>
+            <typeparam name="TValue">The return type.</typeparam>
+            <param name="value">The returned value.</param>
+            <param name="jSRuntime">The <see cref="T:Microsoft.JSInterop.IJSRuntime"/>.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference">
+            <inheritdoc cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a Error Handling version of a <see cref="T:Microsoft.JSInterop.IJSObjectReference" />.
+            </summary>
+            <param name="jSRuntime">The <see cref="T:Microsoft.JSInterop.IJSRuntime"/>.</param>
+            <param name="jSReference">A JS reference that you would like to make error handling calls with.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.InvokeVoidAsync(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.InvokeVoidAsync(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.InvokeAsync``1(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSObjectReference.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSRuntime">
+            <inheritdoc cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSRuntime.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a Error Handling version of a <see cref="T:Microsoft.JSInterop.IJSRuntime" />.
+            </summary>
+            <param name="jSRuntime">The <see cref="T:Microsoft.JSInterop.IJSRuntime"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSRuntime.InvokeVoidAsync(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSRuntime.InvokeVoidAsync(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSRuntime.InvokeAsync``1(System.String,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSRuntime.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])">
+            <inheritdoc />
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ErrorMappers">
+            <summary>
+            Standard error mappers for Error types.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ErrorMappers.Default">
+            <summary>
+            The default mapper is used when none other is specified. It is a dictionary that maps from error names to a creator method that takes the name, message, stack trace, and inner exception and creates a new <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessObjectReference">
+            <summary>
+            Represents a reference to a JavaScript object whose functions can be invoked synchronously. This instance differs from <see cref="T:Microsoft.JSInterop.IJSInProcessObjectReference"/> by raising typed errors with more information if the invocation fails.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessObjectReference.InvokeVoid(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function synchronously.
+            </summary>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>someScope.someFunction</c> on the target instance.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessObjectReference.Invoke``1(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function synchronously.
+            </summary>
+            <typeparam name="TValue">The JSON-serializable return type.</typeparam>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>someScope.someFunction</c> on the target instance.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+            <returns>An instance of <typeparamref name="TValue"/> obtained by JSON-deserializing the return value.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessRuntime">
+            <summary>
+            Represents an instance of a JavaScript runtime to which calls may be dispatched. This instance differs from <see cref="T:Microsoft.JSInterop.IJSRuntime"/> by raising typed errors with more information if the invocation fails.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessRuntime.InvokeVoid(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function synchronously.
+            </summary>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSInProcessRuntime.Invoke``1(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function synchronously.
+            </summary>
+            <typeparam name="TResult">The JSON-serializable return type.</typeparam>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+            <returns>An instance of <typeparamref name="TResult"/> obtained by JSON-deserializing the return value.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference">
+            <summary>
+            Represents a reference to a JavaScript object. This instance differs from <see cref="T:Microsoft.JSInterop.IJSObjectReference"/> by raising typed errors with more information if the invocation fails.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.JSReference">
+            <summary>
+            The inner <see cref="T:Microsoft.JSInterop.IJSObjectReference"/> that invocations are called on.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.InvokeVoidAsync(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            </summary>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.ValueTask"/> that represents the asynchronous invocation operation.</returns>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.InvokeVoidAsync(System.String,System.Threading.CancellationToken,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            </summary>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="cancellationToken">
+            A cancellation token to signal the cancellation of the operation. Specifying this parameter will override any default cancellations such as due to timeouts
+            (<see cref="P:Microsoft.JSInterop.JSRuntime.DefaultAsyncTimeout"/>) from being applied.
+            </param>
+            <param name="args">JSON-serializable arguments.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.ValueTask"/> that represents the asynchronous invocation operation.</returns>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.InvokeAsync``1(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            <para>
+            <see cref="T:Microsoft.JSInterop.JSRuntime"/> will apply timeouts to this operation based on the value configured in <see cref="P:Microsoft.JSInterop.JSRuntime.DefaultAsyncTimeout"/>. To dispatch a call with a different, or no timeout,
+            consider using <see cref="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])" />.
+            </para>
+            </summary>
+            <typeparam name="TValue">The JSON-serializable return type.</typeparam>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>someScope.someFunction</c> on the target instance.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <returns>An instance of <typeparamref name="TValue"/> obtained by JSON-deserializing the return value.</returns>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            </summary>
+            <typeparam name="TValue">The JSON-serializable return type.</typeparam>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>someScope.someFunction</c> on the target instance.</param>
+            <param name="cancellationToken">
+            A cancellation token to signal the cancellation of the operation. Specifying this parameter will override any default cancellations such as due to timeouts
+            (<see cref="P:Microsoft.JSInterop.JSRuntime.DefaultAsyncTimeout"/>) from being applied.
+            </param>
+            <param name="args">JSON-serializable arguments.</param>
+            <returns>An instance of <typeparamref name="TValue"/> obtained by JSON-deserializing the return value.</returns>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSObjectReference.DisposeAsync">
+            <summary>
+            Disposes of the reference.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime">
+            <summary>
+            Represents an instance of a JavaScript runtime to which calls may be dispatched. This instance differs from <see cref="T:Microsoft.JSInterop.IJSRuntime"/> by raising typed errors with more information if the invocation fails.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime.InvokeVoidAsync(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            </summary>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+            <returns>A <see cref="T:System.Threading.Tasks.ValueTask"/> that represents the asynchronous invocation operation.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime.InvokeVoidAsync(System.String,System.Threading.CancellationToken,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            </summary>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="cancellationToken">
+            A cancellation token to signal the cancellation of the operation. Specifying this parameter will override any default cancellations such as due to timeouts
+            (<see cref="P:Microsoft.JSInterop.JSRuntime.DefaultAsyncTimeout"/>) from being applied.
+            </param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+            <returns>A <see cref="T:System.Threading.Tasks.ValueTask"/> that represents the asynchronous invocation operation.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime.InvokeAsync``1(System.String,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            <para>
+            <see cref="T:Microsoft.JSInterop.JSRuntime"/> will apply timeouts to this operation based on the value configured in <see cref="P:Microsoft.JSInterop.JSRuntime.DefaultAsyncTimeout"/>. To dispatch a call with a different timeout, or no timeout,
+            consider using <see cref="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])" />.
+            </para>
+            </summary>
+            <typeparam name="TValue">The JSON-serializable return type.</typeparam>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+            <returns>An instance of <typeparamref name="TValue"/> obtained by JSON-deserializing the return value.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime.InvokeAsync``1(System.String,System.Threading.CancellationToken,System.Object[])">
+            <summary>
+            Invokes the specified JavaScript function asynchronously.
+            </summary>
+            <typeparam name="TValue">The JSON-serializable return type.</typeparam>
+            <param name="identifier">An identifier for the function to invoke. For example, the value <c>"someScope.someFunction"</c> will invoke the function <c>window.someScope.someFunction</c>.</param>
+            <param name="cancellationToken">
+            A cancellation token to signal the cancellation of the operation. Specifying this parameter will override any default cancellations such as due to timeouts
+            (<see cref="P:Microsoft.JSInterop.JSRuntime.DefaultAsyncTimeout"/>) from being applied.
+            </param>
+            <param name="args">JSON-serializable arguments.</param>
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException" />
+            <exception cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException" />
+            <exception cref="T:Microsoft.JSInterop.JSException" />
+            <returns>An instance of <typeparamref name="TValue"/> obtained by JSON-deserializing the return value.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.JSError">
+            <summary>
+            Class that contains all details of the JS error that happened.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.JSError.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Creates a class that holds all information about a JS error.
+            </summary>
+            <param name="name">The name of the error.</param>
+            <param name="message">The message explaining the details of the error.</param>
+            <param name="stack">The stack trace that leads to which line an error happened on.</param>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.JSError.Name">
+            <summary>
+            The name of the error.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.JSError.Message">
+            <summary>
+            The message explaining the details of the error.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.JSError.Stack">
+            <summary>
+            The stack trace that leads to which line an error happened on.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.JSError.ExtensionData">
+            <summary>
+            The extra properties that were requested by setting <see cref="P:KristofferStrube.Blazor.WebIDL.ErrorHandlingJSInterop.ExtraErrorProperties"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.JSError.InnerException">
+            <summary>
+            The exception that held this information.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.MissingErrorHandlingJSInteropSetupException">
+            <summary>
+            An exception that is thrown if the needed instances were not setup for there to be made synchronous Error Handling JS Interop using the <c>Blazor.WebIDL</c> library
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.MissingErrorHandlingJSInteropSetupException.#ctor">
+            <summary>
+            creates a new instance of the exception
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException">
+            <summary>
+            The operation was aborted.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#aborterror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.AbortErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.ConstraintErrorException">
+            <summary>
+            A mutation operation in a transaction failed because a constraint was not satisfied.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#constrainterror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.ConstraintErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.DataCloneErrorException">
+            <summary>
+            The object can not be cloned.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#datacloneerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.DataCloneErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.DataErrorException">
+            <summary>
+            Provided data is inadequate.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#dataerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.DataErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException">
+            <summary>
+            An exception that encapsulates a name for an exception.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-DOMException">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException.Name">
+            <summary>
+            Error name which should be one of the ones listed in this <see href="https://webidl.spec.whatwg.org/#dfn-error-names-table">error names table</see>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.DOMException.#ctor(System.String,System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="name">Error name which should be one of the ones listed in this <see href="https://webidl.spec.whatwg.org/#dfn-error-names-table">error names table</see>.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.EncodingErrorException">
+            <summary>
+            The encoding operation (either encoded or decoding) failed.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#encodingerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.EncodingErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.HierarchyRequestErrorException">
+            <summary>
+            The operation would yield an incorrect node tree.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#hierarchyrequesterror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.HierarchyRequestErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.IndexSizeErrorException">
+            <summary>
+            There is no fitting summary as this error has been deprecated in favor of <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException"/>. It is still used in some APIs though.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#indexsizeerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.IndexSizeErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.InUseAttributeErrorException">
+            <summary>
+            The attribute is in use by another element.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#inuseattributeerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.InUseAttributeErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidAccessErrorException">
+            <summary>
+            There is no fitting summary as this error has been deprecated in favor of <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException"/>, <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.NotSupportedErrorException"/>, or <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.NotAllowedErrorException"/>. It is still used in some APIs though.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#invalidaccesserror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidAccessErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidCharacterErrorException">
+            <summary>
+            The string contains invalid characters.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#invalidcharactererror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidCharacterErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidModificationErrorException">
+            <summary>
+            The object can not be modified in this way.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#invalidmodificationerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidModificationErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidNodeTypeErrorException">
+            <summary>
+            The supplied node is incorrect or has an incorrect ancestor for this operation.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#invalidnodetypeerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidNodeTypeErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidStateErrorException">
+            <summary>
+            The object is in an invalid state.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#invalidstateerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.InvalidStateErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NamespaceErrorException">
+            <summary>
+            The operation is not allowed by Namespaces in XML.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#namespaceerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NamespaceErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NetworkErrorException">
+            <summary>
+            A network error occurred.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#networkerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NetworkErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NoModificationAllowedErrorException">
+            <summary>
+            The object can not be modified.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#nomodificationallowederror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NoModificationAllowedErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NotAllowedErrorException">
+            <summary>
+            The request is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#notallowederror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NotAllowedErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NotFoundErrorException">
+            <summary>
+            The object can not be found here.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#notfounderror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NotFoundErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NotReadableErrorException">
+            <summary>
+            The I/O read operation failed.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#notreadableerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NotReadableErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NotSupportedErrorException">
+            <summary>
+            The operation is not supported.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#notsupportederror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NotSupportedErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.OperationErrorException">
+            <summary>
+            The operation failed for an operation-specific reason.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#operationerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.OperationErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.OptOutErrorException">
+            <summary>
+            The user opted out of the process.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#optouterror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.OptOutErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.QuotaExceededErrorException">
+            <summary>
+            The quota has been exceeded.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#quotaexceedederror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.QuotaExceededErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReadOnlyErrorException">
+            <summary>
+            The mutating operation was attempted in a "readonly" transaction.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#readonlyerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.ReadOnlyErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.SecurityErrorException">
+            <summary>
+            The operation is insecure.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#securityerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.SecurityErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.SyntaxErrorDOMException">
+            <summary>
+            The string did not match the expected pattern.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#syntaxerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.SyntaxErrorDOMException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.TimeoutErrorException">
+            <summary>
+            The operation timed out.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#timeouterror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.TimeoutErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.TransactionInactiveErrorException">
+            <summary>
+            A request was placed against a transaction which is currently not active, or which is finished.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#transactioninactiveerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.TransactionInactiveErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeMismatchErrorException">
+            <summary>
+            There is no fitting summary as this error has been deprecated in favor of <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException"/>. It is still used in some APIs though.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#typemismatcherror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.TypeMismatchErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.UnknownErrorException">
+            <summary>
+            The operation failed for an unknown transient reason (e.g. out of memory).
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#unknownerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.UnknownErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.URLMismatchErrorException">
+            <summary>
+            There is no fitting summary as this error has been deprecated. It is still used in some APIs though.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#urlmismatcherror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.URLMismatchErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.VersionErrorException">
+            <summary>
+            An attempt was made to open a database using a lower version than the existing version.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#versionerror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.VersionErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.WrongDocumentErrorException">
+            <summary>
+            The object is in the wrong document.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#wrongdocumenterror">See the WebIDL definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.WrongDocumentErrorException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException">
+            <summary>
+            This exception is not currently used within this specification. This object remains for compatibility with previous editions of this specification.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-evalerror">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.EvalErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.NativeErrorException">
+            <summary>
+            When an ECMAScript implementation detects a runtime error, it throws a new instance of one of the NativeError objects. All deriving Errors have the same structure as this error, differing only in the name used as the constructor name instead of NativeError, in the "name" property of the prototype object, and in the implementation-defined "message" property of the prototype object.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-nativeerror-object-structure">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.NativeErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException">
+            <summary>
+            Indicates a value that is not in the set or range of allowable values.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.RangeErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException">
+            <summary>
+            Indicate that an invalid reference has been detected.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-referenceerror">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.ReferenceErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.SyntaxErrorException">
+            <summary>
+            Indicates that a parsing error has occurred.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.SyntaxErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException">
+            <summary>
+            TypeError is used to indicate an unsuccessful operation when none of the other <see cref="T:KristofferStrube.Blazor.WebIDL.Exceptions.NativeErrorException"/> objects are an appropriate indication of the failure cause.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.TypeErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException">
+            <summary>
+            Indicates that one of the global URI handling functions was used in a way that is incompatible with its definition.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-urierror">See the ECMAScript definition here</see></remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.URIErrorException.#ctor(System.String,System.String,System.Exception)">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException">
+            <summary>
+            A common exception class for all exceptions from the <c>Blazor.WebIDL</c> library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException.StackTrace">
+            <summary>
+            Returns the stack trace as a string. If no stack trace is available, null is returned. The stack is prepended with the JS stack trace if there is any.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Exceptions.WebIDLException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Constructs a wrapper Exception for the given error.
+            </summary>
+            <param name="message">User agent-defined value that provides human readable details of the error.</param>
+            <param name="jSStackTrace">The stack trace from JavaScript if there is any.</param>
+            <param name="innerException">Inner exception which is the cause of this exception.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IServiceCollectionExtensions">
+            <summary>
+            Contains extension methods for adding services to a <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IServiceCollectionExtensions.AddErrorHandlingJSRuntime(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds an <see cref="T:KristofferStrube.Blazor.WebIDL.IErrorHandlingJSRuntime"/> to the service collection.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IServiceProviderExtensions">
+            <summary>
+            Extension methods for the Service Provider.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IServiceProviderExtensions.SetupErrorHandlingJSInterop(System.IServiceProvider)">
+            <summary>
+            Sets up the needed instances for there to be made Error Handling JS Interop calls in WebAssembly.
+            </summary>
+            <param name="serviceProvider">A built service provider.</param>
+            <returns>The same <paramref name="serviceProvider"/>.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IJSCreatable`1">
+            <summary>
+            A common interface for all classes that wrap a JS object which also exposes a method to create an instance of it.
+            </summary>
+            <typeparam name="T">The type of wrapper that the wrapper can create.</typeparam>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for an equivalent JS instance of a <typeparamref name="T"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <summary>
+            Constructs a wrapper instance for an equivalent JS instance of a <typeparamref name="T"/> with the option for configuring how the wrapper is constructed.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+            <param name="options">The options for constructing this wrapper</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2">
+            <summary>
+            A common interface for all classes that wrap a JS object which is accessible with in-process interop which also exposes a method to create an instance of it.
+            </summary>
+            <typeparam name="TInProcess"></typeparam>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.JSReference">
+            <summary>
+            An <see cref="T:Microsoft.JSInterop.IJSInProcessObjectReference"/> to the object that is being wrapped.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs an in-process wrapper instance for an equivalent JS instance of a <typeparamref name="TInProcess"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <summary>
+            Constructs an in-process wrapper instance for an equivalent JS instance of a <typeparamref name="TInProcess"/> with the option for configuring how the wrapper is constructed.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+            <param name="options">The options for constructing this wrapper</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IJSWrapper">
+            <summary>
+            A common interface for all classes that wrap some JS object.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSReference">
+            <summary>
+            An <see cref="T:Microsoft.JSInterop.IJSObjectReference"/> to the object that is being wrapped.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSRuntime">
+            <summary>
+            The JSRuntime that is used to invoke indirect functions on the <see cref="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSReference"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.DisposesJSReference">
+            <summary>
+            Whether the wrapper disposes of the <see cref="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.JSReference"/> when the wrapper is disposed of.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSWrapper.DisposeAsync">
+            <summary>
+            Disposes the wrapper.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSWrapper.DisposeJSReference(KristofferStrube.Blazor.WebIDL.IJSWrapper)">
+            <summary>
+            Disposes the underlying JSReference if <see cref="P:KristofferStrube.Blazor.WebIDL.IJSWrapper.DisposesJSReference"/> is set to <see langword="true"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IJSWrapperConverter`1">
+            <summary>
+            A JSON converter that can correctly serialize a class that implements the <see cref="T:KristofferStrube.Blazor.WebIDL.IJSWrapper"/> interface.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSWrapperConverter`1.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Deserialization is not supported.
+            </summary>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSWrapperConverter`1.Write(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Serializes the class that implements the <see cref="T:KristofferStrube.Blazor.WebIDL.IJSWrapper"/> interface.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.IJSWrapperConverterAttribute">
+            <summary>
+            An attribute for making any <see cref="T:KristofferStrube.Blazor.WebIDL.IJSWrapper"/> JSON serializable.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.IJSWrapperConverterAttribute.CreateConverter(System.Type)">
+            <summary>
+            Creates the <see cref="T:KristofferStrube.Blazor.WebIDL.IJSWrapperConverter`1"/> for serializing a specific <see cref="T:KristofferStrube.Blazor.WebIDL.IJSWrapper"/>.
+            </summary>
+            <param name="typeToConvert">The type to create a <see cref="T:KristofferStrube.Blazor.WebIDL.IJSWrapperConverter`1"/> for.</param>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.Iterator`1.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Iterator`1.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Iterator`1.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Iterator`1.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Iterator`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Iterator`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Iterator`1.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.StructIterator`1.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.StructIterator`1.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.StructIterator`1.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.StructIterator`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.StructIterator`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.StructIterator`1.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ITransferable">
+            <summary>
+            Transferable objects support being transferred across agents.
+            Transferring is effectively recreating the object while sharing a reference to the underlying data and then detaching the object being transferred.
+            </summary>
+            <remarks><see href="https://html.spec.whatwg.org/multipage/structured-data.html#transferable-objects">See the API definition here</see>.</remarks>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.Pair.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Pair.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Pair.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Pair.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.Pair.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.Pair`2.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Pair`2.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Pair`2.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Pair`2.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair`2.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.Pair`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Pair`2.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Float32Array">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of IEEE 754 floating point numbers of 4 bytes.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Float32Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32Array.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.Float32Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of IEEE 754 floating point numbers of 4 bytes.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Float32Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.InProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.CreateAsync``2(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.TypedArray{``0,``1})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.IArrayBuffer,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.GetBufferAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.At(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Float32ArrayInProcess.Length">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3">
+            <summary>
+            A in-process version of some <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/>.
+            </summary>
+            <typeparam name="TElement">The element type that the <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/> contains</typeparam>
+            <typeparam name="TTypedArrayTypeInProcess">The concrete in-process type of <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/></typeparam>
+            <typeparam name="TTypedArrayType">The concrete non-in-process type of <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/> which <typeparamref name="TTypedArrayTypeInProcess"/> extends</typeparam>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.InProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Creates a new empty <typeparamref name="TTypedArrayTypeInProcess"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayTypeInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.CreateAsync``2(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.TypedArray{``0,``1})">
+            <summary>
+            Creates a new <typeparamref name="TTypedArrayTypeInProcess"/> from an existing <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="typedArray">The <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/> to create a new <typeparamref name="TTypedArrayTypeInProcess"/> from.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayTypeInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.IArrayBuffer,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Creates a new <typeparamref name="TTypedArrayTypeInProcess"/> from an existing <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBuffer"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="buffer">The <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> or <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/> to create a new <typeparamref name="TTypedArrayTypeInProcess"/> from.</param>
+            <param name="byteOffset">The offset in the existing <paramref name="buffer"/> to have the new <typeparamref name="TTypedArrayTypeInProcess"/> start from.</param>
+            <param name="length">The length of the new <typeparamref name="TTypedArrayTypeInProcess"/>.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayTypeInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <summary>
+            Creates a new <typeparamref name="TTypedArrayTypeInProcess"/> with the given length.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="length">Its minimum value is <c>0</c> and its maximum value is <c>2^53-1</c>.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayTypeInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.GetBufferAsync">
+            <summary>
+            Gets the internal array buffer of the <see cref="T:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3"/>. This can either be an <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBufferInProcess"/> or a <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBufferInProcess"/>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.At(System.Int64)">
+            <summary>
+            Gets the element at the index of the array.
+            </summary>
+            <param name="index">The index in the array. If negative then it is interpreted at the length from the end of the array.</param>
+            <returns>The element at the specific index.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ITypedArrayInProcess`3.Length">
+            <summary>
+            Gets the number of elements in this array.
+            </summary>
+            <returns>The length as a long.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.TypedArray`2">
+            <summary>
+            A TypedArray presents an array-like view of an underlying binary data buffer.
+            A TypedArray element type is the underlying binary scalar data type that all elements of a TypedArray instance have.
+            </summary>
+            <remarks><see href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects">See the API definition here</see>.</remarks>
+            <typeparam name="TElement">The element type.</typeparam>
+            <typeparam name="TTypedArrayType">The type of the deriving type.</typeparam>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.TypedArray`2.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.TypedArray`2.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.TypedArray`2.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.TypedArray`2.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Creates a new empty <typeparamref name="TTypedArrayType"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayType"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.CreateAsync``2(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.TypedArray{``0,``1})">
+            <summary>
+            Creates a new <typeparamref name="TTypedArrayType"/> from an existing <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="typedArray">The <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/> to create a new <typeparamref name="TTypedArrayType"/> from.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayType"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.IArrayBuffer,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Creates a new <typeparamref name="TTypedArrayType"/> from an existing <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBuffer"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="buffer">The <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> or <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/> to create a new <typeparamref name="TTypedArrayType"/> from.</param>
+            <param name="byteOffset">The offset in the existing <paramref name="buffer"/> to have the new <typeparamref name="TTypedArrayType"/> start from.</param>
+            <param name="length">The length of the new <typeparamref name="TTypedArrayType"/>.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayType"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <summary>
+            Creates a new <typeparamref name="TTypedArrayType"/> with the given length.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="length">Its minimum value is <c>0</c> and its maximum value is <c>2^53-1</c>.</param>
+            <returns>A wrapper instance for a <typeparamref name="TTypedArrayType"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/>.</param>
+            <param name="options">The options for constructing this wrapper</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.GetBufferAsync">
+            <summary>
+            Gets the internal array buffer of the <see cref="T:KristofferStrube.Blazor.WebIDL.TypedArray`2"/>. This can either be an <see cref="T:KristofferStrube.Blazor.WebIDL.ArrayBuffer"/> or a <see cref="T:KristofferStrube.Blazor.WebIDL.SharedArrayBuffer"/>.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.AtAsync(System.Int64)">
+            <summary>
+            Gets the element at the index of the array.
+            </summary>
+            <param name="index">The index in the array. If negative then it is interpreted at the length from the end of the array.</param>
+            <returns>The element at the specific index.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.AtAsync``1(System.Int64)">
+            <summary>
+            Gets the element at the index of the array as a wrapper instance.
+            </summary>
+            <param name="index">The index in the array. If negative then it is interpreted at the length from the end of the array.</param>
+            <returns>The element at the specific index.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.GetLengthAsync">
+            <summary>
+            Gets the number of elements in this array.
+            </summary>
+            <returns>The length as a long.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.TypedArray`2.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Uint16Array">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of ushorts.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Uint16Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16Array.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.Uint16Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of ushorts.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Uint16Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.InProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.CreateAsync``2(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.TypedArray{``0,``1})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.IArrayBuffer,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.GetBufferAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.At(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint16ArrayInProcess.Length">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Uint32Array">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of uints.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Uint16Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32Array.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.Uint32Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of uints.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Uint16Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.InProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.CreateAsync``2(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.TypedArray{``0,``1})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.IArrayBuffer,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.GetBufferAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.At(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint32ArrayInProcess.Length">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Uint8Array">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of bytes.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Uint8Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8Array.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.Uint8Array.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8Array.GetAsArrayAsync">
+            <summary>
+            Gets the array as a .NET byte array.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess">
+            <summary>
+            A view on to a buffer type instance that exposes it as an array of bytes.
+            </summary>
+            <remarks><see href="https://webidl.spec.whatwg.org/#idl-Uint8Array">See the API definition here</see>.</remarks>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.InProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.CreateAsync``2(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.TypedArray{``0,``1})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.WebIDL.IArrayBuffer,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSInProcessCreatable`2.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.GetBufferAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.At(System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.Length">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.AsArray">
+            <summary>
+            Gets the array as a .NET byte array.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.Uint8ArrayInProcess.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ValueReference">
+            <summary>
+            A wrapper that points to some attribute of a object. It can be used to check the type of that attribute and fetch it as either a <see cref="T:System.Object" /> or a concrete type.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.ValueReference.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReference.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReference.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReference.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReference.Attribute">
+            <summary>
+            The attribute of the <see cref="P:KristofferStrube.Blazor.WebIDL.ValueReference.JSReference"/> that this <see cref="T:KristofferStrube.Blazor.WebIDL.ValueReference"/> points to.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReference.TypeMapper">
+            <summary>
+            A mapper from JS type names to .NET <see cref="T:System.Type"/>s.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReference.ValueMapper">
+            <summary>
+            A mapper from JS type names to creator methods for that type.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)"/>
+            <param name="jSRuntime"></param>
+            <param name="jSReference"></param>
+            <param name="attribute">The attribute name that should be accessed.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)"/>
+            <param name="jSRuntime"></param>
+            <param name="jSReference"></param>
+            <param name="attribute">The attribute name that should be accessed.</param>
+            <param name="options">The options for constructing this wrapper</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.ValueReference.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object)" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.ValueReference.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object,KristofferStrube.Blazor.WebIDL.CreationOptions)" />
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.GetValueAsync">
+            <summary>
+            Gets the value as an object but could be any registered type underneath. If the JS value is <c>undefined</c> then the returned value is <see langword="null"/>.
+            </summary>
+            <returns>Returns a object that is the best matching type if we have the JS type registed in <see cref="P:KristofferStrube.Blazor.WebIDL.ValueReference.ValueMapper"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.GetValueAsync``1">
+            <summary>
+            Gets the value as the defined type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>Returns the property as a <typeparamref name="T"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.GetCreatableAsync``1">
+            <summary>
+            Gets the value as a reference and constructs the <typeparamref name="T"/> type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>Returns the property as a <typeparamref name="T"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.GetTypeAsync">
+            <summary>
+            Gets the type of the value. If the JS value is undefined then the type is <see langword="null"/>.
+            </summary>
+            <returns>The <see cref="T:System.Type"/> of the value.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.GetTypeNameAsync">
+            <summary>
+            Gets the name of JS type.
+            </summary>
+            <returns>The string representation of the name of the JS type.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReference.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess">
+            <inheritdoc/>
+        </member>
+        <member name="F:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.inProcessHelper">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.WebIDL library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.ValueMapperInProcess">
+            <summary>
+            A mapper from JS type names to creator methods for that type.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.GetValue">
+            <summary>
+            Gets the value as an object but could be any registered type underneath. If the JS value is <c>undefined</c> then the returned value is <see langword="null"/>.
+            </summary>
+            <returns>Returns a object that is the best matching type if we have the JS type registed in <see cref="P:KristofferStrube.Blazor.WebIDL.ValueReference.ValueMapper"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.GetValue``1">
+            <summary>
+            Gets the value as the defined type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>Returns the property as a <typeparamref name="T"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.GetCreatableAsync``2">
+            <summary>
+            Gets the value as a reference and constructs the <typeparamref name="T"/> type.
+            </summary>
+            <typeparam name="TInProcess"></typeparam>
+            <typeparam name="T"></typeparam>
+            <returns>Returns the property as a <typeparamref name="T"/></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.WebIDL.ValueReferenceInProcess.TypeName">
+            <summary>
+            The name of JS type.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileAPI\\wwwroot\\KristofferStrube.Blazor.FileAPI.js",
+      "PackagePath": "staticwebassets\\KristofferStrube.Blazor.FileAPI.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KristofferStrube.Blazor.FileAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KristofferStrube.Blazor.FileAPI.props",
+      "PackagePath": "build\\KristofferStrube.Blazor.FileAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KristofferStrube.Blazor.FileAPI.props",
+      "PackagePath": "buildMultiTargeting\\KristofferStrube.Blazor.FileAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KristofferStrube.Blazor.FileAPI.props",
+      "PackagePath": "buildTransitive\\KristofferStrube.Blazor.FileAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+   "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "filesystemservice",
+      "applicationUrl": "http://localhost:5270",
+      "environmentVariables": {
+         "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+   },
+   "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "filesystemservice",
+      "applicationUrl": "https://localhost:7069;http://localhost:5270",
+      "environmentVariables": {
+         "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+   }
+  }
+}

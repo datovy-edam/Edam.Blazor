@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KristofferStrube.Blazor.FileAPI</name>
+    </assembly>
+    <members>
+        <member name="M:KristofferStrube.Blazor.FileAPI.BaseJSWrapper.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for an equivalent JS instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.Blob">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#blob-section">Blob browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Collections.Generic.IList{KristofferStrube.Blazor.FileAPI.BlobPart},KristofferStrube.Blazor.FileAPI.BlobPropertyBag)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="blobParts">The parts that will make the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</param>
+            <param name="options">Options for constructing the new Blob which includes MIME type and line endings settings.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.GetSizeAsync">
+            <summary>
+            The size of this blob.
+            </summary>
+            <returns>A <see langword="ulong"/> representing the size of the blob in bytes.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.GetTypeAsync">
+            <summary>
+            The media type of this blob. This is either a parseable MIME type or an empty string.
+            </summary>
+            <returns>The MIME type of this blob.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.SliceAsync(System.Nullable{System.Int64},System.Nullable{System.Int64},System.String)">
+            <summary>
+            Gets some range of the content of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="start">The start index of the range. If <see langword="null"/> or negative then <c>0</c> is assumed.</param>
+            <param name="end">The start index of the range. If <see langword="null"/> or larger than the size of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> then the size of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> is assumed.</param>
+            <param name="contentType">An optional MIME type of the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>. If <see langword="null"/> then the MIME type of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> is used.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.StreamAsync">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> from the <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <returns>A new wrapper for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.TextAsync">
+            <summary>
+            The content of the blob as a string.
+            </summary>
+            <returns>The content of the file in UTF-8 format.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.Blob.ArrayBufferAsync">
+            <summary>
+            The content of the blob as a byte array.
+            </summary>
+            <returns>All bytes in the blob.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.BlobInProcess">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#blob-section">Blob browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.BlobInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.BlobInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Collections.Generic.IList{KristofferStrube.Blazor.FileAPI.BlobPart},KristofferStrube.Blazor.FileAPI.BlobPropertyBag)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="blobParts">The parts that will make the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</param>
+            <param name="options">Options for constructing the new Blob which includes MIME type and line endings settings.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.BlobInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.BlobInProcess.StreamAsync">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamInProcess"/> from the <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <returns>A new wrapper for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamInProcess"/></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.BlobInProcess.Size">
+            <summary>
+            The size of this blob.
+            </summary>
+            <returns>A <see langword="ulong"/> representing the size of the blob in bytes.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.BlobInProcess.Type">
+            <summary>
+            The media type of this blob. This is either a parseable MIME type or an empty string.
+            </summary>
+            <returns>The MIME type of this blob.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.BlobInProcess.Slice(System.Nullable{System.Int64},System.Nullable{System.Int64},System.String)">
+            <summary>
+            Gets some range of the content of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="start">The start index of the range. If <see langword="null"/> or negative then <c>0</c> is assumed.</param>
+            <param name="end">The start index of the range. If <see langword="null"/> or larger than the size of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> then the size of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> is assumed.</param>
+            <param name="contentType">An optional MIME type of the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>. If <see langword="null"/> then the MIME type of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> is used.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.FileAPI.BlobInProcess"/>.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.EndingType">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#enumdef-endingtype">EndingType browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.File">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#file-section">File browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.File.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.File.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Collections.Generic.IList{KristofferStrube.Blazor.FileAPI.BlobPart},System.String,KristofferStrube.Blazor.FileAPI.FilePropertyBag)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="fileBits">The bits that will make the new <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+            <param name="fileName">The name of the new file.</param>
+            <param name="options">Options for constructing the new Blob which includes MIME type, line endings, and last modified date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.File.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.File.GetNameAsync">
+            <summary>
+            The name of the file including file extension.
+            </summary>
+            <returns>The file name.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.File.GetLastModifiedAsync">
+            <summary>
+            The time that the file was last modified.
+            </summary>
+            <returns>A new <see cref="T:System.DateTime"/> object representing when the file was last modified.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.FileInProcess">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#file-section">File browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,System.Collections.Generic.IList{KristofferStrube.Blazor.FileAPI.BlobPart},System.String,KristofferStrube.Blazor.FileAPI.FilePropertyBag)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="fileBits">The bits that will make the new <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+            <param name="fileName">The name of the new file.</param>
+            <param name="options">Options for constructing the new Blob which includes MIME type, line endings, and last modified date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileInProcess.StreamAsync">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamInProcess"/> from the <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <returns>A new wrapper for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamInProcess"/></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileInProcess.Size">
+            <summary>
+            The size of this blob.
+            </summary>
+            <returns>A <see langword="ulong"/> representing the size of the blob in bytes.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileInProcess.Type">
+            <summary>
+            The media type of this blob. This is either a parseable MIME type or an empty string.
+            </summary>
+            <returns>The MIME type of this blob.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileInProcess.Slice(System.Nullable{System.Int64},System.Nullable{System.Int64},System.String)">
+            <summary>
+            Gets some range of the content of a <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+            <param name="start">The start index of the range. If <see langword="null"/> or negative then <c>0</c> is assumed.</param>
+            <param name="end">The start index of the range. If <see langword="null"/> or larger than the size of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> then the size of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> is assumed.</param>
+            <param name="contentType">An optional MIME type of the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>. If <see langword="null"/> then the MIME type of the original <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> is used.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.FileAPI.BlobInProcess"/>.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileInProcess.Name">
+            <summary>
+            The name of the file including file extension.
+            </summary>
+            <returns>The file name.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileInProcess.LastModified">
+            <summary>
+            The time that the file was last modified.
+            </summary>
+            <returns>A new <see cref="T:System.DateTime"/> object representing when the file was last modified.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.FileReader">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#dfn-filereader">FileReader browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.ReadAsArrayBufferAsync(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as an <see langword="byte"/>[] which can be read from <see cref="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultAsByteArrayAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.ReadAsBinaryStringAsync(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a binarily encoded <see langword="string"/> which can be read from <see cref="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultAsStringAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.ReadAsTextAsync(KristofferStrube.Blazor.FileAPI.Blob,System.String)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a <see langword="string"/> which can be read from <see cref="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultAsStringAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <param name="encoding">An optional encoding for the text. The default is UTF-8.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.ReadAsDataURLAsync(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a base64 encoded Data URL which can be read from <see cref="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultAsStringAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.AbortAsync(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Terminates the load if the <see cref="M:KristofferStrube.Blazor.FileAPI.FileReader.GetReadyStateAsync"/> is <see cref="F:KristofferStrube.Blazor.FileAPI.FileReader.LOADING"/> else it sets the result to <see langword="null"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> read that should be terminated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.GetReadyStateAsync">
+            <summary>
+            Gets the state of the <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.
+            </summary>
+            <returns>As a standard either <see cref="F:KristofferStrube.Blazor.FileAPI.FileReader.EMPTY"/>, <see cref="F:KristofferStrube.Blazor.FileAPI.FileReader.LOADING"/> or <see cref="F:KristofferStrube.Blazor.FileAPI.FileReader.DONE"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultTypeAsync">
+            <summary>
+            Checks whether the result is a either a <see langword="string"/> or a byte array.
+            </summary>
+            <returns>Either the type of <see langword="string"/> or type of <see cref="T:System.Byte"/>[].</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultAsStringAsync">
+            <summary>
+            Gets the result of the read a <see langword="string"/>.
+            </summary>
+            <returns>A <see langword="string"/> representing the read. If there was no result from the read or if the read has not ended yet then it will be <see langword="null"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.GetResultAsByteArrayAsync">
+            <summary>
+            Gets the result of the read a <see langword="byte"/>[].
+            </summary>
+            <returns>A <see langword="byte"/>[] representing the read. If there was no result from the read or if the read has not ended yet then it will be <see langword="null"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReader.GetErrorAsync">
+            <summary>
+            Gets the error object reference which will be <see langword="null"/> if no error occured.
+            </summary>
+            <returns>A nullable IJSObjectReference because it was out of scope to wrap the Exception API.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoadStart">
+            <summary>
+            Invoked when a load starts.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReader.OnProgress">
+            <summary>
+            Invoked when the progress of a load changes which includes when it ends.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoad">
+            <summary>
+            Invoked when a load ends successfully.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReader.OnAbort">
+            <summary>
+            Invoked when a load is aborted.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReader.OnError">
+            <summary>
+            Invoked when a load fails due to an error.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReader.OnLoadEnd">
+            <summary>
+            Invoked when a load finishes successfully or not.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.FileReaderInProcess">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#dfn-filereader">FileReader browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.File"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ReadAsArrayBuffer(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as an <see langword="byte"/>[] which can be read from <see cref="!:GetResultAsByteArrayAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ReadAsBinaryString(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a binarily encoded <see langword="string"/> which can be read from <see cref="!:GetResultAsStringAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ReadAsText(KristofferStrube.Blazor.FileAPI.Blob,System.String)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a <see langword="string"/> which can be read from <see cref="!:GetResultAsStringAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <param name="encoding">An optional encoding for the text. The default is UTF-8.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ReadAsDataURL(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Starts a new read for some <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> as a base64 encoded Data URL which can be read from <see cref="!:GetResultAsStringAsync"/> once the load has ended which can be checked by setting the action <see cref="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoadEnd"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that should be read asynchronously.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.Abort(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Terminates the load if the <see cref="!:GetReadyStateAsync"/> is <see cref="!:LOADING"/> else it sets the result to <see langword="null"/>.
+            </summary>
+            <param name="blob">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> read that should be terminated.</param>
+            <returns></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ReadyState">
+            <summary>
+            Gets the state of the <see cref="T:KristofferStrube.Blazor.FileAPI.FileReader"/>.
+            </summary>
+            <returns>As a standard either <see cref="!:EMPTY"/>, <see cref="!:LOADING"/> or <see cref="!:DONE"/></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ResultType">
+            <summary>
+            Checks whether the result is a either a <see langword="string"/> or a byte array.
+            </summary>
+            <returns>Either the type of <see langword="string"/> or type of <see cref="T:System.Byte"/>[].</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ResultAsString">
+            <summary>
+            Gets the result of the read a <see langword="string"/>.
+            </summary>
+            <returns>A <see langword="string"/> representing the read. If there was no result from the read or if the read has not ended yet then it will be <see langword="null"/>.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.ResultAsByteArray">
+            <summary>
+            Gets the result of the read a <see langword="byte"/>[].
+            </summary>
+            <returns>A <see langword="byte"/>[] representing the read. If there was no result from the read or if the read has not ended yet then it will be <see langword="null"/>.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.Error">
+            <summary>
+            Gets the error object reference which will be <see langword="null"/> if no error occured.
+            </summary>
+            <returns>A nullable IJSObjectReference because it was out of scope to wrap the Exception API.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoadStart">
+            <summary>
+            Invoked when a load starts.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnProgress">
+            <summary>
+            Invoked when the progress of a load changes which includes when it ends.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoad">
+            <summary>
+            Invoked when a load ends successfully.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnAbort">
+            <summary>
+            Invoked when a load is aborted.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnError">
+            <summary>
+            Invoked when a load fails due to an error.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FileReaderInProcess.OnLoadEnd">
+            <summary>
+            Invoked when a load finishes successfully or not.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.BlobPart">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#typedefdef-blobpart">BlobPart browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.BlobPropertyBag">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#dfn-BlobPropertyBag">BlobPropertyBag browser specs</see>
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.BlobPropertyBag.Type">
+            <summary>
+            The MIME type of the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> in lowercase.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.BlobPropertyBag.Endings">
+            <summary>
+            The line endings for the new <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.FilePropertyBag">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#dfn-FilePropertyBag">FilePropertyBag browser specs</see>
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.FilePropertyBag.LastModified">
+            <summary>
+            When the new <see cref="T:KristofferStrube.Blazor.FileAPI.File"/> was last modified.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.ProgressEvent">
+            <summary>
+            <see href="https://xhr.spec.whatwg.org/#progressevent">ProgressEvent browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.ProgressEvent.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.ProgressEvent"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.ProgressEvent"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.ProgressEvent.GetLengthComputableAsync">
+            <summary>
+            Indicates whether the total can be calculated.
+            </summary>
+            <returns>A <see langword="bool"/> indicating if the total length was computable.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.ProgressEvent.GetLoadedAsync">
+            <summary>
+            The loaded number of bytes of the total.
+            </summary>
+            <returns>The length of the currently loaded part.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.ProgressEvent.GetTotalAsync">
+            <summary>
+            The total number of bytes if it was computable else this is <c>0</c>.
+            </summary>
+            <returns>The total length of the read.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.ProgressEventInProcess">
+            <summary>
+            <see href="https://xhr.spec.whatwg.org/#progressevent">ProgressEvent browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.ProgressEventInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.FileAPI.ProgressEvent"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.FileAPI.ProgressEvent"/>.</param>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.ProgressEventInProcess.LengthComputable">
+            <summary>
+            Indicates whether the total can be calculated.
+            </summary>
+            <returns>A <see langword="bool"/> indicating if the total length was computable.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.ProgressEventInProcess.Loaded">
+            <summary>
+            The loaded number of bytes of the total.
+            </summary>
+            <returns>The length of the currently loaded part.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.FileAPI.ProgressEventInProcess.Total">
+            <summary>
+            The total number of bytes if it was computable else this is <c>0</c>.
+            </summary>
+            <returns>The total length of the read.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.URLService">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#url">URL browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.URLService.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.FileAPI.URLService"/> that can be used to access the partial part of the URL interface defined in the FileAPI definition.
+            </summary>
+            <param name="jSRuntime"></param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.URLService.CreateObjectURLAsync(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Creates a new Blob URL and adds that to the current contexts Blob URL store.
+            </summary>
+            <param name="obj">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that you wish to create a URL for.</param>
+            <returns>a Blob Url which can be used as a source in different media like image, sound, iframe sources.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.URLService.RevokeObjectURLAsync(System.String)">
+            <summary>
+            Removes a specific URL from the current contexts Blob URL store.
+            </summary>
+            <param name="url">The URL that is to be removed.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileAPI.URLServiceInProcess">
+            <summary>
+            <see href="https://www.w3.org/TR/FileAPI/#url">URL browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.URLServiceInProcess.#ctor(Microsoft.JSInterop.IJSInProcessRuntime)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.FileAPI.URLServiceInProcess"/> that can be used to access the partial part of the URL interface defined in the FileAPI definition.
+            </summary>
+            <param name="jSRuntime"></param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.URLServiceInProcess.CreateObjectURL(KristofferStrube.Blazor.FileAPI.Blob)">
+            <summary>
+            Creates a new Blob URL and adds that to the current contexts Blob URL store.
+            </summary>
+            <param name="obj">The <see cref="T:KristofferStrube.Blazor.FileAPI.Blob"/> that you wish to create a URL for.</param>
+            <returns>a Blob Url which can be used as a source in different media like image, sound, iframe sources.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileAPI.URLServiceInProcess.RevokeObjectURL(System.String)">
+            <summary>
+            Removes a specific URL from the current contexts Blob URL store.
+            </summary>
+            <param name="url">The URL that is to be removed.</param>
+        </member>
+    </members>
+</doc>

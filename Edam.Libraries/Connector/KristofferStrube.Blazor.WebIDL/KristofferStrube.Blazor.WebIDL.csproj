@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Title>Blazor WebIDL Standard wrapper</Title>
+    <Description>WebIDL Standard wrapper implementation for Blazor.</Description>
+    <PackageId>KristofferStrube.Blazor.WebIDL</PackageId>
+    <PackageTags>Blazor;Wasm;Wrapper;WebIDL;ValueReference;Iterable;AsynchronouslyIterable;Maplike;Setlike;TypedArray;JSException;Exception;Error;Handling;DomException;EvalError;RangeError;ReferenceError;TypeError;URIError;JSInterop</PackageTags>
+    <RepositoryUrl>https://github.com/KristofferStrube/Blazor.WebIDL</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageVersion>0.5.1</PackageVersion>
+    <Authors>Kristoffer Strube</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\docs\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.7" />
+  </ItemGroup>
+</Project>

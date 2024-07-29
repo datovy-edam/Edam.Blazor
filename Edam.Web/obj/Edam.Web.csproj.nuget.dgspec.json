@@ -4,6 +4,456 @@
     "D:\\Projects\\Edam.Blazor\\Edam.Web\\Edam.Web.csproj": {}
   },
   "projects": {
+    "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\KristofferStrube.Blazor.DOM.csproj": {
+      "version": "0.2.2",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\KristofferStrube.Blazor.DOM.csproj",
+        "projectName": "KristofferStrube.Blazor.DOM",
+        "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\KristofferStrube.Blazor.DOM.csproj",
+        "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\KristofferStrube.Blazor.WebIDL.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\KristofferStrube.Blazor.WebIDL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj": {
+      "version": "3.2.2",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj",
+        "projectName": "KristofferStrube.Blazor.FileSystemAccess",
+        "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj",
+        "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj": {
+      "version": "0.3.1",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj",
+        "projectName": "KristofferStrube.Blazor.FileSystem",
+        "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj",
+        "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.Streams\\KristofferStrube.Blazor.Streams.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.Streams\\KristofferStrube.Blazor.Streams.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "KristofferStrube.Blazor.FileAPI": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.Streams\\KristofferStrube.Blazor.Streams.csproj": {
+      "version": "0.4.2",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.Streams\\KristofferStrube.Blazor.Streams.csproj",
+        "projectName": "KristofferStrube.Blazor.Streams",
+        "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.Streams\\KristofferStrube.Blazor.Streams.csproj",
+        "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.Streams\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\KristofferStrube.Blazor.DOM.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\KristofferStrube.Blazor.DOM.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\KristofferStrube.Blazor.WebIDL.csproj": {
+      "version": "0.5.1",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\KristofferStrube.Blazor.WebIDL.csproj",
+        "projectName": "KristofferStrube.Blazor.WebIDL",
+        "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\KristofferStrube.Blazor.WebIDL.csproj",
+        "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj",
+        "projectName": "Edam.Data.FileSystemModel",
+        "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj",
+        "packagesPath": "C:\\Users\\esobr\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\esobr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -218,6 +668,15 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj"
+              },
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj"
+              },
+              "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj": {
+                "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj"
+              },
               "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj": {
                 "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj"
               },
@@ -257,22 +716,6 @@
             "BlazorMonaco": {
               "target": "Package",
               "version": "[3.2.0, )"
-            },
-            "CodeBeam.MudBlazor.Extensions": {
-              "target": "Package",
-              "version": "[6.9.2, )"
-            },
-            "KristofferStrube.Blazor.FileAPI": {
-              "target": "Package",
-              "version": "[0.3.0, )"
-            },
-            "KristofferStrube.Blazor.FileSystem": {
-              "target": "Package",
-              "version": "[0.3.1, )"
-            },
-            "KristofferStrube.Blazor.FileSystemAccess": {
-              "target": "Package",
-              "version": "[3.2.2, )"
             },
             "Microsoft.JSInterop.WebAssembly": {
               "target": "Package",

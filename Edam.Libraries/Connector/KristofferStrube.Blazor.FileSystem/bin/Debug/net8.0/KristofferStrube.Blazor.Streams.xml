@@ -1,0 +1,1847 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KristofferStrube.Blazor.Streams</name>
+    </assembly>
+    <members>
+        <member name="T:KristofferStrube.Blazor.Streams.ArrayBufferView">
+            <summary>
+            <see href="https://webidl.spec.whatwg.org/#ArrayBufferView">WebIDL browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.BaseJSStreamableWrapper">
+            <summary>
+            A base class for all streamable wrappers in Blazor.Streams.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.BaseJSStreamableWrapper.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.BaseJSStreamableWrapper.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.BaseJSStreamableWrapper.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.BaseJSStreamableWrapper.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.BaseJSStreamableWrapper.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.BaseJSWrapper">
+            <summary>
+            A base class for all wrappers in Blazor.Streams.
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.BaseJSWrapper.helperTask">
+            <summary>
+            A lazily loaded task that evaluates to a helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.BaseJSWrapper.JSRuntime">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.BaseJSWrapper.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.BaseJSWrapper.DisposesJSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.BaseJSWrapper.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <summary>
+            Constructs a wrapper instance for an equivalent JS instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+            <param name="options">The options for constructing this wrapper.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.BaseJSWrapper.DisposeAsync">
+            <inheritdoc/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamReaderMode">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#enumdef-readablestreamreadermode">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamType">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#enumdef-readablestreamtype">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#blqs-class">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.QueuingStrategyInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="init">An <see cref="T:KristofferStrube.Blazor.Streams.QueuingStrategyInit"/> that provides the required <see cref="P:KristofferStrube.Blazor.Streams.QueuingStrategyInit.HighWaterMark"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#blqs-class">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.QueuingStrategyInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="init">An <see cref="T:KristofferStrube.Blazor.Streams.QueuingStrategyInit"/> that provides the required <see cref="P:KristofferStrube.Blazor.Streams.QueuingStrategyInit.HighWaterMark"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.CountQueuingStrategy">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#cqs-class">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategy.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.CountQueuingStrategy"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.CountQueuingStrategy"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.CountQueuingStrategy"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.QueuingStrategyInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="init">An <see cref="T:KristofferStrube.Blazor.Streams.QueuingStrategyInit"/> that provides the required <see cref="P:KristofferStrube.Blazor.Streams.QueuingStrategyInit.HighWaterMark"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.CountQueuingStrategy"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategy.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.CountQueuingStrategy.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#cqs-class">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.QueuingStrategyInit)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="init">An <see cref="T:KristofferStrube.Blazor.Streams.QueuingStrategyInit"/> that provides the required <see cref="P:KristofferStrube.Blazor.Streams.QueuingStrategyInit.HighWaterMark"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.CountQueuingStrategy"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.CountQueuingStrategyInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.QueuingStrategy">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-queuingstrategy">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.QueuingStrategyInit">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-queuingstrategyinit">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderReadOptions">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-readablestreambyobreaderreadoptions">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderReadOptions.Min">
+            <summary>
+            The minimal number of elements needed to be read for the <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.ReadAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView,KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderReadOptions)"/> to finish.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-readablestreamgetreaderoptions">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.StreamPipeOptions">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-streampipeoptions">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.StreamPipeOptions.PreventClose">
+            <summary>
+            Decides whether the destination will be closed when the <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> is closed.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.StreamPipeOptions.PreventAbort">
+            <summary>
+            Decides whether the destination will be aborted when the <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> is aborted.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.StreamPipeOptions.PreventCancel">
+            <summary>
+            Decides whether the <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> will be aborted when the destination is aborted.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.StreamPipeOptions.Signal">
+            <summary>
+            The signal option can be set to an <see cref="T:KristofferStrube.Blazor.DOM.AbortSignal"/> to allow aborting an ongoing pipe operation via the corresponding <see cref="T:KristofferStrube.Blazor.DOM.AbortController"/>.
+            In this case, this source readable stream will be canceled, and destination aborted, unless the respective options <see cref="P:KristofferStrube.Blazor.Streams.StreamPipeOptions.PreventCancel"/> or <see cref="P:KristofferStrube.Blazor.Streams.StreamPipeOptions.PreventAbort"/> are set.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.Transformer">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-transformer">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.Transformer.Create(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> wrapper instance.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.Transformer.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> wrapper instance.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.Transformer.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.Transformer.Start">
+            <summary>
+            A function that is called immediately during creation of the <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.Transformer.Transform">
+            <summary>
+            A function called when a new chunk originally written to the writable side is ready to be transformed.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.Transformer.Flush">
+            <summary>
+            A function called after all chunks written to the writable side have been transformed by successfully passing through <see cref="P:KristofferStrube.Blazor.Streams.Transformer.Transform"/>, and the writable side is about to be closed.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.Transformer.Cancel">
+            <summary>
+            A function called when the readable side is cancelled, or when the writable side is aborted.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.TransformerInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-underlyingsource">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.TransformerInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformerInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformerInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformerInProcess.Start">
+            <summary>
+            A function that is called immediately during creation of the <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformerInProcess.Transform">
+            <summary>
+            A function called when a new chunk originally written to the writable side is ready to be transformed.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformerInProcess.Flush">
+            <summary>
+            A function called after all chunks written to the writable side have been transformed by successfully passing through <see cref="P:KristofferStrube.Blazor.Streams.TransformerInProcess.Transform"/>, and the writable side is about to be closed.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformerInProcess.Cancel">
+            <summary>
+            A function called when the readable side is cancelled, or when the writable side is aborted.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.UnderlyingSink">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-underlyingsink">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSink.Create(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> wrapper instance.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSink.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> wrapper instance.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSink.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.UnderlyingSinkInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-underlyingsource">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.UnderlyingSinkInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSinkInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSinkInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSinkInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.UnderlyingSource">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-underlyingsource">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSource.Create(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> wrapper instance.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSource.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> wrapper instance.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSource.#ctor(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.UnderlyingSourceInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-underlyingsource">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.UnderlyingSourceInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSourceInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <returns>A new wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.UnderlyingSourceInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <summary>
+            Constructs a wrapper instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="inProcessHelper">An in process helper instance.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableByteStreamController">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#rbs-controller-class">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamController.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableByteStreamController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamController.GetBYOBRequestAsync">
+            <summary>
+            Returns the current BYOB pull request, or null if there isn’t one.
+            </summary>
+            <returns>A <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamController.EnqueueAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView)">
+            <summary>
+            Enqueues the chunk in the controlled stream.
+            </summary>
+            <param name="chunk">An <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> supplied as the BYOB.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#rbs-controller-class">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.BYOBRequest">
+            <summary>
+            Returns the current BYOB pull request, or null if there isn’t one.
+            </summary>
+            <returns>A <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess"/></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.DesiredSize">
+            <summary>
+            The desired size to fill the controlled stream's internal queue.
+            </summary>
+            <returns>Negative values means that the queue is overfull.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.Close">
+            <summary>
+            Closes the controlled stream once all previously enqueued chunks have been read.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.Enqueue(KristofferStrube.Blazor.WebIDL.IArrayBufferView)">
+            <summary>
+            Enqueues the chunk in the controlled stream.
+            </summary>
+            <param name="chunk">An <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> supplied as the BYOB.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableByteStreamControllerInProcess.Error">
+            <summary>
+            Errors the controlled stream so that all future interactions will fail.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStream">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#rs-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSource,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSource">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> that which implements the Start, Pull, and/or Cancel methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSource,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSource">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> that which implements the Start, Pull, and/or Cancel methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSource,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSource">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> that which implements the Start, Pull, and/or Cancel methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.GetLockedAsync">
+            <summary>
+            Indicates whether the stream already has a reader.
+            </summary>
+            <returns><see langword="true"/> if the internal reader is a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/> or a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> and returns <see langword="false"/> else meaning that the internal reader is <c>undefined</c></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.CancelAsync">
+            <summary>
+            Closes the internal reader if it is not locked.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.GetReaderAsync(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamReader"/> that it assigns to the internal <c>reader</c> slot and returns that.
+            </summary>
+            <param name="options">Options that can be used to indicate that a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> should be created.</param>
+            <returns>If <paramref name="options"/> is <see langword="not"/> <see langword="null"/> and the <see cref="P:KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions.Mode"/> is <see cref="F:KristofferStrube.Blazor.Streams.ReadableStreamReaderMode.Byob"/> it returns a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> else it returns a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.GetBYOBReaderAsync">
+            <summary>
+            Helper method for creating a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> without having to instantiate the options parameter yourself and where you don't need to cast the result from <see cref="M:KristofferStrube.Blazor.Streams.ReadableStream.GetReaderAsync(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/>.
+            </summary>
+            <returns>The <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> using the <see cref="M:KristofferStrube.Blazor.Streams.ReadableStream.GetReaderAsync(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/> method.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.GetDefaultReaderAsync">
+            <summary>
+            Helper method for creating a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/> without needing to cast the result from <see cref="M:KristofferStrube.Blazor.Streams.ReadableStream.GetReaderAsync(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/>.
+            </summary>
+            <returns>The <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/> using the <see cref="M:KristofferStrube.Blazor.Streams.ReadableStream.GetReaderAsync(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/> method.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.PipeThroughAsync(KristofferStrube.Blazor.Streams.IGenericTransformStream,KristofferStrube.Blazor.Streams.StreamPipeOptions)">
+            <summary>
+            Provides a convenient, chainable way of piping this <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> through a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/> or simply a <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.
+            </summary>
+            <param name="transform">The transformer that is piped through.</param>
+            <param name="options">An optional <see cref="T:KristofferStrube.Blazor.Streams.StreamPipeOptions"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.PipeToAsync(KristofferStrube.Blazor.Streams.WritableStream,KristofferStrube.Blazor.Streams.StreamPipeOptions)">
+            <summary>
+            Pipes this readable stream to a given writable stream destination.
+            </summary>
+            <param name="destination">The <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/> that is piped to.</param>
+            <param name="options">An optional <see cref="T:KristofferStrube.Blazor.Streams.StreamPipeOptions"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStream.TeeAsync">
+            <summary>
+            Tees this readable stream. Teeing a stream will lock it, preventing any other consumer from acquiring a reader.
+            </summary>
+            <returns>Two resulting branches as new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> instances.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStream.Length">
+            <summary>
+            We can't check the length of a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#rs-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSource,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSource">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> that which implements the Start, Pull, and/or Cancel methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSource,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSource">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> that which implements the Start, Pull, and/or Cancel methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSource,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSource">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSource"/> that which implements the Start, Pull, and/or Cancel methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.Locked">
+            <summary>
+            Indicates whether the stream already has a reader.
+            </summary>
+            <returns><see langword="true"/> if the internal reader is a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/> or a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> and returns <see langword="false"/> else meaning that the internal reader is <c>undefined</c></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetReader(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamReader"/> that it assigns to the internal <c>reader</c> slot and returns that.
+            </summary>
+            <param name="options">Options that can be used to indicate that a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/> should be created.</param>
+            <returns>If <paramref name="options"/> is <see langword="not"/> <see langword="null"/> and the <see cref="P:KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions.Mode"/> is <see cref="F:KristofferStrube.Blazor.Streams.ReadableStreamReaderMode.Byob"/> it returns a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess"/> else it returns a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetBYOBReader">
+            <summary>
+            Helper method for creating a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess"/> without having to instantiate the options parameter yourself and where you don't need to cast the result from <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetReader(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/>.
+            </summary>
+            <returns>The <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess"/> using the <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetReader(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/> method.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetDefaultReader">
+            <summary>
+            Helper method for creating a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess"/> without needing to cast the result from <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetReader(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/>.
+            </summary>
+            <returns>The <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess"/> using the <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.GetReader(KristofferStrube.Blazor.Streams.ReadableStreamGetReaderOptions)"/> method.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.PipeThrough(KristofferStrube.Blazor.Streams.IGenericTransformStreamInProcess,KristofferStrube.Blazor.Streams.StreamPipeOptions)">
+            <summary>
+            Provides a convenient, chainable way of piping this <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> through a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/> or simply a <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.
+            </summary>
+            <param name="transform">The transformer that is piped through.</param>
+            <param name="options">An optional <see cref="T:KristofferStrube.Blazor.Streams.StreamPipeOptions"/>.</param>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamInProcess.Tee">
+            <summary>
+            Tees this readable stream. Teeing a stream will lock it, preventing any other consumer from acquiring a reader.
+            </summary>
+            <returns>Two resulting branches as new <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> instances.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreambyobreader">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.ReadableStream)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/> from some <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="stream">A <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> wrapper instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.ReadAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView)">
+            <summary>
+            Reads a chunk of a stream.
+            </summary>
+            <param name="view">The <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> that acts as a buffer.</param>
+            <returns>The next chunk of the underlying <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReader.ReadAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView,KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderReadOptions)">
+            <summary>
+            Reads a chunk of a stream.
+            </summary>
+            <param name="view">The <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> that acts as a buffer.</param>
+            <param name="options">The options for how the chunk is to be read.</param>
+            <returns>The next chunk of the underlying <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreambyobreader">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.ReadableStream)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.ReadAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView)">
+            <summary>
+            Reads a chunk of a stream.
+            </summary>
+            <param name="view">The <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> that is used as a buffer</param>
+            <returns>The next chunk of the underlying <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.ReadAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView,KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderReadOptions)">
+            <summary>
+            Reads a chunk of a stream.
+            </summary>
+            <param name="view">The <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> that is used as a buffer</param>
+            <param name="options">The options for how the chunk is to be read.</param>
+            <returns>The next chunk of the underlying <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.ReleaseLock">
+            <summary>
+            Sets the internal <c>reader</c> slot to <c>undefined</c>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamBYOBReaderInProcess.Closed">
+            <summary>
+            Gets a JS reference to the closed attribute.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreambyobrequest">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.GetViewAsync">
+            <summary>
+            The view that should be written to. Is null if it has been responded already.
+            </summary>
+            <returns>A new concrete implementation of an <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.RespondAsync(System.UInt64)">
+            <summary>
+            Should be called after having written to the the view.
+            </summary>
+            <param name="bytesWritten">The number of bytes that had been written to the view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.RespondWithNewViewAsync(KristofferStrube.Blazor.WebIDL.IArrayBufferView)">
+            <summary>
+            Indicates that there was supplied a new <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> as the source for the write.
+            </summary>
+            <param name="view">A new view. The constraints for what this can be are extensive, so look into the documentation if you need this.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreambyobrequest">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.View">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequest.GetViewAsync"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.GetViewAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.Respond(System.UInt64)">
+            <summary>
+            Should be called after having written to the the view.
+            </summary>
+            <param name="bytesWritten">The number of bytes that had been written to the view.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamBYOBRequestInProcess.RespondWithNewView(KristofferStrube.Blazor.WebIDL.IArrayBufferView)">
+            <summary>
+            Indicates that there was supplied a new <see cref="T:KristofferStrube.Blazor.WebIDL.IArrayBufferView"/> as the source for the write.
+            </summary>
+            <param name="view">A new view. The constraints for what this can be are extensive, so look into the documentation if you need this.</param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamController">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#typedefdef-readablestreamcontroller">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamController.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamController.GetDesiredSizeAsync">
+            <summary>
+            The desired size to fill the controlled stream's internal queue.
+            </summary>
+            <returns>Negative values means that the queue is overfull.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamController.CloseAsync">
+            <summary>
+            Closes the controlled stream once all previously enqueued chunks have been read.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamController.ErrorAsync">
+            <summary>
+            Errors the controlled stream so that all future interactions will fail.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultController">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreamdefaultcontroller">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultController.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultController.EnqueueAsync(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Enqueues the chunk in the controlled stream.
+            </summary>
+            <param name="chunk">A JS reference to a chunk.</param>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreamdefaultcontroller">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.DesiredSize">
+            <summary>
+            The desired size to fill the controlled stream's internal queue.
+            </summary>
+            <returns>Negative values means that the queue is overfull.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.Close">
+            <summary>
+            Closes the controlled stream once all previously enqueued chunks have been read.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.Enqueue(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Enqueues the chunk in the controlled stream.
+            </summary>
+            <param name="chunk">A JS reference to a chunk.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultControllerInProcess.Error">
+            <summary>
+            Errors the controlled stream so that all future interactions will fail.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreamdefaultreader">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.ReadableStream)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/> from some <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="stream">A <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> wrapper instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.ReadAsync">
+            <summary>
+            Reads a chunk of a stream.
+            </summary>
+            <returns>The next chunk of the underlying <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.IterateByteArraysAsync(System.Threading.CancellationToken)">
+            <summary>
+            Iterates the reader resulting in each chunk as byte arrays,
+            </summary>
+            <param name="cancellationToken">A cancellation token for breaking the enumeration.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader.IterateStringsAsync(System.Text.Encoding,System.Threading.CancellationToken)">
+            <summary>
+            Iterates the reader resulting in each chunk as a string with some optional encoding. The defualt encodig is <see cref="P:System.Text.Encoding.ASCII"/>,
+            </summary>
+            <param name="cancellationToken">A cancellation token for breaking the enumeration.</param>
+            <param name="encoding">A cancellation token for breaking the enumeration.</param>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#readablestreamdefaultreader">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.ReadableStream)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess"/> from some <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="stream">A <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> wrapper instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReader"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.ReadAsync">
+            <summary>
+            Reads a chunk of a stream.
+            </summary>
+            <returns>The next chunk of the underlying <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.ReleaseLock">
+            <summary>
+            Sets the internal <c>reader</c> slot to <c>undefined</c>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamDefaultReaderInProcess.Closed">
+            <summary>
+            Gets a JS reference to the closed attribute.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamReader">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#typedefdef-readablestreamreader">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReader.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.WebIDL.IJSCreatable`1.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReader.ReleaseLockAsync">
+            <summary>
+            Sets the internal <c>reader</c> slot to <c>undefined</c>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReader.GetClosedAsync">
+            <summary>
+            Gets a JS reference to the closed attribute.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReader.CancelAsync">
+            <summary>
+            Cancels the underlying stream which is equivalent to <see cref="M:KristofferStrube.Blazor.Streams.ReadableStream.CancelAsync"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamReadResult">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-readablestreamreadresult">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.GetValueAsync">
+            <summary>
+            A JS Reference to a chunk of data.
+            </summary>
+            <returns>A <see cref="T:Microsoft.JSInterop.IJSObjectReference"/> to a value which can be of <c>any</c> type.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.GetDoneAsync">
+            <summary>
+            Indicates whether this is the last read which means that <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.GetValueAsync"/> will be <c>undefined</c>.
+            </summary>
+            <returns><see langword="true"/> if the chunk is the last which contains no <see cref="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResult.GetValueAsync"/> else <see langword="false"/></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-readablestreamreadresult">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.Value">
+            <summary>
+            A JS Reference to a chunk of data.
+            </summary>
+            <returns>An <see cref="T:Microsoft.JSInterop.IJSInProcessObjectReference"/> to a value which can be of <c>any</c> type.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.Done">
+            <summary>
+            Indicates whether this is the last read which means that <see cref="P:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.Value"/> will be <c>undefined</c>.
+            </summary>
+            <returns><see langword="true"/> if the chunk is the last which contains no <see cref="P:KristofferStrube.Blazor.Streams.ReadableStreamReadResultInProcess.Value"/> else <see langword="false"/></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableWritablePair">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-readablewritablepair">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePair.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePair.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePair.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePair.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.ReadableStream,KristofferStrube.Blazor.Streams.WritableStream)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="readable">The <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> part of the pair.</param>
+            <param name="writable">The <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/> part of the pair.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePair.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableWritablePair.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#dictdef-readablewritablepair">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.ReadableStream,KristofferStrube.Blazor.Streams.WritableStream)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="readable">The <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/> part of the pair.</param>
+            <param name="writable">The <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/> part of the pair.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.ReadableWritablePair"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.ReadableWritablePairInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.IGenericTransformStream">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#generictransformstream">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.IGenericTransformStreamInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#generictransformstream">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.TransformStream">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#transformstream">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.QueuingStrategy,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.QueuingStrategy,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.QueuingStrategy,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.CountQueuingStrategy,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.CountQueuingStrategy,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.CountQueuingStrategy,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStream.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.TransformStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.TransformStreamInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#transformstream">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.TransformStreamInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformStreamInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.QueuingStrategy,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.QueuingStrategy,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.QueuingStrategy,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.CountQueuingStrategy,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.CountQueuingStrategy,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.Transformer,KristofferStrube.Blazor.Streams.CountQueuingStrategy,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="transformer">An <see cref="T:KristofferStrube.Blazor.Streams.Transformer"/> that which implements the Start, Transform, and/or Cancel methods.</param>
+            <param name="writableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <param name="readableStrategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.TransformStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.TransformStreamDefaultController">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#ws-default-controller-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.TransformStreamDefaultController"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.TransformStreamDefaultController"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.TransformStreamDefaultController"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.GetDesiredSizeAsync">
+            <summary>
+            The desired size to fill the controlled stream's internal queue.
+            </summary>
+            <returns>Negative values means that the queue is overfull.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.EnqueueAsync(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Enqueues a chunk on the readable side of the transfor stream.
+            </summary>
+            <param name="chunk">A JS reference to a chunk.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.ErrorAsync">
+            <summary>
+            Errors both the readable and writable side of the transform stream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultController.TerminateAsync">
+            <summary>
+            Closes the readable side and errors the writable side.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#ws-default-controller-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.DesiredSize">
+            <summary>
+            The desired size to fill the controlled stream's internal queue.
+            </summary>
+            <returns>Negative values means that the queue is overfull.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.Enqueue(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Enqueues a chunk on the readable side of the transfor stream.
+            </summary>
+            <param name="chunk">A JS reference to a chunk.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.Error">
+            <summary>
+            Errors both the readable and writable side of the transform stream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.TransformStreamDefaultControllerInProcess.Terminate">
+            <summary>
+            Closes the readable side and errors the writable side.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.WritableStream">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#ws-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSink,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSink">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> that which implements the Start, Write, Close, and/or Abort methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSink,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSink">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> that which implements the Start, Write, Close, and/or Abort methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSink,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSink">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> that which implements the Start, Write, Close, and/or Abort methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.WritableStream.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.GetLockedAsync">
+            <summary>
+            Indicates whether the stream already has a writer.
+            </summary>
+            <returns><see langword="false"/> if the internal <c>writer</c> slot is <c>undefined</c> else return <see langword="false"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.AbortAsync">
+            <summary>
+            Aborts the stream if it is not locked.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.CloseAsync">
+            <summary>
+            Closes the stream if it is not locked.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStream.GetWriterAsync">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/> that it assigns to the internal <c>writer</c> slot and returns that.
+            </summary>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/>.</returns>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.WritableStream.Length">
+            <summary>
+            We can't check the length of a <see cref="T:KristofferStrube.Blazor.Streams.ReadableStream"/>.
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.WritableStreamInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#ws-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.WritableStreamInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.WritableStreamInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSink,KristofferStrube.Blazor.Streams.QueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSink">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> that which implements the Start, Write, Close, and/or Abort methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSink,KristofferStrube.Blazor.Streams.ByteLengthQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSink">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> that which implements the Start, Write, Close, and/or Abort methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.UnderlyingSink,KristofferStrube.Blazor.Streams.CountQueuingStrategy)">
+            <summary>
+            Constructs a wrapper instance using the standard constructor
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="underlyingSink">An <see cref="T:KristofferStrube.Blazor.Streams.UnderlyingSink"/> that which implements the Start, Write, Close, and/or Abort methods.</param>
+            <param name="strategy">A queing strategy that specifies the chunk size and a high water mark.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.WritableStreamInProcess.Locked">
+            <summary>
+            Indicates whether the stream already has a writer.
+            </summary>
+            <returns><see langword="false"/> if the internal <c>writer</c> slot is <c>undefined</c> else return <see langword="false"/></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamInProcess.GetWriter">
+            <summary>
+            Creates a new <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/> that it assigns to the internal <c>writer</c> slot and returns that.
+            </summary>
+            <returns>A new <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/>.</returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultController">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#ws-default-controller-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultController.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultController"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultController"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultController"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultController.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultController.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultController.ErrorAsync">
+            <summary>
+            Errors the controlled stream so that all future interactions will fail.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#ws-default-controller-class-definition">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultControllerInProcess.Error">
+            <summary>
+            Errors the controlled stream so that all future interactions will fail.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#writablestreamdefaultwriter">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.Create(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Constructs a wrapper instance for a given JS Instance of a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/>.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/>.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.WritableStream)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/> from some <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="stream">A <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/> wrapper instance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.GetClosedAsync">
+            <summary>
+            A JS reference to the promise related to closing the writer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.GetDesiredSizeAsync">
+            <summary>
+            The size desired to fill the writers internal queue. It can be negative, if the queue is over-full.
+            </summary>
+            <returns>It will be null if the stream cannot be successfully written to (due to either being errored, or having an abort queued up). It will return zero if the stream is closed.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.GetReadyAsync">
+            <summary>
+            A JS reference to a promise that will be fulfilled when the <see cref="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.GetDesiredSizeAsync"/> changes to a positive number meaning the internal queue of the writer is ready to receive data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.AbortAsync">
+            <summary>
+            Aborts the stream. The same as <see cref="M:KristofferStrube.Blazor.Streams.WritableStream.AbortAsync"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.CloseAsync">
+            <summary>
+            Closes the stream. The same as <see cref="M:KristofferStrube.Blazor.Streams.WritableStream.CloseAsync"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.ReleaseLockAsync">
+            <summary>
+            Releases the writer's lock.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter.WriteAsync(Microsoft.JSInterop.IJSObjectReference)">
+            <summary>
+            Writes the chunk to the writable stream once any previous writes have finished successfully.
+            </summary>
+            <param name="chunk"></param>
+            <returns></returns>
+        </member>
+        <member name="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess">
+            <summary>
+            <see href="https://streams.spec.whatwg.org/#writablestreamdefaultwriter">Streams browser specs</see>
+            </summary>
+        </member>
+        <member name="F:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.inProcessHelper">
+            <summary>
+            An in-process helper module instance from the Blazor.Streams library.
+            </summary>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.JSReference">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,KristofferStrube.Blazor.Streams.WritableStream)">
+            <summary>
+            Constructs a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/> from some <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/>.
+            </summary>
+            <param name="jSRuntime">An IJSRuntime instance.</param>
+            <param name="stream">A <see cref="T:KristofferStrube.Blazor.Streams.WritableStream"/> wrapper instance.</param>
+            <returns>A wrapper instance for a <see cref="T:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriter"/>.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)">
+            <inheritdoc cref="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.CreateAsync(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSInProcessObjectReference,KristofferStrube.Blazor.WebIDL.CreationOptions)"/>
+        </member>
+        <member name="P:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.DesiredSize">
+            <summary>
+            The size desired to fill the writers internal queue. It can be negative, if the queue is over-full.
+            </summary>
+            <returns>It will be null if the stream cannot be successfully written to (due to either being errored, or having an abort queued up). It will return zero if the stream is closed.</returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.Streams.WritableStreamDefaultWriterInProcess.ReleaseLock">
+            <summary>
+            Releases the writer's lock.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

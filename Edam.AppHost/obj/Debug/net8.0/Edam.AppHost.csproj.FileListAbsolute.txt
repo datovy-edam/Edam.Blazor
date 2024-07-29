@@ -77,7 +77,6 @@ D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Js
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\Polly.Core.dll
-D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\Prometheus.NetStandard.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\YamlDotNet.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
@@ -110,3 +109,4 @@ D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\refint\Edam.AppHost.dll
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.pdb
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Edam.AppHost.genruntimeconfig.cache
 D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\ref\Edam.AppHost.dll
+D:\Projects\Edam.Blazor\Edam.AppHost\obj\Debug\net8.0\Aspire\references\Edam_Data_FileSystemService.ProjectMetadata.g.cs

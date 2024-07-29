@@ -6,6 +6,7 @@
 </div>
 
 @code {
+   private bool initialized = false;
    private string editorTabName = "MyDocument.json";
 
    private StandaloneCodeEditor _editor = null!;
@@ -47,8 +48,10 @@
    {
       if (firstRender)
       {
-         
+         initialized = true;
       }
+
+      await base.OnAfterRenderAsync(firstRender);
    }
 
    public async Task SetValue(string value = null)

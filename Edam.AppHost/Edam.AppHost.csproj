@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Edam.ApiService\Edam.ApiService.csproj" />
+    <ProjectReference Include="..\Edam.Libraries\Data\Edam.Data.FileSystemService\Edam.Data.FileSystemService.csproj" />
     <ProjectReference Include="..\Edam.Web\Edam.Web.csproj" />
     <!-- The IsAspireProjectResource attribute tells .NET Aspire to treat this 
        reference as a standard project reference and not attempt to generate
@@ -19,9 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
-    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.1" />
-    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.2" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.2" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.0.2" />
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
 
 </Project>

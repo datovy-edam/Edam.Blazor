@@ -168,48 +168,6 @@
           "buildMultiTargeting/BlazorMonaco.props": {}
         }
       },
-      "BuildBundlerMinifier/3.2.449": {
-        "type": "package",
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "CodeBeam.MudBlazor.Extensions/6.9.2": {
-        "type": "package",
-        "dependencies": {
-          "BuildBundlerMinifier": "3.2.449",
-          "CsvHelper": "30.0.1",
-          "Microsoft.AspNetCore.Components": "8.0.3",
-          "Microsoft.AspNetCore.Components.Web": "8.0.3",
-          "MudBlazor": "6.12.0",
-          "ZXing.Net": "0.16.9"
-        },
-        "compile": {
-          "lib/net8.0/CodeBeam.MudBlazor.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/CodeBeam.MudBlazor.Extensions.dll": {}
-        },
-        "build": {
-          "buildTransitive/CodeBeam.MudBlazor.Extensions.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/CodeBeam.MudBlazor.Extensions.props": {}
-        }
-      },
-      "CsvHelper/30.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/CsvHelper.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/CsvHelper.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Google.Protobuf/3.22.5": {
         "type": "package",
         "compile": {
@@ -295,97 +253,10 @@
           "buildMultiTargeting/KristofferStrube.Blazor.FileAPI.props": {}
         }
       },
-      "KristofferStrube.Blazor.FileSystem/0.3.1": {
+      "Microsoft.AspNetCore.Authorization/8.0.7": {
         "type": "package",
         "dependencies": {
-          "KristofferStrube.Blazor.FileAPI": "0.3.0",
-          "Microsoft.AspNetCore.Components.Web": "7.0.3"
-        },
-        "compile": {
-          "lib/net7.0/KristofferStrube.Blazor.FileSystem.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.FileSystem.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/KristofferStrube.Blazor.FileSystem.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/KristofferStrube.Blazor.FileSystem.props": {}
-        }
-      },
-      "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
-        "type": "package",
-        "dependencies": {
-          "KristofferStrube.Blazor.FileSystem": "0.3.1",
-          "Microsoft.AspNetCore.Components.Web": "7.0.3"
-        },
-        "compile": {
-          "lib/net7.0/KristofferStrube.Blazor.FileSystemAccess.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.FileSystemAccess.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/KristofferStrube.Blazor.FileSystemAccess.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/KristofferStrube.Blazor.FileSystemAccess.props": {}
-        }
-      },
-      "KristofferStrube.Blazor.Streams/0.3.0": {
-        "type": "package",
-        "dependencies": {
-          "KristofferStrube.Blazor.WebIDL": "0.1.0-alpha.1",
-          "Microsoft.AspNetCore.Components.Web": "7.0.3"
-        },
-        "compile": {
-          "lib/net7.0/KristofferStrube.Blazor.Streams.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.Streams.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/KristofferStrube.Blazor.Streams.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/KristofferStrube.Blazor.Streams.props": {}
-        }
-      },
-      "KristofferStrube.Blazor.WebIDL/0.1.0-alpha.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "7.0.3"
-        },
-        "compile": {
-          "lib/net7.0/KristofferStrube.Blazor.WebIDL.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/KristofferStrube.Blazor.WebIDL.dll": {}
-        },
-        "build": {
-          "buildTransitive/KristofferStrube.Blazor.WebIDL.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/KristofferStrube.Blazor.WebIDL.props": {}
-        }
-      },
-      "Microsoft.AspNetCore.Authorization/8.0.6": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "8.0.6",
+          "Microsoft.AspNetCore.Metadata": "8.0.7",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
           "Microsoft.Extensions.Options": "8.0.2"
         },
@@ -400,11 +271,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/8.0.6": {
+      "Microsoft.AspNetCore.Components/8.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "8.0.6",
-          "Microsoft.AspNetCore.Components.Analyzers": "8.0.6"
+          "Microsoft.AspNetCore.Authorization": "8.0.7",
+          "Microsoft.AspNetCore.Components.Analyzers": "8.0.7"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Components.dll": {
@@ -417,16 +288,16 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/8.0.6": {
+      "Microsoft.AspNetCore.Components.Analyzers/8.0.7": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/8.0.6": {
+      "Microsoft.AspNetCore.Components.Forms/8.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.6"
+          "Microsoft.AspNetCore.Components": "8.0.7"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
@@ -439,14 +310,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/8.0.6": {
+      "Microsoft.AspNetCore.Components.Web/8.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.6",
-          "Microsoft.AspNetCore.Components.Forms": "8.0.6",
+          "Microsoft.AspNetCore.Components": "8.0.7",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.7",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
-          "Microsoft.JSInterop": "8.0.6",
+          "Microsoft.JSInterop": "8.0.7",
           "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
@@ -460,7 +331,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Metadata/8.0.6": {
+      "Microsoft.AspNetCore.Metadata/8.0.7": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -616,6 +487,50 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore/8.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.7",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.7",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.AmbientMetadata.Application/8.3.0": {
         "type": "package",
         "dependencies": {
@@ -631,6 +546,48 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.AmbientMetadata.Application.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll": {
             "related": ".xml"
           }
         },
@@ -2274,19 +2231,6 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "ZXing.Net/0.16.9": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/zxing.dll": {
-            "related": ".XML"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/zxing.dll": {
-            "related": ".XML"
-          }
-        }
-      },
       "Edam.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2302,6 +2246,20 @@
         },
         "runtime": {
           "bin/placeholder/Edam.Common.dll": {}
+        }
+      },
+      "Edam.Data.FileSystemModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Edam.Common": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/Edam.Data.FileSystemModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Edam.Data.FileSystemModel.dll": {}
         }
       },
       "Edam.ServiceDefaults/1.0.0": {
@@ -2325,6 +2283,76 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "KristofferStrube.Blazor.DOM/0.2.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "KristofferStrube.Blazor.WebIDL": "0.5.1",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/KristofferStrube.Blazor.DOM.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KristofferStrube.Blazor.DOM.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.FileSystem/0.3.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "KristofferStrube.Blazor.FileAPI": "0.3.0",
+          "KristofferStrube.Blazor.Streams": "0.4.2",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/KristofferStrube.Blazor.FileSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KristofferStrube.Blazor.FileSystem.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "KristofferStrube.Blazor.FileSystem": "0.3.1",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/KristofferStrube.Blazor.FileSystemAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KristofferStrube.Blazor.FileSystemAccess.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.Streams/0.4.2": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "KristofferStrube.Blazor.DOM": "0.2.2",
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/KristofferStrube.Blazor.Streams.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KristofferStrube.Blazor.Streams.dll": {}
+        }
+      },
+      "KristofferStrube.Blazor.WebIDL/0.5.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.7"
+        },
+        "compile": {
+          "bin/placeholder/KristofferStrube.Blazor.WebIDL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KristofferStrube.Blazor.WebIDL.dll": {}
+        }
       }
     }
   },
@@ -2723,82 +2751,6 @@
         "staticwebassets/lib/monaco-editor/min/vs/loader.min.js"
       ]
     },
-    "BuildBundlerMinifier/3.2.449": {
-      "sha512": "uA9sYDy4VepL3xwzBTLcP2LyuVYMt0ZIT3gaSiXvGoX15Ob+rOP+hGydhevlSVd+rFo+Y+VQFEHDuWU8HBW+XA==",
-      "type": "package",
-      "path": "buildbundlerminifier/3.2.449",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/BuildBundlerMinifier.targets",
-        "buildbundlerminifier.3.2.449.nupkg.sha512",
-        "buildbundlerminifier.nuspec",
-        "tools/net46/BundlerMinifier.dll",
-        "tools/net46/NUglify.dll",
-        "tools/net46/Newtonsoft.Json.dll",
-        "tools/netcoreapp2.0/BundlerMinifier.dll",
-        "tools/netcoreapp2.0/NUglify.dll",
-        "tools/netcoreapp2.0/Newtonsoft.Json.dll",
-        "tools/netcoreapp3.0/BundlerMinifier.dll",
-        "tools/netcoreapp3.0/NUglify.dll",
-        "tools/netcoreapp3.0/Newtonsoft.Json.dll",
-        "tools/netcoreapp3.1/BundlerMinifier.dll",
-        "tools/netcoreapp3.1/NUglify.dll",
-        "tools/netcoreapp3.1/Newtonsoft.Json.dll",
-        "tools/netstandard1.3/BundlerMinifier.dll",
-        "tools/netstandard1.3/NUglify.dll",
-        "tools/netstandard1.3/Newtonsoft.Json.dll"
-      ]
-    },
-    "CodeBeam.MudBlazor.Extensions/6.9.2": {
-      "sha512": "uvAdli09L0F9m58a+dYVnwiWNusbw8xbBAahBmKDuDUsIi//7IdTCruCCNVKYhxKG0SKUlG9lebEyuossCSbLw==",
-      "type": "package",
-      "path": "codebeam.mudblazor.extensions/6.9.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Mud_Secondary.png",
-        "build/CodeBeam.MudBlazor.Extensions.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/CodeBeam.MudBlazor.Extensions.props",
-        "buildTransitive/CodeBeam.MudBlazor.Extensions.props",
-        "codebeam.mudblazor.extensions.6.9.2.nupkg.sha512",
-        "codebeam.mudblazor.extensions.nuspec",
-        "lib/net6.0/CodeBeam.MudBlazor.Extensions.dll",
-        "lib/net7.0/CodeBeam.MudBlazor.Extensions.dll",
-        "lib/net8.0/CodeBeam.MudBlazor.Extensions.dll",
-        "staticwebassets/MudExtensions.min.css",
-        "staticwebassets/MudExtensions.min.js",
-        "staticwebassets/Mud_Secondary.png",
-        "staticwebassets/eraser.cur",
-        "staticwebassets/pencil.cur"
-      ]
-    },
-    "CsvHelper/30.0.1": {
-      "sha512": "rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
-      "type": "package",
-      "path": "csvhelper/30.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "csvhelper.30.0.1.nupkg.sha512",
-        "csvhelper.nuspec",
-        "lib/net45/CsvHelper.dll",
-        "lib/net45/CsvHelper.xml",
-        "lib/net47/CsvHelper.dll",
-        "lib/net47/CsvHelper.xml",
-        "lib/net5.0/CsvHelper.dll",
-        "lib/net5.0/CsvHelper.xml",
-        "lib/net6.0/CsvHelper.dll",
-        "lib/net6.0/CsvHelper.xml",
-        "lib/netstandard2.0/CsvHelper.dll",
-        "lib/netstandard2.0/CsvHelper.xml",
-        "lib/netstandard2.1/CsvHelper.dll",
-        "lib/netstandard2.1/CsvHelper.xml"
-      ]
-    },
     "Google.Protobuf/3.22.5": {
       "sha512": "tTMtDZPbLxJew8pk7NBdqhLqC4OipfkZdwPuCEUNr2AoDo1siUGcxFqJK0wDewTL8ge5Cjrb16CToMPxBUHMGA==",
       "type": "package",
@@ -2922,89 +2874,10 @@
         "staticwebassets/KristofferStrube.Blazor.FileAPI.js"
       ]
     },
-    "KristofferStrube.Blazor.FileSystem/0.3.1": {
-      "sha512": "dEQkBDDEOsBc8BGqDnZJ2XoKlwdeOpctmLIMgxwERLIAmDKk9bjwFMR2xS5gUh6ccqyp3GoRKPRYrOTieDX4TA==",
+    "Microsoft.AspNetCore.Authorization/8.0.7": {
+      "sha512": "Oz8BvQ1iYwOTH5QcT5I+EGphgJbqCGuBRDk1BK7Hscx1xC8Bg6H0rtYcmiWdNn/cZ4Uu5FMr6z46sEZSSZ6ycw==",
       "type": "package",
-      "path": "kristofferstrube.blazor.filesystem/0.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "build/KristofferStrube.Blazor.FileSystem.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/KristofferStrube.Blazor.FileSystem.props",
-        "buildTransitive/KristofferStrube.Blazor.FileSystem.props",
-        "icon.png",
-        "kristofferstrube.blazor.filesystem.0.3.1.nupkg.sha512",
-        "kristofferstrube.blazor.filesystem.nuspec",
-        "lib/net7.0/KristofferStrube.Blazor.FileSystem.dll",
-        "lib/net7.0/KristofferStrube.Blazor.FileSystem.xml",
-        "staticwebassets/KristofferStrube.Blazor.FileSystem.js"
-      ]
-    },
-    "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
-      "sha512": "owZeGnzlPNBU2ITVuVFMqXbSxw70nJSe0fF27JOiE00WTSDgW+CoJ0Mi/62+acXzibamNtS1vrTFu9KJnUTUAQ==",
-      "type": "package",
-      "path": "kristofferstrube.blazor.filesystemaccess/3.2.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "build/KristofferStrube.Blazor.FileSystemAccess.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/KristofferStrube.Blazor.FileSystemAccess.props",
-        "buildTransitive/KristofferStrube.Blazor.FileSystemAccess.props",
-        "icon.png",
-        "kristofferstrube.blazor.filesystemaccess.3.2.2.nupkg.sha512",
-        "kristofferstrube.blazor.filesystemaccess.nuspec",
-        "lib/net7.0/KristofferStrube.Blazor.FileSystemAccess.dll",
-        "lib/net7.0/KristofferStrube.Blazor.FileSystemAccess.xml",
-        "staticwebassets/KristofferStrube.Blazor.FileSystemAccess.js"
-      ]
-    },
-    "KristofferStrube.Blazor.Streams/0.3.0": {
-      "sha512": "2qofmH/n0oFiZQ693/nTyAN6wF7NdX1PM12/qmV+2UQPijlxUqpYqmn1uensng3+U406hUfGmcdZEeNJalsR/A==",
-      "type": "package",
-      "path": "kristofferstrube.blazor.streams/0.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "build/KristofferStrube.Blazor.Streams.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/KristofferStrube.Blazor.Streams.props",
-        "buildTransitive/KristofferStrube.Blazor.Streams.props",
-        "icon.png",
-        "kristofferstrube.blazor.streams.0.3.0.nupkg.sha512",
-        "kristofferstrube.blazor.streams.nuspec",
-        "lib/net7.0/KristofferStrube.Blazor.Streams.dll",
-        "lib/net7.0/KristofferStrube.Blazor.Streams.xml",
-        "staticwebassets/KristofferStrube.Blazor.Streams.js"
-      ]
-    },
-    "KristofferStrube.Blazor.WebIDL/0.1.0-alpha.1": {
-      "sha512": "7Fm42iLu+I4Kb0zbRMok2XcR/+CDwkco0O8VdPUgBk+NwY9jCujgmChXrs7AjfoThxTlsEVr4k+pm0C7bP6TLA==",
-      "type": "package",
-      "path": "kristofferstrube.blazor.webidl/0.1.0-alpha.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "build/KristofferStrube.Blazor.WebIDL.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/KristofferStrube.Blazor.WebIDL.props",
-        "buildTransitive/KristofferStrube.Blazor.WebIDL.props",
-        "icon.png",
-        "kristofferstrube.blazor.webidl.0.1.0-alpha.1.nupkg.sha512",
-        "kristofferstrube.blazor.webidl.nuspec",
-        "lib/net7.0/KristofferStrube.Blazor.WebIDL.dll",
-        "staticwebassets/KristofferStrube.Blazor.WebIDL.js"
-      ]
-    },
-    "Microsoft.AspNetCore.Authorization/8.0.6": {
-      "sha512": "H1CSbD7UeSPsrJSUpvbms6SqWMa5y8ch4Rw+gyHh2uztOEb20fTP2r0AUnStn1Q9WYghikiDO5wzkgV+n6KC2Q==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.authorization/8.0.6",
+      "path": "microsoft.aspnetcore.authorization/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3016,14 +2889,14 @@
         "lib/net8.0/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components/8.0.6": {
-      "sha512": "Je2l+rd5i8gB+ZWsN5wBHOsnyAh81h6+a5vNq6rjfQhM2ZYxH+BVsmanCYa+F8BFy6rmd+ZL61SEiNaAyAOgtg==",
+    "Microsoft.AspNetCore.Components/8.0.7": {
+      "sha512": "rXAeBI1NpcqZ0s+LkVxe3zVJqow8GXZyTkw2pThnh/IWz/qsZshU8rve/23EXN14+l+7b3Ragt0JSO8+iwcMUw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components/8.0.6",
+      "path": "microsoft.aspnetcore.components/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3031,14 +2904,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net8.0/Microsoft.AspNetCore.Components.dll",
         "lib/net8.0/Microsoft.AspNetCore.Components.xml",
-        "microsoft.aspnetcore.components.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.components.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/8.0.6": {
-      "sha512": "SEL0CN1jJdJkCDwRox3kSY1ffMnahlOCDJZYrYWfQ6ftjqRuuiPtwyvI3VIeVHLcpT3VP1AXww8wzKDK3oeFxg==",
+    "Microsoft.AspNetCore.Components.Analyzers/8.0.7": {
+      "sha512": "S186J2WX2+7wM43u1kJ/BGy2fndKCSe6Swhd2f3xKr0p5VcQUUsQMhkWslmpXuNTQlZyeNw1w6IWXbzQoU347Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/8.0.6",
+      "path": "microsoft.aspnetcore.components.analyzers/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3047,14 +2920,14 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Forms/8.0.6": {
-      "sha512": "49wIE1ns3ZGDU4NPMcKCSTC716IxujUeaynsUyflM5Qmb2WlF6M6m4pMcJ6UET1Ixmn027nZjMEc8J7pU4BLBg==",
+    "Microsoft.AspNetCore.Components.Forms/8.0.7": {
+      "sha512": "W6B1ARyh+vOtBbAYap1ekDIA+8U3N6hwnli6gG3WYAOmC+4bFlbfpoVoQvpLVTaFH2CSCwEM4NAA16dmTFv3kA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.forms/8.0.6",
+      "path": "microsoft.aspnetcore.components.forms/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3062,14 +2935,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll",
         "lib/net8.0/Microsoft.AspNetCore.Components.Forms.xml",
-        "microsoft.aspnetcore.components.forms.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Web/8.0.6": {
-      "sha512": "xxYlTpcTEWsxaWUscDLN32mM32ysslLFtNQBS6wJOxaKJ9LCvusXDyBVEKL2DPbB8PZdereNvyrVr0deHkuOEw==",
+    "Microsoft.AspNetCore.Components.Web/8.0.7": {
+      "sha512": "InawfVQAvvxHZYiaHfMgdZge6Dc7wdFFAQDhgYKO6Ezh3cm+STVHATlR4nygZAV4df58AG3rhZ0uuv7EPXvPMA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.web/8.0.6",
+      "path": "microsoft.aspnetcore.components.web/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3077,14 +2950,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll",
         "lib/net8.0/Microsoft.AspNetCore.Components.Web.xml",
-        "microsoft.aspnetcore.components.web.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Metadata/8.0.6": {
-      "sha512": "3e7S/kz1MGds8zDA8SfQiutqifyVcULs5P/8Bxpes0WIkJRMGkU/l+XlMllj9KrDfCGwHW8bgjRy/zxfoILgfg==",
+    "Microsoft.AspNetCore.Metadata/8.0.7": {
+      "sha512": "CD5PNOSnOh3XcqZaaxp0uENK4WTFifSkhWkuO9dQ/Mo7gpXwAMvrfwdqW2T7Z4YS+VXuka7Gf70f29HND9oQ3w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.metadata/8.0.6",
+      "path": "microsoft.aspnetcore.metadata/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3096,7 +2969,7 @@
         "lib/net8.0/Microsoft.AspNetCore.Metadata.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
@@ -3342,6 +3215,52 @@
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
       ]
     },
+    "Microsoft.EntityFrameworkCore/8.0.7": {
+      "sha512": "UOyPNAgyzw/E4hUCurqvZxi0WWVLQAGZuntFPzkTXtvJLTqRjKvokvhv+XazAUSODLsU1DZ67GjZ4mT9d82+0g==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore/8.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
+        "microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.7": {
+      "sha512": "DHX6nxcg4/tpWfTjAleKrXveDiNFY/OGOK6nm27GipUXNI2Uofev9cH5SYXmtGIgHWxlvfn754TXN4WnrixOwg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
+        "microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.7": {
+      "sha512": "nerD0vEOYJVhVapamRVH9DrUYbDNMJ5bPfWze4SibDDaDaekzgwQqBht97/tV+8pgdKoPAXmtiJsB+lDajwVrQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
+        "docs/PACKAGE.md",
+        "lib/netstandard2.0/_._",
+        "microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
     "Microsoft.Extensions.AmbientMetadata.Application/8.3.0": {
       "sha512": "NktDh/Qbj7DdI+zLixvigvK8FB/pu/aPIG3VLh6+VlwNi769mWPjV6aVE1kmgNP/2kgF7UDEkqrfdNdzQAPXZw==",
       "type": "package",
@@ -3361,6 +3280,66 @@
         "lib/net8.0/Microsoft.Extensions.AmbientMetadata.Application.xml",
         "microsoft.extensions.ambientmetadata.application.8.3.0.nupkg.sha512",
         "microsoft.extensions.ambientmetadata.application.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Abstractions/8.0.0": {
+      "sha512": "3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Caching.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory/8.0.0": {
+      "sha512": "7pqivmrZDzo1ADPkRwjy+8jtRKWRCPag9qPI+p7sgu7Q4QreWhcvbiWXsbhP+yY8XSiDvZpu2/LWdBv7PnmOpQ==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.memory/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Caching.Memory.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Caching.Memory.targets",
+        "lib/net462/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net462/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net6.0/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net7.0/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/net8.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net8.0/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+        "microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.Compliance.Abstractions/8.3.0": {
@@ -6031,98 +6010,45 @@
         "version.txt"
       ]
     },
-    "ZXing.Net/0.16.9": {
-      "sha512": "7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
-      "type": "package",
-      "path": "zxing.net/0.16.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/native/zxing.XML",
-        "lib/native/zxing.pri",
-        "lib/native/zxing.winmd",
-        "lib/net20-cf/zxing.ce2.0.dll",
-        "lib/net20-cf/zxing.ce2.0.xml",
-        "lib/net20/zxing.XML",
-        "lib/net20/zxing.dll",
-        "lib/net35-cf/zxing.ce3.5.dll",
-        "lib/net35-cf/zxing.ce3.5.xml",
-        "lib/net35/zxing.XML",
-        "lib/net35/zxing.dll",
-        "lib/net40/zxing.XML",
-        "lib/net40/zxing.dll",
-        "lib/net40/zxing.presentation.XML",
-        "lib/net40/zxing.presentation.dll",
-        "lib/net45/zxing.XML",
-        "lib/net45/zxing.dll",
-        "lib/net45/zxing.presentation.XML",
-        "lib/net45/zxing.presentation.dll",
-        "lib/net461/zxing.XML",
-        "lib/net461/zxing.dll",
-        "lib/net461/zxing.presentation.XML",
-        "lib/net461/zxing.presentation.dll",
-        "lib/net47/zxing.XML",
-        "lib/net47/zxing.dll",
-        "lib/net47/zxing.presentation.XML",
-        "lib/net47/zxing.presentation.dll",
-        "lib/net48/zxing.XML",
-        "lib/net48/zxing.dll",
-        "lib/net48/zxing.presentation.XML",
-        "lib/net48/zxing.presentation.dll",
-        "lib/net5.0/zxing.XML",
-        "lib/net5.0/zxing.dll",
-        "lib/net6.0/zxing.XML",
-        "lib/net6.0/zxing.dll",
-        "lib/net7.0/zxing.XML",
-        "lib/net7.0/zxing.dll",
-        "lib/netcoreapp3.0/zxing.dll",
-        "lib/netcoreapp3.0/zxing.xml",
-        "lib/netcoreapp3.1/zxing.dll",
-        "lib/netcoreapp3.1/zxing.xml",
-        "lib/netstandard1.0/zxing.dll",
-        "lib/netstandard1.0/zxing.xml",
-        "lib/netstandard1.1/zxing.dll",
-        "lib/netstandard1.1/zxing.xml",
-        "lib/netstandard1.3/zxing.dll",
-        "lib/netstandard1.3/zxing.xml",
-        "lib/netstandard2.0/zxing.dll",
-        "lib/netstandard2.0/zxing.xml",
-        "lib/netstandard2.1/zxing.dll",
-        "lib/netstandard2.1/zxing.xml",
-        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
-        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
-        "lib/sl3-wp/zxing.wp7.0.XML",
-        "lib/sl3-wp/zxing.wp7.0.dll",
-        "lib/sl4-wp71/zxing.wp7.1.XML",
-        "lib/sl4-wp71/zxing.wp7.1.dll",
-        "lib/sl4/zxing.sl4.XML",
-        "lib/sl4/zxing.sl4.dll",
-        "lib/sl5/zxing.sl5.XML",
-        "lib/sl5/zxing.sl5.dll",
-        "lib/uap10/zxing.dll",
-        "lib/uap10/zxing.pri",
-        "lib/uap10/zxing.xml",
-        "lib/windows8-managed/zxing.winrt.XML",
-        "lib/windows8-managed/zxing.winrt.dll",
-        "lib/windows8/zxing.XML",
-        "lib/windows8/zxing.pri",
-        "lib/windows8/zxing.winmd",
-        "lib/wp8/zxing.wp8.0.XML",
-        "lib/wp8/zxing.wp8.0.dll",
-        "logo.jpg",
-        "zxing.net.0.16.9.nupkg.sha512",
-        "zxing.net.nuspec"
-      ]
-    },
     "Edam.Common/1.0.0": {
       "type": "project",
       "path": "../Edam.Libraries/System/Edam.Common/Edam.Common.csproj",
       "msbuildProject": "../Edam.Libraries/System/Edam.Common/Edam.Common.csproj"
     },
+    "Edam.Data.FileSystemModel/1.0.0": {
+      "type": "project",
+      "path": "../Edam.Libraries/Data/Edam.Data.FileSystemModel/Edam.Data.FileSystemModel.csproj",
+      "msbuildProject": "../Edam.Libraries/Data/Edam.Data.FileSystemModel/Edam.Data.FileSystemModel.csproj"
+    },
     "Edam.ServiceDefaults/1.0.0": {
       "type": "project",
       "path": "../Edam.ServiceDefaults/Edam.ServiceDefaults.csproj",
       "msbuildProject": "../Edam.ServiceDefaults/Edam.ServiceDefaults.csproj"
+    },
+    "KristofferStrube.Blazor.DOM/0.2.2": {
+      "type": "project",
+      "path": "../Edam.Libraries/Connector/KristofferStrube.Blazor.DOM/KristofferStrube.Blazor.DOM.csproj",
+      "msbuildProject": "../Edam.Libraries/Connector/KristofferStrube.Blazor.DOM/KristofferStrube.Blazor.DOM.csproj"
+    },
+    "KristofferStrube.Blazor.FileSystem/0.3.1": {
+      "type": "project",
+      "path": "../Edam.Libraries/Connector/KristofferStrube.Blazor.FileSystem/KristofferStrube.Blazor.FileSystem.csproj",
+      "msbuildProject": "../Edam.Libraries/Connector/KristofferStrube.Blazor.FileSystem/KristofferStrube.Blazor.FileSystem.csproj"
+    },
+    "KristofferStrube.Blazor.FileSystemAccess/3.2.2": {
+      "type": "project",
+      "path": "../Edam.Libraries/Connector/KristofferStrube.Blazor.FileSystemAccess/KristofferStrube.Blazor.FileSystemAccess.csproj",
+      "msbuildProject": "../Edam.Libraries/Connector/KristofferStrube.Blazor.FileSystemAccess/KristofferStrube.Blazor.FileSystemAccess.csproj"
+    },
+    "KristofferStrube.Blazor.Streams/0.4.2": {
+      "type": "project",
+      "path": "../Edam.Libraries/Connector/KristofferStrube.Blazor.Streams/KristofferStrube.Blazor.Streams.csproj",
+      "msbuildProject": "../Edam.Libraries/Connector/KristofferStrube.Blazor.Streams/KristofferStrube.Blazor.Streams.csproj"
+    },
+    "KristofferStrube.Blazor.WebIDL/0.5.1": {
+      "type": "project",
+      "path": "../Edam.Libraries/Connector/KristofferStrube.Blazor.WebIDL/KristofferStrube.Blazor.WebIDL.csproj",
+      "msbuildProject": "../Edam.Libraries/Connector/KristofferStrube.Blazor.WebIDL/KristofferStrube.Blazor.WebIDL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6131,10 +6057,9 @@
       "Aspire.StackExchange.Redis.OutputCaching >= 8.0.2",
       "Azure.Identity >= 1.12.0",
       "BlazorMonaco >= 3.2.0",
-      "CodeBeam.MudBlazor.Extensions >= 6.9.2",
       "Edam.Common >= 1.0.0",
+      "Edam.Data.FileSystemModel >= 1.0.0",
       "Edam.ServiceDefaults >= 1.0.0",
-      "KristofferStrube.Blazor.FileAPI >= 0.3.0",
       "KristofferStrube.Blazor.FileSystem >= 0.3.1",
       "KristofferStrube.Blazor.FileSystemAccess >= 3.2.2",
       "Microsoft.JSInterop.WebAssembly >= 8.0.7",
@@ -6175,6 +6100,15 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj": {
+              "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystemAccess\\KristofferStrube.Blazor.FileSystemAccess.csproj"
+            },
+            "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj": {
+              "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.FileSystem\\KristofferStrube.Blazor.FileSystem.csproj"
+            },
+            "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj": {
+              "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj"
+            },
             "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj": {
               "projectPath": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj"
             },
@@ -6214,22 +6148,6 @@
           "BlazorMonaco": {
             "target": "Package",
             "version": "[3.2.0, )"
-          },
-          "CodeBeam.MudBlazor.Extensions": {
-            "target": "Package",
-            "version": "[6.9.2, )"
-          },
-          "KristofferStrube.Blazor.FileAPI": {
-            "target": "Package",
-            "version": "[0.3.0, )"
-          },
-          "KristofferStrube.Blazor.FileSystem": {
-            "target": "Package",
-            "version": "[0.3.1, )"
-          },
-          "KristofferStrube.Blazor.FileSystemAccess": {
-            "target": "Package",
-            "version": "[3.2.2, )"
           },
           "Microsoft.JSInterop.WebAssembly": {
             "target": "Package",

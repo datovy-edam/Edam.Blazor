@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KristofferStrube.Blazor.DOM.props" />
+</Project>

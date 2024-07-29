@@ -11,6 +11,8 @@ namespace Edam.Web.Components.Pages;
 
 public partial class FileSystemComponent
 {
+   [Parameter]
+   public string Title { get; set; } = "Projects";
 
    public class TreeItemData: TreeItemData<FileSystemItemInfo?>
    {
@@ -65,11 +67,37 @@ public partial class FileSystemComponent
       get { return SelectedValue == null ? "" : SelectedValue.Title; }
    }
 
+   /// <summary>
+   /// Initialize Component Async...
+   /// </summary>
+   /// <returns></returns>
    protected override async Task OnInitializedAsync()
    {
       Directory = await FileSystemDirectory.InitializeDirectory(
          StorageManagerService);
       TreeItems = ToTreeItemData(Directory.Instance);
+      await base.OnInitializedAsync();
+   }
+
+   /// <summary>
+   /// Component After Render method.
+   /// </summary>
+   /// <param name="firstRender"></param>
+   protected async override Task OnAfterRenderAsync(bool firstRender)
+   {
+      await base.OnAfterRenderAsync(firstRender);
+
+      if (firstRender)
+      {
+         StateHasChanged();
+      }
+
+      //if (_stateHasChanged)
+      //{
+      //   _stateHasChanged = false;
+      //   StateHasChanged();
+      //}
+
    }
 
    /// <summary>
@@ -97,7 +125,7 @@ public partial class FileSystemComponent
    /// </summary>
    /// <param name="items"></param>
    /// <returns></returns>
-   private HashSet<TreeItemData<FileSystemItemInfo>>
+   private HashSet<TreeItemData<FileSystemItemInfo>>?
       ToTreeItemData(HashSet<FileSystemItemInfo?> items)
    {
       HashSet<TreeItemData<FileSystemItemInfo>> itms = 

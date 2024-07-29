@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\KristofferStrube.Blazor.WebIDL.props" />
+</Project>

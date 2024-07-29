@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KristofferStrube.Blazor.FileSystemAccess</name>
+    </assembly>
+    <members>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowOpenFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.OpenFilePickerOptionsStartInWellKnownDirectory)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showopenfilepicker">showOpenFilePicker() browser specs</see>
+            </summary>
+            <param name="openFilePickerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowOpenFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.OpenFilePickerOptionsStartInWellKnownDirectory,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showopenfilepicker">showOpenFilePicker() browser specs</see>
+            </summary>
+            <param name="openFilePickerOptions"></param>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowOpenFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.OpenFilePickerOptionsStartInFileSystemHandle)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showopenfilepicker">showOpenFilePicker() browser specs</see>
+            </summary>
+            <param name="openFilePickerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowOpenFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.OpenFilePickerOptionsStartInFileSystemHandle,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showopenfilepicker">showOpenFilePicker() browser specs</see>
+            </summary>
+            <param name="openFilePickerOptions"></param>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowOpenFilePickerAsync">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showopenfilepicker">showOpenFilePicker() browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowOpenFilePickerAsync(KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showopenfilepicker">showOpenFilePicker() browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowSaveFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.SaveFilePickerOptionsStartInWellKnownDirectory)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showsavefilepicker">showSaveFilePicker() browser specs</see>
+            </summary>
+            <param name="saveFilePickerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowSaveFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.SaveFilePickerOptionsStartInWellKnownDirectory,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showsavefilepicker">showSaveFilePicker() browser specs</see>
+            </summary>
+            <param name="saveFilePickerOptions"></param>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowSaveFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.SaveFilePickerOptionsStartInFileSystemHandle)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showsavefilepicker">showSaveFilePicker() browser specs</see>
+            </summary>
+            <param name="saveFilePickerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowSaveFilePickerAsync(KristofferStrube.Blazor.FileSystemAccess.SaveFilePickerOptionsStartInFileSystemHandle,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showsavefilepicker">showSaveFilePicker() browser specs</see>
+            </summary>
+            <param name="saveFilePickerOptions"></param>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowSaveFilePickerAsync">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showsavefilepicker">showSaveFilePicker() browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowSaveFilePickerAsync(KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showsavefilepicker">showSaveFilePicker() browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowDirectoryPickerAsync(KristofferStrube.Blazor.FileSystemAccess.DirectoryPickerOptionsStartInWellKnownDirectory)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showdirectorypicker">showDirectoryPicker() browser specs</see>
+            </summary>
+            <param name="directoryPickerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowDirectoryPickerAsync(KristofferStrube.Blazor.FileSystemAccess.DirectoryPickerOptionsStartInWellKnownDirectory,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showdirectorypicker">showDirectoryPicker() browser specs</see>
+            </summary>
+            <param name="directoryPickerOptions"></param>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowDirectoryPickerAsync(KristofferStrube.Blazor.FileSystemAccess.DirectoryPickerOptionsStartInFileSystemHandle)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showdirectorypicker">showDirectoryPicker() browser specs</see>
+            </summary>
+            <param name="directoryPickerOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowDirectoryPickerAsync(KristofferStrube.Blazor.FileSystemAccess.DirectoryPickerOptionsStartInFileSystemHandle,KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showdirectorypicker">showDirectoryPicker() browser specs</see>
+            </summary>
+            <param name="directoryPickerOptions"></param>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowDirectoryPickerAsync">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showdirectorypicker">showDirectoryPicker() browser specs</see>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.ShowDirectoryPickerAsync(KristofferStrube.Blazor.FileSystem.FileSystemOptions)">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#api-showdirectorypicker">showDirectoryPicker() browser specs</see>
+            </summary>
+            <param name="fsOptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseFileSystemAccessService`3.IsSupportedAsync">
+            <summary>
+            Meta method for the wrapper that checks if the API is available in the current browser.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KristofferStrube.Blazor.FileSystemAccess.BaseJSWrapper.#ctor(Microsoft.JSInterop.IJSRuntime,Microsoft.JSInterop.IJSObjectReference,KristofferStrube.Blazor.FileSystemAccess.FileSystemAccessOptions)">
+            <summary>
+            Constructs a wrapper instance for an equivalent JS instance.
+            </summary>
+            <param name="jSRuntime">An <see cref="T:Microsoft.JSInterop.IJSRuntime"/> instance.</param>
+            <param name="jSReference">A JS reference to an existing JS instance that should be wrapped.</param>
+            <param name="options"></param>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.FileSystemPermissionMode">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#enumdef-filesystempermissionmode">FileSystemPermissionMode browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.PermissionState">
+            <summary>
+            <see href="https://w3c.github.io/permissions/#dom-permissionstate">PermissionState browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.WellKnownDirectory">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#enumdef-wellknowndirectory">WellKnownDirectory browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.DirectoryPickerOptionsStartInWellKnownDirectory">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-directorypickeroptions">DirectoryPickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.DirectoryPickerOptionsStartInFileSystemHandle">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-directorypickeroptions">DirectoryPickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.FilePickerAcceptType">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-filepickeraccepttype">FilePickerAcceptType browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.FilePickerOptionsStartInWellKnownDirectory">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-filepickeroptions">FilePickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.FilePickerOptionsStartInFileSystemHandle">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-filepickeroptions">FilePickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.FileSystemCreateWritableOptions">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-filesystemcreatewritableoptions">FileSystemCreateWritableOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.FileSystemHandlePermissionDescriptor">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-filesystemhandlepermissiondescriptor">FileSystemHandlePermissionDescriptor browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.OpenFilePickerOptionsStartInWellKnownDirectory">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-openfilepickeroptions">OpenFilePickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.OpenFilePickerOptionsStartInFileSystemHandle">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-openfilepickeroptions">OpenFilePickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.SaveFilePickerOptionsStartInWellKnownDirectory">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-savefilepickeroptions">SaveFilePickerOptions browser specs</see>
+            </summary>
+        </member>
+        <member name="T:KristofferStrube.Blazor.FileSystemAccess.SaveFilePickerOptionsStartInFileSystemHandle">
+            <summary>
+            <see href="https://wicg.github.io/file-system-access/#dictdef-savefilepickeroptions">SaveFilePickerOptions browser specs</see>
+            </summary>
+        </member>
+    </members>
+</doc>

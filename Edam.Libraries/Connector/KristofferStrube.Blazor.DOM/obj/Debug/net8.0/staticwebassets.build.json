@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "dC4ePkQDCNQXk8d5NVjiOQSsjSckuTwtemuMyH+U7Ow=",
+  "Source": "KristofferStrube.Blazor.DOM",
+  "BasePath": "_content/KristofferStrube.Blazor.DOM",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\KristofferStrube.Blazor.WebIDL.csproj",
+      "Version": 2,
+      "Source": "KristofferStrube.Blazor.WebIDL",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "KristofferStrube.Blazor.DOM\\wwwroot",
+      "Source": "KristofferStrube.Blazor.DOM",
+      "ContentRoot": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\wwwroot\\",
+      "BasePath": "_content/KristofferStrube.Blazor.DOM",
+      "Pattern": "**"
+    },
+    {
+      "Name": "KristofferStrube.Blazor.WebIDL\\wwwroot",
+      "Source": "KristofferStrube.Blazor.WebIDL",
+      "ContentRoot": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\wwwroot\\",
+      "BasePath": "_content/KristofferStrube.Blazor.WebIDL",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\wwwroot\\KristofferStrube.Blazor.DOM.js",
+      "SourceId": "KristofferStrube.Blazor.DOM",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.DOM\\wwwroot\\",
+      "BasePath": "_content/KristofferStrube.Blazor.DOM",
+      "RelativePath": "KristofferStrube.Blazor.DOM.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\KristofferStrube.Blazor.DOM.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\wwwroot\\KristofferStrube.Blazor.WebIDL.js",
+      "SourceId": "KristofferStrube.Blazor.WebIDL",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Connector\\KristofferStrube.Blazor.WebIDL\\wwwroot\\",
+      "BasePath": "_content/KristofferStrube.Blazor.WebIDL",
+      "RelativePath": "KristofferStrube.Blazor.WebIDL.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\KristofferStrube.Blazor.WebIDL.js"
+    }
+  ]
+}
