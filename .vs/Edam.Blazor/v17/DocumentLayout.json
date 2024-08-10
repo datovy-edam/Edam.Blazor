@@ -1,15 +1,48 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\Edam.Blazor\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|d:\\projects\\edam.blazor\\edam.libraries\\data\\edam.data.filesystemmodel\\catalogtreebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|solutionrelative:edam.libraries\\data\\edam.data.filesystemmodel\\catalogtreebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|d:\\projects\\edam.blazor\\edam.libraries\\data\\edam.data.filesystemmodel\\cataloginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|solutionrelative:edam.libraries\\data\\edam.data.filesystemmodel\\cataloginfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|d:\\projects\\edam.blazor\\edam.libraries\\data\\edam.data.filesystemmodel\\catalogpathitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|solutionrelative:edam.libraries\\data\\edam.data.filesystemmodel\\catalogpathitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E98E5179-39EA-4E27-B857-19467BBC422B}|Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj|d:\\projects\\edam.blazor\\edam.libraries\\system\\edam.common\\inout\\folderfileiteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E98E5179-39EA-4E27-B857-19467BBC422B}|Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj|solutionrelative:edam.libraries\\system\\edam.common\\inout\\folderfileiteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98756506-B8B0-44B0-B0CC-7496F30B25AF}|Edam.Libraries\\Data\\Edam.Data.FileSystemDb\\Edam.Data.FileSystemDb.csproj|d:\\projects\\edam.blazor\\edam.libraries\\data\\edam.data.filesystemdb\\filesysteminstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98756506-B8B0-44B0-B0CC-7496F30B25AF}|Edam.Libraries\\Data\\Edam.Data.FileSystemDb\\Edam.Data.FileSystemDb.csproj|solutionrelative:edam.libraries\\data\\edam.data.filesystemdb\\filesysteminstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}|Edam.Libraries\\Test\\Edam.Test.FileSystemDb\\Edam.Test.FileSystemDb.csproj|d:\\projects\\edam.blazor\\edam.libraries\\test\\edam.test.filesystemdb\\testmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}|Edam.Libraries\\Test\\Edam.Test.FileSystemDb\\Edam.Test.FileSystemDb.csproj|solutionrelative:edam.libraries\\test\\edam.test.filesystemdb\\testmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E98E5179-39EA-4E27-B857-19467BBC422B}|Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj|d:\\projects\\edam.blazor\\edam.libraries\\system\\edam.common\\dataobjects\\medias\\mediacontenttypehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E98E5179-39EA-4E27-B857-19467BBC422B}|Edam.Libraries\\System\\Edam.Common\\Edam.Common.csproj|solutionrelative:edam.libraries\\system\\edam.common\\dataobjects\\medias\\mediacontenttypehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|d:\\projects\\edam.blazor\\edam.libraries\\data\\edam.data.filesystemmodel\\fileiteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}|Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\Edam.Data.FileSystemModel.csproj|solutionrelative:edam.libraries\\data\\edam.data.filesystemmodel\\fileiteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 298,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 255,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +79,120 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileItemInfo.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\FileItemInfo.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\FileItemInfo.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\FileItemInfo.cs",
+              "RelativeToolTip": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\FileItemInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T10:23:08.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatalogPathItem.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogPathItem.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogPathItem.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogPathItem.cs",
+              "RelativeToolTip": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogPathItem.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T20:07:37.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CatalogTreeBuilder.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogTreeBuilder.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogTreeBuilder.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogTreeBuilder.cs",
+              "RelativeToolTip": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogTreeBuilder.cs",
+              "ViewState": "AQIAAPoAAAAAAAAAAAAAABwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T18:06:49.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileSystemInstance.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemDb\\FileSystemInstance.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\Data\\Edam.Data.FileSystemDb\\FileSystemInstance.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemDb\\FileSystemInstance.cs",
+              "RelativeToolTip": "Edam.Libraries\\Data\\Edam.Data.FileSystemDb\\FileSystemInstance.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T10:30:05.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MediaContentTypeHelper.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\DataObjects\\Medias\\MediaContentTypeHelper.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\System\\Edam.Common\\DataObjects\\Medias\\MediaContentTypeHelper.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\DataObjects\\Medias\\MediaContentTypeHelper.cs",
+              "RelativeToolTip": "Edam.Libraries\\System\\Edam.Common\\DataObjects\\Medias\\MediaContentTypeHelper.cs",
+              "ViewState": "AQIAAOsAAAAAAAAAAAAAAB8BAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:24:00.085Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 303,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FolderFileItemInfo.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\InOut\\FolderFileItemInfo.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\System\\Edam.Common\\InOut\\FolderFileItemInfo.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\System\\Edam.Common\\InOut\\FolderFileItemInfo.cs",
+              "RelativeToolTip": "Edam.Libraries\\System\\Edam.Common\\InOut\\FolderFileItemInfo.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T18:45:06.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestModel.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Test\\Edam.Test.FileSystemDb\\TestModel.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\Test\\Edam.Test.FileSystemDb\\TestModel.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Test\\Edam.Test.FileSystemDb\\TestModel.cs",
+              "RelativeToolTip": "Edam.Libraries\\Test\\Edam.Test.FileSystemDb\\TestModel.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T15:42:05.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CatalogInfo.cs",
+              "DocumentMoniker": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogInfo.cs",
+              "RelativeDocumentMoniker": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogInfo.cs",
+              "ToolTip": "D:\\Projects\\Edam.Blazor\\Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogInfo.cs",
+              "RelativeToolTip": "Edam.Libraries\\Data\\Edam.Data.FileSystemModel\\CatalogInfo.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAADkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T18:21:32.567Z",
+              "EditorCaption": ""
             }
           ]
         }

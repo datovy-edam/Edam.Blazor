@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Edam.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97d12e03f7f4966120058cabd5b2318d1ab3ce59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0effe6d91aa9f458b1a99b68b43536c01670aaf6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Edam.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Edam.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

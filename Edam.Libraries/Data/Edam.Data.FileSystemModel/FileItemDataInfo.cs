@@ -22,8 +22,6 @@ public class FileItemDataInfo
    [Required]
    public FileItemInfo FileItem { get; set; }
 
-   public long FileId { get; set; }
-
    [MaxLength(80)]
    public string PartitionId { get; set; } = PARTITION_DEFAULT;
 

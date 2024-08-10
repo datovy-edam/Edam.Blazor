@@ -21,6 +21,7 @@ namespace Edam.DataObjects.Medias
       XmlDocument = 7,
       PNG = 8,
       OfficeWordXml = 9,
+      OfficeExcelXml = 17,
       XML = 11,
       XSLT = 14,
       JSON = 16,

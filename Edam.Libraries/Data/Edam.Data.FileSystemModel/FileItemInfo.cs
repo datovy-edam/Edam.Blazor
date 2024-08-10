@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Edam.DataObjects.Trees;
 using Newtonsoft.Json;
 
 namespace Edam.Data.FileSystemModel;
@@ -30,6 +31,8 @@ public class FileItemInfo
 
    [MaxLength(1024)]
    public string Description { get; set; }
+
+   public TreeItemType ItemType { get; set; } = TreeItemType.Branch;
 
    public virtual ICollection<FileItemDataInfo> DataItems { get; set; }
 

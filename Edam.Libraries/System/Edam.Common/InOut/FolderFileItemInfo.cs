@@ -23,11 +23,12 @@ namespace Edam.InOut
       public String NameFull { get; set; }
       public String Extension { get; set; }
       public String ExtensionName { get; set; }
+      public String DriverName { get; set; }
       public List<BaseColumnInfo> Columns { get; set; }
 
       public bool IsFullPath
       {
-         get { return NameFull.Contains("c:/") ||
+         get { return NameFull.Contains("c:/") || NameFull.Contains("//") ||
                NameFull.Contains("c:\\"); }
       }
 
@@ -57,6 +58,13 @@ namespace Edam.InOut
          NameFull = io.Path.GetFileName(fullPath);
          Path = io.Path.GetDirectoryName(fullPath);
          Parent = parent;
+         DriverName = String.Empty;
+
+         int indx = fullPath.IndexOf(':');
+         if (indx != -1)
+         {
+            DriverName = fullPath.Substring(0, indx + 1);
+         }
       }
 
       //public String Full

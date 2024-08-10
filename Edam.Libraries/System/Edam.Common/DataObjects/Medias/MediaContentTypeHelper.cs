@@ -26,6 +26,8 @@ namespace Edam.DataObjects.Medias
       public const String ExtXML = "xml";
       public const String ExtXSD = "xsd";
       public const String ExtJSON = "json";
+      public const String ExtExcelOpenXml = "xlsx";
+      public const String ExtJSONLD = "jsonld";
 
       public const String TextFile = "text/plain";
       public const String XmlDocument = "text/xml";
@@ -37,9 +39,12 @@ namespace Edam.DataObjects.Medias
       public const String JsonDocument = "application/json";
       public const String MsWordFile = "application/msword";
       public const String OfficeWordXmlFile = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+      public const String OfficeExcelXmlFile = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
       public const String PdfFile = "application/pdf";
       public const String FaxGroup4Standard = "image/g3fax";
       public const String UnknownType = "application/octet-stream";
+      public const String JSONLD = "application/ld+json";
+      public const String JAVASCRIPT = "text/javascript";
 
       public const String TextFileDescription = "Plain Text File";
       public const String XmlDocumentDescription = "XML Text File";
@@ -89,11 +94,20 @@ namespace Edam.DataObjects.Medias
             case MediaFormat.RtfFile:
                ctype = RtfFile;
                break;
+            case MediaFormat.JSON:
+               ctype = JsonDocument;
+               break;
+            case MediaFormat.XML:
+               ctype = XmlDocument;
+               break;
             case MediaFormat.MsWordFile:
                ctype = MsWordFile;
                break;
             case MediaFormat.OfficeWordXml:
                ctype = OfficeWordXmlFile;
+               break;
+            case MediaFormat.OfficeExcelXml:
+               ctype = OfficeExcelXmlFile;
                break;
             case MediaFormat.PdfFile:
                ctype = PdfFile;
@@ -250,19 +264,26 @@ namespace Edam.DataObjects.Medias
       /// <returns>MediaFormat enum is returned</returns>
       public static MediaFormat GetMediaFormat(String extension)
       {
-         MediaFormat f = MediaFormat.TextFile;
-         if (extension == ExtDOC)
+         var ext = extension.Replace(".", "");
+         MediaFormat f = MediaFormat.Unknown;
+         if (ext == ExtDOC)
             f = MediaFormat.MsWordFile;
-         else if (extension == ExtDOCX)
+         else if (ext == ExtDOCX)
             f = MediaFormat.OfficeWordXml;
-         else if (extension == ExtJPEG)
+         else if (ext == ExtJPEG)
             f = MediaFormat.JPEG;
-         else if (extension == ExtPDF)
+         else if (ext == ExtPDF)
             f = MediaFormat.PdfFile;
-         else if (extension == ExtPNG)
+         else if (ext == ExtPNG)
             f = MediaFormat.PNG;
-         else if (extension == ExtRTF)
+         else if (ext == ExtRTF)
             f = MediaFormat.RtfFile;
+         else if (ext == ExtXML)
+            f = MediaFormat.XmlDocument;
+         else if (ext == ExtJSON)
+            f = MediaFormat.JSON;
+         else if (ext == ExtExcelOpenXml)
+            f = MediaFormat.OfficeExcelXml;
          return f;
       }
 

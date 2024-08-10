@@ -12,7 +12,7 @@ namespace Edam.Web.Models.Application
          get { return _sessionId; }
       }
 
-      public static ContainerInfo CurrentContainer { get; set; } = new();
+      public static ContainerInfo? CurrentContainer { get; set; } = new();
    }
 
 }

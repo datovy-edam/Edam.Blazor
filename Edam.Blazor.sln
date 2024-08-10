@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.Data.FileSystemService
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.Data.FileSystemDb", "Edam.Libraries\Data\Edam.Data.FileSystemDb\Edam.Data.FileSystemDb.csproj", "{98756506-B8B0-44B0-B0CC-7496F30B25AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edam.Data.FileSystemModel", "Edam.Libraries\Data\Edam.Data.FileSystemModel\Edam.Data.FileSystemModel.csproj", "{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edam.Data.FileSystemModel", "Edam.Libraries\Data\Edam.Data.FileSystemModel\Edam.Data.FileSystemModel.csproj", "{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edam.Test.FileSystemDb", "Edam.Libraries\Test\Edam.Test.FileSystemDb\Edam.Test.FileSystemDb.csproj", "{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{626F21BA-BEE3-493E-89AB-7DF9E39A66B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +147,7 @@ Global
 		{A2C98AD7-4B9D-4E91-B4A6-3DC5F5CE7377} = {001B5EA3-8FC1-45A7-AC98-3E267536975C}
 		{98756506-B8B0-44B0-B0CC-7496F30B25AF} = {001B5EA3-8FC1-45A7-AC98-3E267536975C}
 		{626F21BA-BEE3-493E-89AB-7DF9E39A66B8} = {001B5EA3-8FC1-45A7-AC98-3E267536975C}
+		{9E8FF0D0-DC78-4C8B-88DE-7EA3C11E8733} = {1F7529AB-BFCA-45A7-8F92-CC3D32148424}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5ABF3AEE-158F-45D0-A5AD-26CC61012971}
